@@ -561,3 +561,73 @@
   }
 }
 
+/* ============================================
+   Task Lists (Checkboxes) Styling
+   ============================================ */
+
+/* 隐藏默认的无序列表样式 */
+.vp-doc ul.contains-task-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* 任务列表项样式 */
+.vp-doc .task-list-item {
+  position: relative;
+  padding-left: 1.75em;
+  margin: 0.5em 0;
+  list-style: none;
+}
+
+/* 复选框样式 */
+.vp-doc .task-list-item-checkbox {
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1.2em;
+  height: 1.2em;
+  margin: 0;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid var(--vp-c-divider);
+  border-radius: 4px;
+  background-color: var(--vp-c-bg);
+  transition: all 0.2s ease;
+}
+
+/* 复选框悬停效果 */
+.vp-doc .task-list-item-checkbox:hover {
+  border-color: var(--vp-c-brand);
+}
+
+/* 已选中的复选框 */
+.vp-doc .task-list-item-checkbox:checked {
+  background-color: var(--vp-c-brand);
+  border-color: var(--vp-c-brand);
+}
+
+/* 复选框勾选标记 */
+.vp-doc .task-list-item-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 0.35em;
+  top: 0.1em;
+  width: 0.4em;
+  height: 0.7em;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* 已完成任务的文本样式 */
+.vp-doc .task-list-item:has(.task-list-item-checkbox:checked) {
+  color: var(--vp-c-text-3);
+}
+
+/* 嵌套任务列表 */
+.vp-doc .task-list-item ul {
+  margin-top: 0.5em;
+  padding-left: 1.5em;
+}
+

@@ -2,6 +2,7 @@ import { defineConfigWithTheme, type HeadConfig, type DefaultTheme } from 'vitep
 import { generateSidebar } from 'vitepress-sidebar'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import timeline from "vitepress-markdown-timeline"
+import taskLists from 'markdown-it-task-lists'
 import { VitePWA } from 'vite-plugin-pwa'
 import { readFile, stat, writeFile } from 'fs/promises'
 import { isAbsolute as isAbsolutePath, join as joinPath, relative as relativePath } from 'path'
@@ -605,9 +606,10 @@ Allow: /security.txt
       'gitignore': 'ini',
       'env': 'properties'
     },
-    // 注册时间线插件
+    // 注册插件
     config: (md) => {
       md.use(timeline);
+      md.use(taskLists, { enabled: true });
     },
   },
 

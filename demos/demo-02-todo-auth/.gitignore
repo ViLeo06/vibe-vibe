@@ -4,3 +4,5 @@ node_modules
 drizzle
 # next-agents-md
 .next-docs/
+# SSL certificates
+*.pem

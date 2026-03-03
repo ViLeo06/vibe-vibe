@@ -311,6 +311,19 @@ Server Action 让前端可以直接调用一个运行在服务器上的函数，
 
 ---
 
+::: tip 让 AI 自动优化性能
+当你的 API 代码越来越复杂时，可能会不知不觉引入性能问题——比如数据瀑布流（一个请求等另一个请求完成）、不必要的重渲染、Bundle 过大等。
+
+推荐加载这两个 Skills，让 AI 在写代码时自动遵循最佳实践：
+
+- **`vercel-react-best-practices`** - React/Next.js 性能优化（消除瀑布流、Bundle 优化、重渲染优化）
+- **`next-best-practices`** - Next.js 文件约定、RSC 边界、异步 API、路由处理、元数据
+
+这两个 Skills 通常已经内置在 Claude Code 中。它们会在你使用 React 或 Next.js 时自动加载，帮你避免常见的性能陷阱。
+:::
+
+---
+
 ::: info 下一步
 接口能查能筛了，但上线后会遇到新问题——有人提交空数据、重复点击、服务器突然 500。去 [当接口出了问题](./02-when-things-go-wrong.md) 看看怎么应对。
 :::
