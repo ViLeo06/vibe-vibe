@@ -29,6 +29,8 @@ title: "第十二章：无服务器部署与 CI/CD 自动化"
 - **Cloudflare Pages**：全球 CDN 加速，免费额度慷慨，支持边缘函数
 - **GitHub Pages**：最简单的静态网站托管，适合纯前端项目
 
+<DeploymentComparison />
+
 **数据库托管**负责存储你的数据。老师傅推荐你用 **Neon**——它是一个专注于 PostgreSQL 本身的云服务，提供无服务器架构，可以按需自动扩缩容。最重要的是，它就是标准的 PostgreSQL，你用 **Drizzle ORM** 通过标准连接字符串去连接，完全不涉及任何厂商捆绑。这样哪天你想换数据库服务商，只需要把 `DATABASE_URL` 一改就行，这叫**保持架构的独立性**。
 
 如果你需要更多后端功能（比如 Auth 认证、Storage 存储、Realtime 实时订阅），也可以考虑 **Supabase**。它本质上就是一个**云端的 PostgreSQL** 加上一套后端服务。但老师傅提醒你，尽量用 Drizzle ORM 直连数据库，而不是大量使用 Supabase 独有的 JS SDK，这样才能保持迁移的灵活性。

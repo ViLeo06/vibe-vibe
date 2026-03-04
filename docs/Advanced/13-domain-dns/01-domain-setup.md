@@ -42,6 +42,8 @@ https://blog.myapp.com
 
 你购买的是 `myapp.com`（二级域名 + 顶级域名）。子域名可以无限创建：`blog.myapp.com`、`api.myapp.com`、`admin.myapp.com`——不需要额外花钱。
 
+<DomainHierarchy />
+
 ### 购买流程
 
 1. 注册腾讯云账号
@@ -63,7 +65,11 @@ https://blog.myapp.com
 
 DNS 就像手机通讯录。你搜"妈妈"，手机帮你拨 138xxxx。浏览器搜 `myapp.com`，DNS 帮你找到服务器地址。没有 DNS，你就得记住每个网站的 IP 地址——就像没有通讯录，你得背下所有人的电话号码。
 
+<DNSResolution />
+
 ### 两种常用记录
+
+<DNSRecordTypes />
 
 | 记录类型 | 指向 | 使用场景 |
 |---------|------|---------|
@@ -117,6 +123,8 @@ ping myapp.com
 
 
 ## HTTPS：给你的网站加把锁
+
+<SSLCertificateFlow />
 
 ![image-20260302022236403](../../public/images/Advanced/image-20260302022236403.png)
 

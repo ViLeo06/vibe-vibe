@@ -70,8 +70,13 @@ import AuthFlow from './components/08-0-AuthFlow.vue'
 import SecurityBoundary from './components/08-0-SecurityBoundary.vue'
 import EnvBoundary from './components/08-1-EnvBoundary.vue'
 import AuthMethodComparison from './components/08-2-AuthMethodComparison.vue'
+import ModernAuthMethods from './components/08-2-ModernAuthMethods.vue'
 import MiddlewareFlow from './components/08-3-MiddlewareFlow.vue'
+import CORSMechanism from './components/08-3-CORSMechanism.vue'
+import DefenseInDepth from './components/08-3-DefenseInDepth.vue'
+import RBACMatrix from './components/08-3-RBACMatrix.vue'
 import AttackVisualizer from './components/08-5-AttackVisualizer.vue'
+import SecurityAuditChecklist from './components/08-5-SecurityAuditChecklist.vue'
 // Chapter 04: Additional components
 import ScaleComparison from './components/04-1-ScaleComparison.vue'
 import CompileVsInterpret from './components/04-2-CompileVsInterpret.vue'
@@ -83,10 +88,51 @@ import ProxyArchitecture from './components/04-7-ProxyArchitecture.vue'
 import MotionEffectsDemo from './components/05-3-MotionEffectsDemo.vue'
 // Chapter 09: Testing & Automation
 import TestPyramid from './components/09-1-TestPyramid.vue'
+import TestCoverageCalculator from './components/09-1-TestCoverageCalculator.vue'
 import TestCoverage from './components/09-2-TestCoverage.vue'
+import APITestScenarios from './components/09-2-APITestScenarios.vue'
+import FlakyTestAnalysis from './components/09-2-FlakyTestAnalysis.vue'
 import CIWorkflow from './components/09-3-CIWorkflow.vue'
+import GitHooksWorkflow from './components/09-3-GitHooksWorkflow.vue'
 // Chapter 15: SEO & Analytics
 import OGCardPreview from './components/15-1-OGCardPreview.vue'
+// Chapter 10: Localhost Public Access
+import LocalhostVsPublic from './components/10-1-LocalhostVsPublic.vue'
+import NetworkLayers from './components/10-1-NetworkLayers.vue'
+import DeploymentComparison from './components/10-1-DeploymentComparison.vue'
+import TunnelFlow from './components/10-2-TunnelFlow.vue'
+// Chapter 11: Git Collaboration (additional)
+import GitFlowDiagram from './components/11-1-GitFlowDiagram.vue'
+import ThreeZoneModel from './components/11-1-ThreeZoneModel.vue'
+import ConflictResolution from './components/11-2-ConflictResolution.vue'
+import PushPullSync from './components/11-2-PushPullSync.vue'
+import BranchDiagram from './components/11-3-BranchDiagram.vue'
+import BranchWorkflow from './components/11-3-BranchWorkflow.vue'
+import BranchConcept from './components/11-3-BranchConcept.vue'
+import DailyRhythm from './components/11-3-DailyRhythm.vue'
+import PRWorkflow from './components/11-3-PRWorkflow.vue'
+// Chapter 12: Deploy & CI/CD (additional)
+import DeploymentPipeline from './components/12-3-DeploymentPipeline.vue'
+// Chapter 13: Domain & DNS
+import DNSResolution from './components/13-1-DNSResolution.vue'
+import DNSRecordTypes from './components/13-1-DNSRecordTypes.vue'
+import DomainHierarchy from './components/13-1-DomainHierarchy.vue'
+import SSLCertificateFlow from './components/13-1-SSLCertificateFlow.vue'
+// Chapter 14: VPS (additional)
+import ServerSetupChecklist from './components/14-2-ServerSetupChecklist.vue'
+import FirewallRuleBuilder from './components/14-2-FirewallRuleBuilder.vue'
+import SecurityHardening from './components/14-2-SecurityHardening.vue'
+import ContainerNetwork from './components/14-3-ContainerNetwork.vue'
+// Chapter 15: SEO & Analytics (additional)
+import SEOChecklist from './components/15-2-SEOChecklist.vue'
+import SEOProcess from './components/15-2-SEOProcess.vue'
+import AnalyticsMetricsExplainer from './components/15-3-AnalyticsMetricsExplainer.vue'
+// Chapter 16: User Feedback (additional)
+import FeedbackManagementFlow from './components/16-2-FeedbackManagementFlow.vue'
+import PriorityMatrix from './components/16-2-PriorityMatrix.vue'
+import RICECalculator from './components/16-2-RICECalculator.vue'
+import HypothesisValidationCycle from './components/16-3-HypothesisValidationCycle.vue'
+import InterviewQuestions from './components/16-3-InterviewQuestions.vue'
 
 // 引入时间线样式
 import "vitepress-markdown-timeline/dist/theme/index.css";
@@ -234,8 +280,13 @@ export default {
     app.component('SecurityBoundary', SecurityBoundary)
     app.component('EnvBoundary', EnvBoundary)
     app.component('AuthMethodComparison', AuthMethodComparison)
+    app.component('ModernAuthMethods', ModernAuthMethods)
     app.component('MiddlewareFlow', MiddlewareFlow)
+    app.component('CORSMechanism', CORSMechanism)
+    app.component('DefenseInDepth', DefenseInDepth)
+    app.component('RBACMatrix', RBACMatrix)
     app.component('AttackVisualizer', AttackVisualizer)
+    app.component('SecurityAuditChecklist', SecurityAuditChecklist)
     // Chapter 04 (additional)
     app.component('ScaleComparison', ScaleComparison)
     app.component('CompileVsInterpret', CompileVsInterpret)
@@ -247,10 +298,50 @@ export default {
     app.component('MotionEffectsDemo', MotionEffectsDemo)
     // Chapter 09
     app.component('TestPyramid', TestPyramid)
+    app.component('TestCoverageCalculator', TestCoverageCalculator)
     app.component('TestCoverage', TestCoverage)
+    app.component('APITestScenarios', APITestScenarios)
+    app.component('FlakyTestAnalysis', FlakyTestAnalysis)
     app.component('CIWorkflow', CIWorkflow)
+    app.component('GitHooksWorkflow', GitHooksWorkflow)
     // Chapter 15
     app.component('OGCardPreview', OGCardPreview)
+    app.component('SEOChecklist', SEOChecklist)
+    app.component('SEOProcess', SEOProcess)
+    app.component('AnalyticsMetricsExplainer', AnalyticsMetricsExplainer)
+    // Chapter 10
+    app.component('LocalhostVsPublic', LocalhostVsPublic)
+    app.component('NetworkLayers', NetworkLayers)
+    app.component('DeploymentComparison', DeploymentComparison)
+    app.component('TunnelFlow', TunnelFlow)
+    // Chapter 11 (additional)
+    app.component('GitFlowDiagram', GitFlowDiagram)
+    app.component('ThreeZoneModel', ThreeZoneModel)
+    app.component('ConflictResolution', ConflictResolution)
+    app.component('PushPullSync', PushPullSync)
+    app.component('BranchDiagram', BranchDiagram)
+    app.component('BranchWorkflow', BranchWorkflow)
+    app.component('BranchConcept', BranchConcept)
+    app.component('DailyRhythm', DailyRhythm)
+    app.component('PRWorkflow', PRWorkflow)
+    // Chapter 12 (additional)
+    app.component('DeploymentPipeline', DeploymentPipeline)
+    // Chapter 13
+    app.component('DNSResolution', DNSResolution)
+    app.component('DNSRecordTypes', DNSRecordTypes)
+    app.component('DomainHierarchy', DomainHierarchy)
+    app.component('SSLCertificateFlow', SSLCertificateFlow)
+    // Chapter 14 (additional)
+    app.component('ServerSetupChecklist', ServerSetupChecklist)
+    app.component('FirewallRuleBuilder', FirewallRuleBuilder)
+    app.component('SecurityHardening', SecurityHardening)
+    app.component('ContainerNetwork', ContainerNetwork)
+    // Chapter 16 (additional)
+    app.component('FeedbackManagementFlow', FeedbackManagementFlow)
+    app.component('PriorityMatrix', PriorityMatrix)
+    app.component('RICECalculator', RICECalculator)
+    app.component('HypothesisValidationCycle', HypothesisValidationCycle)
+    app.component('InterviewQuestions', InterviewQuestions)
   },
   
   // 1. 布局扩展：注入 Giscus 评论

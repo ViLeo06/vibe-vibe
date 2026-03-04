@@ -90,6 +90,8 @@ await db.execute(`SELECT * FROM movies WHERE title = '${userInput}'`)
 
 做一次全面的安全审查：
 
+<SecurityAuditChecklist />
+
 > "对我的项目做一次安全审查：检查是否有 SQL 注入风险（特别是原始 SQL 查询），检查是否有 XSS 风险（特别是 dangerouslySetInnerHTML 的使用），检查 CSRF 保护是否到位，运行 pnpm audit 检查依赖漏洞，如果有 AI 集成，检查提示注入防护和速率限制。"
 
 ---

@@ -169,6 +169,10 @@ VibeVibe 教程已于 **2026 年 1 月 25 日**恢复正式开发，持续更新
 - 如发现问题欢迎通过 [GitHub Issues](https://github.com/datawhalechina/vibe-vibe/issues) 反馈
 :::
 
+::: tip 🎯 Claude Code 全特性速览
+想全面了解 Claude Code 有哪些能力？访问 **[cclog.vibevibe.cn](https://cclog.vibevibe.cn)** 查看从 v0.2 到 v2.1 的完整功能梳理，涵盖 220+ 个版本、1000+ 项更新，包括 AI 模型、多 Agent 协作、MCP 生态、终端体验、安全沙箱等所有核心能力。
+:::
+
 ::: tip 进阶版预告：在线 IDE + Skills
 我们即将推出**在线开发环境**，无需本地配置环境，打开浏览器即可开始学习：
 
