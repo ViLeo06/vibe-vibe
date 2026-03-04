@@ -198,11 +198,17 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 
 小明看了一眼那些 IP 地址，来自俄罗斯、巴西、越南……"好吧，锁门窗确实有必要。"
 
+<SecurityHardening />
+
+<ServerSetupChecklist />
+
 ### 7.1 启用 1Panel 防火墙
 
 在 1Panel 中打开：`系统 → 防火墙`
 
 - 开启防火墙，并添加规则，放行刚刚在云厂商那里开放的端口（80、443、面板端口等）
+
+<FirewallRuleBuilder />
 
 ![1Panel 防火墙配置](../../public/images/Advanced/14-vps-ops-deploy/14-2-firewall-21.png)
 

@@ -173,6 +173,8 @@ docker volume inspect 1panel-postgresql-data
 
 你在家喊"妈"，你妈会应。你在朋友家喊"妈"，应的是朋友的妈。容器里的 `localhost` 也一样——每个容器的 `localhost` 都是它自己，不是服务器主机。
 
+<ContainerNetwork />
+
 | 场景 | 连接地址 | 原因 |
 |------|---------|------|
 | 容器 A 连接容器 B | 用**容器名**（如 `1Panel-postgresql-ukow`） | 同一 Docker 网络内，容器名就是主机名 |

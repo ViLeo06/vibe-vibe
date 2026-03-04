@@ -19,9 +19,7 @@ CI/CD 听起来很高级，但用大白话说就是两件事：
 - **CI（持续集成）**：每次推送代码，自动运行检查和构建，确保代码没问题
 - **CD（持续部署）**：检查通过后，自动发布到线上
 
-```
-你写代码 → git push → 自动检查 → 自动构建 → 自动部署 → 用户看到新版本
-```
+<CIWorkflow />
 
 你只负责写代码和推送，中间的一切都是自动的。
 
@@ -53,6 +51,8 @@ CI/CD 听起来很高级，但用大白话说就是两件事：
 这时候就需要 **GitHub Actions**——GitHub 自带的 CI/CD 工具。
 
 ## GitHub Actions：自动化菜谱
+
+<DeploymentPipeline />
 
 GitHub Actions 通过 `.github/workflows/` 目录下的 YAML 文件来配置。你可以把它理解成一份"菜谱"：告诉 GitHub 在什么时候、按什么步骤、做什么事。
 

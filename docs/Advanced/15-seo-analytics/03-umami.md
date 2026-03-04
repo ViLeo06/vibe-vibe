@@ -99,6 +99,8 @@ Umami 的默认登录信息是：
 
 老师傅坐下来，一个一个给他讲。
 
+<AnalyticsMetricsExplainer />
+
 ![image-20260226235803668](../../public/images/Advanced/image-20260226235803668.png)
 
 ### 访问指标：最基础的四个数字
