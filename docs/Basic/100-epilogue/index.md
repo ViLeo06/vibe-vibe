@@ -3,7 +3,7 @@ title: "结语：给未来的你"
 ---
 
 
-![100-epilogue_index.png](../../public/images/Basic/100-epilogue_index.png)
+![100-epilogue_index.png](/images/Basic/100-epilogue_index.png)
 # 结语：给未来的你
 
 恭喜你，走到了这里。

@@ -25,9 +25,9 @@ SSH 就是远程遥控。你的电脑是遥控器，服务器是电视——SSH 
 3. 在「远程登录」区域点击「免密登录 / 登录」
 4. 浏览器将自动打开 Web 终端，即可输入命令操作
 
-![腾讯云轻量服务器控制台概览](../../public/images/Advanced/14-vps-ops-deploy/14-2-server-console-01.png)
+![腾讯云轻量服务器控制台概览](/images/Advanced/14-vps-ops-deploy/14-2-server-console-01.png)
 
-![Web 终端入口](../../public/images/Advanced/14-vps-ops-deploy/14-2-web-terminal-02.png)
+![Web 终端入口](/images/Advanced/14-vps-ops-deploy/14-2-web-terminal-02.png)
 
 小明点击"免密登录"，浏览器弹出一个黑色的终端窗口，命令提示符显示 `root@xxx:~#`——"我进来了！"他试着输入 `ls`，屏幕上什么都没有——空的。又输入 `pwd`，显示 `/root`。这就是他的服务器，一个干干净净的空系统，等着他往里面装东西。
 
@@ -65,9 +65,9 @@ Are you sure you want to continue connecting (yes/no)?
 4. 密码：购买服务器时设置的密码
 5. 点击确定，双击刚刚配置的服务器，连接即可
 
-![FinalShell 连接界面](../../public/images/Advanced/14-vps-ops-deploy/14-2-finalssh-03.png)
+![FinalShell 连接界面](/images/Advanced/14-vps-ops-deploy/14-2-finalssh-03.png)
 
-![SSH 连接成功界面](../../public/images/Advanced/14-2-ssh-success-04.png)
+![SSH 连接成功界面](/images/Advanced/14-2-ssh-success-04.png)
 
 ## 第二步：系统更新
 
@@ -83,9 +83,9 @@ apt update && apt upgrade -y
 
 这就像给新电脑装完系统后先打补丁。`apt update` 刷新软件列表，`apt upgrade` 安装所有可用更新。
 
-![apt update 过程](../../public/images/Advanced/14-vps-ops-deploy/14-2-apt-update-05.png)
+![apt update 过程](/images/Advanced/14-vps-ops-deploy/14-2-apt-update-05.png)
 
-![apt upgrade 过程](../../public/images/Advanced/14-vps-ops-deploy/14-2-apt-upgrade-06.png)
+![apt upgrade 过程](/images/Advanced/14-vps-ops-deploy/14-2-apt-upgrade-06.png)
 
 ::: tip 更新过程中的配置提示
 如果看到弹出一些配置页面，直接按回车保持默认就好。更新完成后，服务器可能会提示需要重启，这很正常。如果中途断开连接，重新连一次即可。
@@ -135,9 +135,9 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 
 安装完成后，终端会显示面板的访问地址：`http://你的IP:端口/安全入口`
 
-![1Panel 安装过程](../../public/images/Advanced/14-vps-ops-deploy/14-2-1panel-install-07.png)
+![1Panel 安装过程](/images/Advanced/14-vps-ops-deploy/14-2-1panel-install-07.png)
 
-![1Panel 安装完成](../../public/images/Advanced/14-vps-ops-deploy/14-2-1panel-install-10.png)
+![1Panel 安装完成](/images/Advanced/14-vps-ops-deploy/14-2-1panel-install-10.png)
 
 ::: tip 记住安全入口
 1Panel 的访问地址包含一个随机的**安全入口路径**（如 `/abc123`）。别人即使知道你的 IP 和端口，没有这个路径也打不开面板。**务必记下来**。
@@ -162,7 +162,7 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 
 小明打开腾讯云控制台，找到「防火墙」页面（不同厂商叫法不同，阿里云叫「安全组」，腾讯云轻量叫「防火墙」）。他按照表格逐个添加规则，每加一条都要选协议、填端口号、选"允许"。操作不难，但第一次做会觉得有点繁琐——习惯了就好。
 
-![腾讯云防火墙添加规则](../../public/images/Advanced/14-vps-ops-deploy/14-2-security-group-14.png)
+![腾讯云防火墙添加规则](/images/Advanced/14-vps-ops-deploy/14-2-security-group-14.png)
 
 ::: warning 安全组 vs 系统防火墙
 云厂商的安全组和服务器系统内的防火墙（如 `ufw`）是**两道门**。两道都要开，流量才能进来。很多新手只开了一道，然后怎么都访问不了，排查半天。
@@ -170,13 +170,13 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 
 配置完安全组后，在浏览器里打开 1Panel 的访问地址，输入用户名和密码登录。
 
-![1Panel 登录页面](../../public/images/Advanced/14-vps-ops-deploy/14-2-1panel-login-11.png)
+![1Panel 登录页面](/images/Advanced/14-vps-ops-deploy/14-2-1panel-login-11.png)
 
-![1Panel 主界面](../../public/images/Advanced/14-vps-ops-deploy/14-2-1panel-dashboard-12.png)
+![1Panel 主界面](/images/Advanced/14-vps-ops-deploy/14-2-1panel-dashboard-12.png)
 
 小明看到了一个网页版的控制台——"这比命令行友好多了。"面板首页显示着服务器的实时状态——CPU 使用率、内存占用、磁盘空间、网络流量，一目了然。左侧菜单有应用商店、容器管理、数据库、网站、计划任务……小明点了一圈，感觉像是给服务器装了一个操作系统的桌面。
 
-![容器监控面板](../../public/images/Advanced/14-3-1-monitor-10.png)
+![容器监控面板](/images/Advanced/14-3-1-monitor-10.png)
 
 ## 第六步：安装 Docker 和配置镜像加速
 
@@ -210,9 +210,9 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 
 <FirewallRuleBuilder />
 
-![1Panel 防火墙配置](../../public/images/Advanced/14-vps-ops-deploy/14-2-firewall-21.png)
+![1Panel 防火墙配置](/images/Advanced/14-vps-ops-deploy/14-2-firewall-21.png)
 
-![1Panel 防火墙规则列表](../../public/images/Advanced/14-vps-ops-deploy/14-2-firewall-rules-22.png)
+![1Panel 防火墙规则列表](/images/Advanced/14-vps-ops-deploy/14-2-firewall-rules-22.png)
 
 ### 7.2 修改 SSH 默认端口
 
@@ -221,7 +221,7 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 1. 进入「系统 > SSH 管理」
 2. 找到「连接端口」，点击旁边的「设置」按钮，在弹窗中改成一个不常见的端口（如 `24324`）
 
-![1Panel SSH 管理页面](../../public/images/Advanced/14-vps-ops-deploy/14-2-ssh-port-19.png)
+![1Panel SSH 管理页面](/images/Advanced/14-vps-ops-deploy/14-2-ssh-port-19.png)
 
 改完之后，记得在云厂商安全组和 1Panel「系统 > 防火墙」里都**开放新端口**，然后用新端口连接测试：
 
@@ -243,11 +243,11 @@ Fail2Ban 就是自动拉黑。有人连续输错密码 5 次，直接把他的 I
 
 进入 1Panel「工具箱 > Fail2Ban」，如果显示红色的"未安装"，点击旁边的「立即安装」按钮，1Panel 会自动帮你装好。安装完成后就能在面板里可视化管理封禁规则了。默认配置已经够用——SSH 连续失败 5 次就封禁 IP。
 
-![Fail2ban 安装](../../public/images/Advanced/14-vps-ops-deploy/14-2-fail2ban-24.png)
+![Fail2ban 安装](/images/Advanced/14-vps-ops-deploy/14-2-fail2ban-24.png)
 
 记得把监听端口改成你之前设置的端口。
 
-![Fail2ban 配置](../../public/images/Advanced/14-vps-ops-deploy/14-2-fail2ban-25.png)
+![Fail2ban 配置](/images/Advanced/14-vps-ops-deploy/14-2-fail2ban-25.png)
 
 装完 Fail2Ban 后，小明再看日志，发现那些暴力破解的 IP 已经被自动封禁了。"就像给门口装了个自动锁——试错太多次，直接不让你进。"
 
@@ -277,7 +277,7 @@ cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC...
 ```
 
-![Windows PowerShell 生成 SSH 密钥](../../public/images/Advanced/14-vps-ops-deploy/14-2-ssh-keygen-15.png)
+![Windows PowerShell 生成 SSH 密钥](/images/Advanced/14-vps-ops-deploy/14-2-ssh-keygen-15.png)
 
 ::: tip 公钥 vs 私钥
 - **公钥**（`id_rsa.pub`）可以公开，上传到服务器
@@ -296,7 +296,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC...
 | 授权密钥 | 点击「授权密钥」按钮，将刚复制的公钥粘贴进去 |
 | 密码认证 | ❌ 关闭（先确认密钥登录成功再关） |
 
-![1Panel SSH 密钥管理](../../public/images/Advanced/14-vps-ops-deploy/14-2-ssh-key-mgr-16.png)
+![1Panel SSH 密钥管理](/images/Advanced/14-vps-ops-deploy/14-2-ssh-key-mgr-16.png)
 
 保存后，**先不要关闭当前的 SSH 连接**。打开一个新的终端窗口，用密钥登录测试：
 
@@ -323,7 +323,7 @@ ssh -p 24324 root@你的服务器IP
 3. 启用「访问频率限制」（防止恶意刷新、CC 攻击）
 4. 保存即可
 
-![1Panel WAF 配置](../../public/images/Advanced/14-vps-ops-deploy/14-2-waf-28.png)
+![1Panel WAF 配置](/images/Advanced/14-vps-ops-deploy/14-2-waf-28.png)
 
 WAF 不会影响正常访问，即便你不做额外安全配置，也能显著减少恶意流量。
 

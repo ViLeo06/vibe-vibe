@@ -3,7 +3,7 @@ title: "进阶版核心内容详解"
 ---
 
 
-![101-next-part_preview-advanced-content.png](../../public/images/Basic/101-next-part_preview-advanced-content.png)
+![101-next-part_preview-advanced-content.png](/images/Basic/101-next-part_preview-advanced-content.png)
 # 进阶版核心内容详解
 
 想知道进阶版具体会教什么？这里是详细介绍。

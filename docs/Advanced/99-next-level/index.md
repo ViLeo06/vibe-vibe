@@ -4,7 +4,7 @@ title: "NEXT LEVEL"
 
 ## Next Level
 
-![img](../../public/images/Advanced/mll09weg-197b0efb5807cc43.jpg)
+![img](/images/Advanced/mll09weg-197b0efb5807cc43.jpg)
 
 回望整个旅程，你已经从"有个想法"到"上线产品"再到"持续迭代"，形成了完整的闭环。
 

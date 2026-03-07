@@ -3,7 +3,7 @@ title: "第 2 章：心法 —— 像产品经理一样思考"
 ---
 
 
-![02-mindset_index.png](../../public/images/Basic/02-mindset_index.png)
+![02-mindset_index.png](/images/Basic/02-mindset_index.png)
 # 第 2 章：心法 —— 像产品经理一样思考
 
 > **章节导语**

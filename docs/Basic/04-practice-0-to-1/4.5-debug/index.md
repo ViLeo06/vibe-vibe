@@ -4,7 +4,7 @@ order: 1
 ---
 
 
-![04-practice-0-to-1_4.5-debug_index.png](../../../public/images/Basic/04-practice-0-to-1_4.5-debug_index.png)
+![04-practice-0-to-1_4.5-debug_index.png](/images/Basic/04-practice-0-to-1_4.5-debug_index.png)
 # 4.5 Debug 实战：当 AI 代码报错时
 
 经过本节学习，你将掌握：

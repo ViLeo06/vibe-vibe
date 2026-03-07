@@ -5,7 +5,7 @@ title: "第三章：产品思维与文档驱动"
 
 # 第三章：产品思维与文档驱动
 
-![img](../../public/images/Advanced/mlkzvdt7-83b23488ee2e4fad.jpg)
+![img](/images/Advanced/mlkzvdt7-83b23488ee2e4fad.jpg)
 
 ## 序言：为什么先写文档再写代码？
 

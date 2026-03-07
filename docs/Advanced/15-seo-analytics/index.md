@@ -4,7 +4,7 @@ title: "第十五章：SEO、分享与数据统计"
 
 # 第十五章：SEO、分享与数据统计
 
-![img](../../public/images/Advanced/mll0919q-682d8eae8561ed41.jpg)
+![img](/images/Advanced/mll0919q-682d8eae8561ed41.jpg)
 
 ## 序言
 

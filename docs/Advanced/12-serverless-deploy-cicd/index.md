@@ -5,7 +5,7 @@ title: "第十二章：无服务器部署与 CI/CD 自动化"
 
 # 第十二章：无服务器部署与 CI/CD 自动化
 
-![img](../../public/images/Advanced/mll089oi-6566edafa4114ef0.jpg)
+![img](/images/Advanced/mll089oi-6566edafa4114ef0.jpg)
 
 ## 序言
 

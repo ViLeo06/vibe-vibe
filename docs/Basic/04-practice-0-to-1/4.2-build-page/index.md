@@ -4,7 +4,7 @@ order: 1
 ---
 
 
-![04-practice-0-to-1_4.2-build-page_index.png](../../../public/images/Basic/04-practice-0-to-1_4.2-build-page_index.png)
+![04-practice-0-to-1_4.2-build-page_index.png](/images/Basic/04-practice-0-to-1_4.2-build-page_index.png)
 # 4.2 第一轮：搭建页面框架
 
 > **本轮目标**：用 AI 生成待办清单的静态页面，先把"脸"做出来

@@ -5,7 +5,7 @@ title: "第五章：界面(UI)与交互(UX)"
 
 # 第五章：界面(UI)与交互(UX)
 
-![img](../../public/images/Advanced/mlkzwvbv-cfdf61ece2ce1cbf.jpg)
+![img](/images/Advanced/mlkzwvbv-cfdf61ece2ce1cbf.jpg)
 
 ## 序言
 

@@ -4,7 +4,7 @@ title: "第九章：功能测试与自动化"
 
 # 第九章：功能测试与自动化
 
-![img](../../public/images/Advanced/mll04yup-21b2fa96acf26358.jpg)
+![img](/images/Advanced/mll04yup-21b2fa96acf26358.jpg)
 
 ## 序言
 

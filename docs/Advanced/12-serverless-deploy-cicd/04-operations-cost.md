@@ -26,7 +26,7 @@ title: "12.4 运维基础与成本优化"
 
 部署平台通常提供一个分析面板，展示你的应用运行状态。
 
-![image-20260302021249583](../../public/images/Advanced/image-20260302021249583.png)
+![image-20260302021249583](/images/Advanced/image-20260302021249583.png)
 
 不同平台的分析面板位置不同：
 - **EdgeOne**：控制台 → 项目 → 数据分析
@@ -58,7 +58,7 @@ Error: Connection timed out - database not responding
 - **Vercel**：Dashboard → 项目 → Logs，可以按时间和关键词筛选
 - **Cloudflare**：Dashboard → Workers & Pages → 实时日志
 
-![image-20260302021359067](../../public/images/Advanced/image-20260302021359067.png)
+![image-20260302021359067](/images/Advanced/image-20260302021359067.png)
 
 ## 平台已经帮你做的优化
 

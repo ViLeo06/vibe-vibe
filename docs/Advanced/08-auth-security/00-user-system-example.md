@@ -84,7 +84,7 @@ src/
 
 <AuthFlow mode="register" />
 
-![image-20260227000741233](../../public/images/Advanced/image-20260227000741233.png)
+![image-20260227000741233](/images/Advanced/image-20260227000741233.png)
 
 ### 登录流程
 
@@ -100,7 +100,7 @@ src/
 
 <AuthFlow mode="login" />
 
-![image-20260227000752991](../../public/images/Advanced/image-20260227000752991.png)
+![image-20260227000752991](/images/Advanced/image-20260227000752991.png)
 
 ### 受保护路由
 
@@ -114,7 +114,7 @@ src/
 
 <AuthFlow mode="protected" />
 
-![image-20260227000835333](../../public/images/Advanced/image-20260227000835333.png)
+![image-20260227000835333](/images/Advanced/image-20260227000835333.png)
 
 ## AI 生成了什么
 
@@ -195,15 +195,15 @@ pnpm drizzle-kit push
 
 Better Auth 需要 `user`、`session`、`account`、`verification` 四张表。AI 已经在 schema 里定义好了，push 一下就行。
 
-![image-20260227000945256](../../public/images/Advanced/image-20260227000945256.png)
+![image-20260227000945256](/images/Advanced/image-20260227000945256.png)
 
-![image-20260227001900414](../../public/images/Advanced/image-20260227001900414.png)
+![image-20260227001900414](/images/Advanced/image-20260227001900414.png)
 
 **第二步：测试注册**
 
 启动 `pnpm dev`，访问 `/register`，填写邮箱和密码，点击注册。
 
-![image-20260227002810786](../../public/images/Advanced/image-20260227002810786.png)
+![image-20260227002810786](/images/Advanced/image-20260227002810786.png)
 
 **第三步：测试登出和登录**
 
@@ -217,9 +217,9 @@ pnpm drizzle-kit studio
 
 打开 `user` 表，你能看到刚才注册的用户。注意 `password` 字段存的不是明文，而是一串加密后的哈希值——这就是安全。
 
-![image-20260227002858565](../../public/images/Advanced/image-20260227002858565.png)
+![image-20260227002858565](/images/Advanced/image-20260227002858565.png)
 
-![image-20260227002907603](../../public/images/Advanced/image-20260227002907603.png)
+![image-20260227002907603](/images/Advanced/image-20260227002907603.png)
 
 ## 常见问题
 

@@ -1,25 +1,14 @@
 ---
-title: "实践篇"
+title: "实践案例篇"
 ---
 
-# 实践篇
+# 实践案例篇
 
-通过实战项目，将理论知识转化为实际能力。
+真实的 Vibecoding 实践案例，展示如何用 AI 辅助开发完成各类项目。
 
-## 基础板块
+## 案例列表
 
-按不同受众提供针对性的入门项目：
-
-- [文科生/商科生项目](./01-for-liberal-arts/) —— 内容创作、数据展示类项目
-- [理工科学生项目](./02-for-stem/) —— 算法可视化、数据处理类项目
-- [职场人士项目](./03-for-professionals/) —— 工作流自动化、效率提升类项目
-
-## 进阶板块
-
-基于 Sean's Stories "You Can Build Anything" 系列，深入学习全栈开发：
-
-- [核心技能](./10-core-skills/) —— 上线应用、数据库、后端部署、用户认证
-- [AI Agent 开发](./11-ai-agents/) —— RAG、向量数据库、MCP 集成
-- [全栈项目实战](./12-fullstack-projects/) —— SaaS、地图应用、移动应用
-- [工具与效率](./13-tools-integration/) —— n8n、GitHub 工作流、React/TS 进阶
-- [TalkCoach：AI 对话训练平台](./14-talkcoach/) —— CS50 风格 Lab/Pset，贯穿进阶篇的全栈实战项目
+- [开源 AI 画布：我的 Vibecoding 实践历程](./ai-canvas-vibecoding-journey.md) —— 从想法到产品的完整开发过程
+- [零代码打造 AI 绘本生成器](./ai-picture-book-generator.md) —— 纯小白 2 周完成 AI 应用
+- [全栈实战：AI 简历优化 SaaS](./ai-resume-saas.md) —— Next.js + AI 的完整 SaaS 项目
+- [我的 Vibe 编程经验分享](./vibe-coding-methodology.md) —— 从执行者到决策者的思维转变

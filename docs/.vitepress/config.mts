@@ -731,30 +731,21 @@ Allow: /security.txt
       },
 
       {
-        text: '实践篇',
+        text: '优质文章篇',
         items: [
-          { text: '序言', link: '/Practice/' },
-          { text: '文科生/商科生项目', link: '/Practice/01-for-liberal-arts/' },
-          { text: '理工科学生项目', link: '/Practice/02-for-stem/' },
-          { text: '职场人士项目', link: '/Practice/03-for-professionals/' },
-          { text: '核心技能', link: '/Practice/10-core-skills/' },
-          { text: 'AI Agent 开发', link: '/Practice/11-ai-agents/' },
-          { text: '全栈项目实战', link: '/Practice/12-fullstack-projects/' },
-          { text: '工具与效率', link: '/Practice/13-tools-integration/' },
-          { text: 'TalkCoach：AI 对话训练', link: '/Practice/14-talkcoach/' },
+          { text: '总览', link: '/Articles/' },
+          { text: '核心概念与范式演进', link: '/Articles/01-core-concepts/' },
+          { text: '基础技术与架构设计', link: '/Articles/02-technical-architecture/' },
+          { text: '工具链与开发框架', link: '/Articles/03-toolchain-frameworks/' },
+          { text: '工程实施与质量保障', link: '/Articles/04-engineering-practices/' },
+          { text: '安全、合规与局限性', link: '/Articles/05-security-compliance/' },
+          { text: '商业应用与行业趋势', link: '/Articles/06-business-trends/' },
         ]
       },
 
       {
-        text: '优质文章篇',
-        items: [
-          { text: '序言', link: '/Articles/' },
-          { text: '知名公司博客', link: '/Articles/01-company-blogs/' },
-          { text: '优质播客', link: '/Articles/02-podcasts/' },
-          { text: '研究报告', link: '/Articles/03-research-reports/' },
-          { text: '优质 Newsletter', link: '/Articles/04-newsletters/' },
-          { text: '开发者社区', link: '/Articles/05-communities/' },
-        ]
+        text: '实践案例篇',
+        link: '/Practice/'
       },
     ],
     
@@ -781,8 +772,9 @@ Allow: /security.txt
         'Advanced/13-domain-dns', 'Advanced/14-vps-ops-deploy', 'Advanced/15-seo-analytics', 'Advanced/16-user-feedback-iteration',
         'Advanced/99-next-level',
         'Practice/01-for-liberal-arts', 'Practice/02-for-stem', 'Practice/03-for-professionals',
-        'Practice/10-core-skills', 'Practice/11-ai-agents', 'Practice/12-fullstack-projects', 'Practice/13-tools-integration', 'Practice/14-talkcoach',
-        'Articles/01-company-blogs', 'Articles/02-podcasts', 'Articles/03-research-reports', 'Articles/04-newsletters', 'Articles/05-communities'
+        'Practice/10-core-skills', 'Practice/11-ai-agents', 'Practice/12-fullstack-projects', 'Practice/13-tools-integration',
+        'Articles/01-core-concepts', 'Articles/02-technical-architecture', 'Articles/03-toolchain-frameworks',
+        'Articles/04-engineering-practices', 'Articles/05-security-compliance', 'Articles/06-business-trends'
       ],
       
       collapsed: true,

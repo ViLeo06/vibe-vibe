@@ -3,7 +3,7 @@ title: "第八章：安全与用户认证"
 ---
 # 第八章：安全与用户认证
 
-![img](../../public/images/Advanced/mll04qyy-61b0d268ae22452a.jpg)
+![img](/images/Advanced/mll04qyy-61b0d268ae22452a.jpg)
 
 ## 序言
 

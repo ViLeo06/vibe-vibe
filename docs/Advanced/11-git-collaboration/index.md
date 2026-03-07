@@ -4,7 +4,7 @@ title: "第十一章：Git 版本控制与协作开发"
 
 # 第十一章：Git 版本控制与协作开发
 
-![img](../../public/images/Advanced/mll07nf0-b9713c4841e17ce9.jpg)
+![img](/images/Advanced/mll07nf0-b9713c4841e17ce9.jpg)
 
 ## 序言
 

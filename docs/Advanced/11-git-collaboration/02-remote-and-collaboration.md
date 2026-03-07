@@ -60,7 +60,7 @@ git push -u origin main
 
 推送完成后，打开 GitHub 仓库页面，你会看到你的项目文件都在这里，和本地一模一样。如果有 README.md，会自动渲染在页面下方。点击 "commits" 可以看到所有提交记录——和你在本地用 `git log` 看到的一样，只不过现在是在网页上看。你的代码现在有了两份：一份在本地，一份在 GitHub。硬盘坏了也不怕了。
 
-![image-20260227003017220](../../public/images/Advanced/image-20260227003017220.png)
+![image-20260227003017220](/images/Advanced/image-20260227003017220.png)
 
 创建仓库时可以选择 Public（公开）或 Private（私有）。个人项目建议选 Private——你的代码不需要让全世界看到。以后想开源了，随时可以改成 Public。
 

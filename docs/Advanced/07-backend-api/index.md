@@ -4,7 +4,7 @@ title: "第七章：后端API开发"
 
 # 第七章：后端API开发
 
-![img](../../public/images/Advanced/mll04abe-1f408b85793aaf81.jpg)
+![img](/images/Advanced/mll04abe-1f408b85793aaf81.jpg)
 
 ## 序言
 

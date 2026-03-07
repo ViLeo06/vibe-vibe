@@ -4,7 +4,7 @@ title: "第十四章：云服务器运维与项目部署"
 
 # 第十四章：云服务器运维与项目部署
 
-![img](../../public/images/Advanced/mll08oqx-9a52a9d3a1e83c5d.jpg)
+![img](/images/Advanced/mll08oqx-9a52a9d3a1e83c5d.jpg)
 
 ## 序言
 

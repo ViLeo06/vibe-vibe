@@ -5,7 +5,7 @@ title: "第四章：你必须知道的开发基础"
 
 # 第四章：你必须知道的开发基础
 
-![img](../../public/images/Advanced/mlkzwcw8-aa8ae9e1ebb5251a.jpg)
+![img](/images/Advanced/mlkzwcw8-aa8ae9e1ebb5251a.jpg)
 
 ## 序言
 

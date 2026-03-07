@@ -1,15 +1,28 @@
 ---
 title: "优质文章篇"
+description: "精选 Agentic Coding 领域的优质文章"
 ---
 
 # 优质文章篇
 
-精选优质学习资源，帮助你保持对行业前沿的关注。
+精选 Agentic Coding 领域的优质文章，来自 Vercel、Anthropic 等顶级团队的实战经验。
 
-## 内容分类
+## 主题分类
 
-- [知名公司博客](./01-company-blogs/) —— OpenAI、Anthropic、Vercel 等公司的技术博客
-- [优质播客](./02-podcasts/) —— AI、开发者、创业者相关播客推荐
-- [研究报告](./03-research-reports/) —— AI 发展报告、开发者调查、行业趋势
-- [优质 Newsletter](./04-newsletters/) —— 值得订阅的技术周刊
-- [开发者社区](./05-communities/) —— Discord、Twitter、GitHub 优质资源
+### [核心概念与范式演进](./01-core-concepts/)
+界定 Agentic Coding 和 Vibe Coding 的边界，探讨开发模式的根本性转变
+
+### [基础技术与架构设计](./02-technical-architecture/)
+构建自主智能体所需的底层技术能力和系统架构
+
+### [工具链与开发框架](./03-toolchain-frameworks/)
+评测、介绍和指导使用当前生态中的各类构建工具
+
+### [工程实施与质量保障](./04-engineering-practices/)
+如何将 Agentic 系统推向生产环境，强调可控性和稳定性
+
+### [安全、合规与局限性](./05-security-compliance/)
+AI 自动编写代码和执行任务带来的潜在风险及应对策略
+
+### [商业应用与行业趋势](./06-business-trends/)
+宏观视角的行业落地和未来发展

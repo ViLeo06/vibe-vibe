@@ -3,7 +3,7 @@ title: "写在最前面"
 ---
 
 
-![00-preface_index.png](../../public/images/Basic/00-preface_index.png)
+![00-preface_index.png](/images/Basic/00-preface_index.png)
 # 写在最前面
 
 你好，欢迎翻开这份教程。

@@ -325,7 +325,7 @@ GET 用于读取数据，参数通常放在 URL 中；POST 用于创建数据，
 - 命令行工具 curl
 - 让 AI 写测试代码
 
-![image-20260227000559422](../../public/images/Advanced/image-20260227000559422.png)
+![image-20260227000559422](/images/Advanced/image-20260227000559422.png)
 
 ### Q4: HTTPS 和 HTTP 的区别是什么？
 

@@ -3,7 +3,7 @@ title: "第二章：AI 使用说明书"
 ---
 
 
-![02-dev-tools-ai-tuning_index.png](../../public/images/Advanced/02-dev-tools-ai-tuning_index.png)
+![02-dev-tools-ai-tuning_index.png](/images/Advanced/02-dev-tools-ai-tuning_index.png)
 
 # 第二章：AI 使用说明书
 

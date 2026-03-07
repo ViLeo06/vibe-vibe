@@ -3,7 +3,7 @@ title: "第六章：数据持久化与数据库"
 ---
 # 第六章：数据持久化与数据库
 
-![img](../../public/images/Advanced/mlkzzu32-0a305624d07171b4.jpg)
+![img](/images/Advanced/mlkzzu32-0a305624d07171b4.jpg)
 
 
 

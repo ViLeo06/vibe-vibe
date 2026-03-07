@@ -133,7 +133,7 @@ graph LR
 
 即使纯静态项目（Vite 打包），通常也不能直接双击打开。现代应用使用**绝对路径**引用资源，双击打开使用 **file:// 协议**会导致浏览器找不到资源。
 
-![image-20260226235036212](../../public/images/Advanced/image-20260226235036212.png)
+![image-20260226235036212](/images/Advanced/image-20260226235036212.png)
 
 ::: tip 正确的访问方式
 
@@ -158,7 +158,7 @@ graph LR
 - 无痕模式打开
 - 开发者工具 Network 选项卡勾选 "Disable cache"
 
-![image-20260226235149160](../../public/images/Advanced/image-20260226235149160.png)
+![image-20260226235149160](/images/Advanced/image-20260226235149160.png)
 
 ### 构建缓存
 

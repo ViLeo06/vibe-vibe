@@ -1,5 +1,5 @@
 ---
-title: “随时随地 AI 编程”
+title: "随时随地 AI 编程"
 description: “使用 Happy Coder 实现移动端远程控制 AI 编程，配合云电脑打造全场景开发环境”
 order: 2
 ---
@@ -37,7 +37,7 @@ order: 2
 
 > Happy Coder 的神不在于它的模型比别人强，而在于它让 AI 开发变得像呼吸一样随时随地，而且像保险柜一样安全。
 
-<video src="./../public/images/Advanced/happy-coder/Happy-App.mp4" autoplay muted loop playsinline controls></video>
+<video src="/images/Advanced/happy-coder/Happy-App.mp4" autoplay muted loop playsinline controls></video>
 
 ### 1、Happy Coder 解决了什么痛点
 

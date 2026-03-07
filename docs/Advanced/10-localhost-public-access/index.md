@@ -4,7 +4,7 @@ title: "第十章：Localhost 与公网访问"
 
 # 第十章：Localhost 与公网访问
 
-![img](../../public/images/Advanced/mll05kjk-61c547a6df466500.jpg)
+![img](/images/Advanced/mll05kjk-61c547a6df466500.jpg)
 
 ## 序言
 

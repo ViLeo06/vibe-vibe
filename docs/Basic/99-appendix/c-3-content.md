@@ -3,7 +3,7 @@ title: "C.3 技术相关"
 ---
 
 
-![99-appendix_c-3-content.png](../../public/images/Basic/99-appendix_c-3-content.png)
+![99-appendix_c-3-content.png](/images/Basic/99-appendix_c-3-content.png)
 # C.3 技术相关
 
 这些是做网页/应用时会遇到的技术术语。

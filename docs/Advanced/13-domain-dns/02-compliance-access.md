@@ -54,7 +54,7 @@ title: "13.2 备案与访问问题排查"
 5. **等待审核**：接入商初审（1-2 天）+ 管局终审（5-20 个工作日）
 6. **备案成功**：获得 ICP 备案号，需在网站底部展示
 
-![image-20260302022424271](../../public/images/Advanced/image-20260302022424271.png)
+![image-20260302022424271](/images/Advanced/image-20260302022424271.png)
 
 ::: warning 备案注意事项
 
@@ -103,7 +103,7 @@ title: "13.2 备案与访问问题排查"
 
 **解决**：绑定自定义域名。详见 [13.1 域名购买与 DNS 配置](./01-domain-setup.md)。绑定后，任何人都可以通过你的域名正常访问。
 
-![image-20260302022507817](../../public/images/Advanced/image-20260302022507817.png)
+![image-20260302022507817](/images/Advanced/image-20260302022507817.png)
 
 ### 页面打不开（超时）
 
@@ -134,7 +134,7 @@ title: "13.2 备案与访问问题排查"
 - 检查域名是否正确指向了部署平台（CNAME 记录是否正确）
 - 如果用 Cloudflare 代理，确保 SSL 模式设置为 "Full (strict)"，而不是 "Flexible"。Flexible 模式下，Cloudflare 到你服务器这段是明文传输——相当于信封只封了前半程，后半程敞开的。Full (strict) 才是全程密封
 
-![image-20260302022953265](../../public/images/Advanced/image-20260302022953265.png)
+![image-20260302022953265](/images/Advanced/image-20260302022953265.png)
 
 ### 让 AI 帮你排查
 

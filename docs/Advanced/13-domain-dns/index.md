@@ -4,7 +4,7 @@ title: "第十三章：域名、DNS 与网络接入"
 
 # 第十三章：域名、DNS 与网络接入
 
-![img](../../public/images/Advanced/mll08c63-bcea35d79958ea70.jpg)
+![img](/images/Advanced/mll08c63-bcea35d79958ea70.jpg)
 
 ## 序言
 

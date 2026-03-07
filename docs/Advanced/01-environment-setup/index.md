@@ -2,7 +2,7 @@
 title: "第一章：环境搭建与代码运行基础"
 ---
 
-![01-environment-setup_index.png](../../public/images/Advanced/01-environment-setup_index.png)
+![01-environment-setup_index.png](/images/Advanced/01-environment-setup_index.png)
 
 # 第一章：环境搭建与代码运行基础
 
