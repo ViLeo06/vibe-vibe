@@ -1,9 +1,9 @@
 ---
-title: "260307-Vercel 如何构建 Coding Agent 的 AEO 追踪系统"
-description: "深入了解 Vercel 如何使用 Sandbox、AI Gateway 和 Workflows 构建 AI 引擎优化系统，追踪编程智能体的行为"
-author: "Eric Dodds, Allen Zhou"
-source: "https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents"
-date: "2026-03-07"
+title: '260307-Vercel 如何构建 Coding Agent 的 AEO 追踪系统'
+description: '深入了解 Vercel 如何使用 Sandbox、AI Gateway 和 Workflows 构建 AI 引擎优化系统，追踪编程智能体的行为'
+author: 'Eric Dodds, Allen Zhou'
+source: 'https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents'
+date: '2026-03-07'
 category: 04-engineering-practices
 tags: [Vercel, 智能体工程, AEO, 架构设计]
 ---
@@ -54,29 +54,29 @@ AI 改变了人们查找信息的方式。对企业而言，理解 LLM 如何搜
 在代码中，生命周期如下所示：
 
 ```typescript
-import { Sandbox } from "@vercel/sandbox";
+import { Sandbox } from '@vercel/sandbox'
 
 // 步骤 1：创建沙箱
 sandbox = await Sandbox.create({
   resources: { vcpus: 2 },
   timeout: 10 * 60 * 1000
-});
+})
 
 // 步骤 2：安装智能体 CLI
 for (const setupCmd of agent.setupCommands) {
-  await sandbox.runCommand("sh", ["-c", setupCmd]);
+  await sandbox.runCommand('sh', ['-c', setupCmd])
 }
 
 // 步骤 3：注入 AI Gateway 凭证（通过步骤 4 中的环境变量）
 
 // 步骤 4：运行智能体
-const fullCommand = `AI_GATEWAY_API_KEY='${aiGatewayKey}' ${agent.command}`;
-const result = await sandbox.runCommand("sh", ["-c", fullCommand]);
+const fullCommand = `AI_GATEWAY_API_KEY='${aiGatewayKey}' ${agent.command}`
+const result = await sandbox.runCommand('sh', ['-c', fullCommand])
 
 // 步骤 5：捕获记录（特定于智能体 —— 见下一节）
 
 // 步骤 6：清理
-await sandbox.stop();
+await sandbox.stop()
 ```
 
 ### 智能体即配置
@@ -86,18 +86,18 @@ await sandbox.stop();
 ```typescript
 export const AGENTS: Agent[] = [
   {
-    id: "anthropic/claude-code",
-    name: "Claude Code",
-    setupCommands: ["npm install -g @anthropic-ai/claude-code"],
-    buildCommand: (prompt) => `echo '${prompt}' | claude --print`,
+    id: 'anthropic/claude-code',
+    name: 'Claude Code',
+    setupCommands: ['npm install -g @anthropic-ai/claude-code'],
+    buildCommand: prompt => `echo '${prompt}' | claude --print`
   },
   {
-    id: "openai/codex",
-    name: "OpenAI Codex",
-    setupCommands: ["npm install -g @openai/codex"],
-    buildCommand: (prompt) => `codex exec -y -S '${prompt}'`,
-  },
-];
+    id: 'openai/codex',
+    name: 'OpenAI Codex',
+    setupCommands: ['npm install -g @openai/codex'],
+    buildCommand: prompt => `codex exec -y -S '${prompt}'`
+  }
+]
 ```
 
 `runtime` 决定 MicroVM 的基础镜像。大多数智能体在 Node 上运行，但系统也支持 Python 运行时。
@@ -113,17 +113,13 @@ export const AGENTS: Agent[] = [
 以下是 Claude Code 的实现：
 
 ```typescript
-const claudeResult = await sandbox.runCommand(
-  'claude',
-  ['-p', '-m', options.model, '-y', options.prompt],
-  {
-    env: {
-      ANTHROPIC_BASE_URL: AI_GATEWAY.baseUrl,
-      ANTHROPIC_AUTH_TOKEN: options.apiKey,
-      ANTHROPIC_API_KEY: '',  // 故意留空，因为 AI Gateway 处理认证
-    },
+const claudeResult = await sandbox.runCommand('claude', ['-p', '-m', options.model, '-y', options.prompt], {
+  env: {
+    ANTHROPIC_BASE_URL: AI_GATEWAY.baseUrl,
+    ANTHROPIC_AUTH_TOKEN: options.apiKey,
+    ANTHROPIC_API_KEY: '' // 故意留空，因为 AI Gateway 处理认证
   }
-);
+})
 ```
 
 `ANTHROPIC_BASE_URL` 指向 AI Gateway 而不是 `api.anthropic.com`。智能体的 HTTP 调用发送到 Gateway，Gateway 将它们代理到 Anthropic。
@@ -156,17 +152,15 @@ const claudeResult = await sandbox.runCommand(
 
 ```typescript
 async function captureTranscript(sandbox) {
-  const workdir = sandbox.getWorkingDirectory();
-  const projectPath = workdir.replace(/\//g, '-');
-  const claudeProjectDir = `~/.claude/projects/${projectPath}`;
+  const workdir = sandbox.getWorkingDirectory()
+  const projectPath = workdir.replace(/\//g, '-')
+  const claudeProjectDir = `~/.claude/projects/${projectPath}`
 
   // 查找最新的 .jsonl 文件
-  const findResult = await sandbox.runShell(
-    `ls -t ${claudeProjectDir}/*.jsonl 2>/dev/null | head -1`
-  );
+  const findResult = await sandbox.runShell(`ls -t ${claudeProjectDir}/*.jsonl 2>/dev/null | head -1`)
 
-  const transcriptPath = findResult.stdout.trim();
-  return await sandbox.readFile(transcriptPath);
+  const transcriptPath = findResult.stdout.trim()
+  return await sandbox.readFile(transcriptPath)
 }
 ```
 
@@ -175,10 +169,10 @@ async function captureTranscript(sandbox) {
 ```typescript
 function extractTranscriptFromOutput(output: string) {
   const lines = output.split('\n').filter(line => {
-    const trimmed = line.trim();
-    return trimmed.startsWith('{') && trimmed.endsWith('}');
-  });
-  return lines.join('\n');
+    const trimmed = line.trim()
+    return trimmed.startsWith('{') && trimmed.endsWith('}')
+  })
+  return lines.join('\n')
 }
 ```
 
@@ -192,37 +186,53 @@ function extractTranscriptFromOutput(output: string) {
 
 相同操作在不同智能体中有不同名称：
 
-| 操作 | Claude Code | Codex | OpenCode |
-|------|-------------|-------|----------|
-| 读取文件 | `Read` | `read_file` | `read` |
-| 写入文件 | `Write` | `write_file` | `write` |
-| 编辑文件 | `StrReplace` | `patch_file` | `patch` |
-| 运行命令 | `Bash` | `shell` | `bash` |
-| 搜索网络 | `WebFetch` | _(varies)_ | _(varies)_ |
+| 操作     | Claude Code  | Codex        | OpenCode   |
+| -------- | ------------ | ------------ | ---------- |
+| 读取文件 | `Read`       | `read_file`  | `read`     |
+| 写入文件 | `Write`      | `write_file` | `write`    |
+| 编辑文件 | `StrReplace` | `patch_file` | `patch`    |
+| 运行命令 | `Bash`       | `shell`      | `bash`     |
+| 搜索网络 | `WebFetch`   | _(varies)_   | _(varies)_ |
 
 每个解析器维护一个查找表，将特定于智能体的名称映射到约 10 个规范名称：
 
 ```typescript
 export type ToolName =
-  | 'file_read' | 'file_write' | 'file_edit'
-  | 'shell' | 'web_fetch' | 'web_search'
-  | 'glob' | 'grep' | 'list_dir'
-  | 'agent_task' | 'unknown';
+  | 'file_read'
+  | 'file_write'
+  | 'file_edit'
+  | 'shell'
+  | 'web_fetch'
+  | 'web_search'
+  | 'glob'
+  | 'grep'
+  | 'list_dir'
+  | 'agent_task'
+  | 'unknown'
 
 const claudeToolMap = {
-  Read: 'file_read', Write: 'file_write', Bash: 'shell',
-  WebFetch: 'web_fetch', Glob: 'glob', Grep: 'grep', /* ... */
-};
+  Read: 'file_read',
+  Write: 'file_write',
+  Bash: 'shell',
+  WebFetch: 'web_fetch',
+  Glob: 'glob',
+  Grep: 'grep' /* ... */
+}
 
 const codexToolMap = {
-  read_file: 'file_read', write_file: 'file_write', shell: 'shell',
-  patch_file: 'file_edit', /* ... */
-};
+  read_file: 'file_read',
+  write_file: 'file_write',
+  shell: 'shell',
+  patch_file: 'file_edit' /* ... */
+}
 
 const opencodeToolMap = {
-  read: 'file_read', write: 'file_write', bash: 'shell',
-  rg: 'grep', patch: 'file_edit', /* ... */
-};
+  read: 'file_read',
+  write: 'file_write',
+  bash: 'shell',
+  rg: 'grep',
+  patch: 'file_edit' /* ... */
+}
 ```
 
 **消息形状扁平化**
@@ -237,16 +247,16 @@ const opencodeToolMap = {
 
 ```typescript
 export interface TranscriptEvent {
-  timestamp?: string;
-  type: 'message' | 'tool_call' | 'tool_result' | 'thinking' | 'error';
-  role?: 'user' | 'assistant' | 'system';
-  content?: string;
+  timestamp?: string
+  type: 'message' | 'tool_call' | 'tool_result' | 'thinking' | 'error'
+  role?: 'user' | 'assistant' | 'system'
+  content?: string
   tool?: {
-    name: ToolName;           // 规范名称
-    originalName: string;     // 特定于智能体的名称（用于调试）
-    args?: Record<string, unknown>;
-    result?: unknown;
-  };
+    name: ToolName // 规范名称
+    originalName: string // 特定于智能体的名称（用于调试）
+    args?: Record<string, unknown>
+    result?: unknown
+  }
 }
 ```
 
@@ -258,13 +268,13 @@ export interface TranscriptEvent {
 
 ```typescript
 if (['file_read', 'file_write', 'file_edit'].includes(event.tool.name)) {
-  const path = extractFilePath(args);
-  if (path) event.tool.args = { ...args, _extractedPath: path };
+  const path = extractFilePath(args)
+  if (path) event.tool.args = { ...args, _extractedPath: path }
 }
 
 if (event.tool.name === 'web_fetch') {
-  const url = extractUrl(args);
-  if (url) event.tool.args = { ...args, _extractedUrl: url };
+  const url = extractUrl(args)
+  if (url) event.tool.args = { ...args, _extractedUrl: url }
 }
 ```
 
@@ -278,19 +288,25 @@ if (event.tool.name === 'web_fetch') {
 
 ```typescript
 export async function probeTopicWorkflow(topicId: string) {
-  "use workflow";
+  'use workflow'
 
   const agentPromises = AGENTS.map((agent, index) => {
-    const command = agent.buildCommand(topicData.text);
-    return queryAgentAndSave(topicData.text, run.id, {
-      id: agent.id,
-      name: agent.name,
-      setupCommands: agent.setupCommands,
-      command,
-    }, index + 1, totalQueries);
-  });
+    const command = agent.buildCommand(topicData.text)
+    return queryAgentAndSave(
+      topicData.text,
+      run.id,
+      {
+        id: agent.id,
+        name: agent.name,
+        setupCommands: agent.setupCommands,
+        command
+      },
+      index + 1,
+      totalQueries
+    )
+  })
 
-  const results = await Promise.all(agentPromises);
+  const results = await Promise.all(agentPromises)
 }
 ```
 

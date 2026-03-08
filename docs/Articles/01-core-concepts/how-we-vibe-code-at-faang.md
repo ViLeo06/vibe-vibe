@@ -1,9 +1,9 @@
 ---
-title: "250800-我们在 FAANG 如何 Vibe Coding"
-description: "来自 FAANG 公司资深工程师的真实经验分享，展示 AI 辅助编码在大型科技公司生产环境中的完整工作流程"
-author: "Anonymous FAANG Engineer"
-source: "https://www.reddit.com/r/ClaudeAI/comments/1i4kqxo/how_we_vibe_code_at_a_faang/"
-date: "2025-08-00"
+title: '250800-我们在 FAANG 如何 Vibe Coding'
+description: '来自 FAANG 公司资深工程师的真实经验分享，展示 AI 辅助编码在大型科技公司生产环境中的完整工作流程'
+author: 'Anonymous FAANG Engineer'
+source: 'https://www.reddit.com/r/ClaudeAI/comments/1i4kqxo/how_we_vibe_code_at_a_faang/'
+date: '2025-08-00'
 category: 01-core-concepts
 tags: [Vibe Coding, FAANG, 测试驱动开发, 设计文档, 生产环境]
 ---

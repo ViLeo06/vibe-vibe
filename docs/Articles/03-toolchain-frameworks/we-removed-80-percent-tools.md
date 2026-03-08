@@ -1,9 +1,9 @@
 ---
-title: "260307-我们删掉了智能体 80% 的工具"
-description: "Vercel 花了数月构建复杂的 text-to-SQL 智能体，但最终发现：有时候简单就是更好。给它执行任意 bash 命令的能力，反而超越了所有精心设计的工具"
-author: "Andrew Qu"
-source: "https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools"
-date: "2026-03-07"
+title: '260307-我们删掉了智能体 80% 的工具'
+description: 'Vercel 花了数月构建复杂的 text-to-SQL 智能体，但最终发现：有时候简单就是更好。给它执行任意 bash 命令的能力，反而超越了所有精心设计的工具'
+author: 'Andrew Qu'
+source: 'https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools'
+date: '2026-03-07'
 category: 03-toolchain-frameworks
 tags: [Vercel, 智能体工程, 架构设计, 工具简化]
 ---
@@ -48,19 +48,32 @@ d0 将自然语言问题翻译成针对我们分析基础设施的 SQL 查询，
 ai-sdk@6.0.0-beta.160 ToolLoopAgent
 
 ```typescript
-import { ToolLoopAgent } from 'ai';
-import { GetEntityJoins, LoadCatalog, /*...*/ } from '@/lib/tools'
+import { ToolLoopAgent } from 'ai'
+import { GetEntityJoins, LoadCatalog /*...*/ } from '@/lib/tools'
 
 const agent = new ToolLoopAgent({
-  model: "anthropic/claude-opus-4.5",
-  instructions: "",
+  model: 'anthropic/claude-opus-4.5',
+  instructions: '',
   tools: {
-    GetEntityJoins, LoadCatalog, RecallContext, LoadEntityDetails,
-    SearchCatalog, ClarifyIntent, SearchSchema, GenerateAnalysisPlan,
-    FinalizeQueryPlan, FinalizeNoData, JoinPathFinder, SyntaxValidator,
-    FinalizeBuild, ExecuteSQL, FormatResults, VisualizeData, ExplainResults
-  },
-});
+    GetEntityJoins,
+    LoadCatalog,
+    RecallContext,
+    LoadEntityDetails,
+    SearchCatalog,
+    ClarifyIntent,
+    SearchSchema,
+    GenerateAnalysisPlan,
+    FinalizeQueryPlan,
+    FinalizeNoData,
+    JoinPathFinder,
+    SyntaxValidator,
+    FinalizeBuild,
+    ExecuteSQL,
+    FormatResults,
+    VisualizeData,
+    ExplainResults
+  }
+})
 ```
 
 ## 一个新想法：如果我们就是……停下来呢？
@@ -71,7 +84,7 @@ const agent = new ToolLoopAgent({
 
 ### v2：文件系统就是智能体
 
-**新技术栈：**
+**新技术栈**：
 
 - **模型**: Claude Opus 4.5 via [AI SDK](https://ai-sdk.dev/)
 - **执行**: [Vercel Sandbox](https://vercel.com/sandbox) 用于上下文探索
@@ -118,12 +131,12 @@ const agent = new ToolLoopAgent({
 
 我们在 5 个代表性查询上对比了旧架构和新的文件系统方法。
 
-| 指标 | 高级版（旧） | 文件系统（新） | 变化 |
-|------|-------------|---------------|------|
-| 平均执行时间 | 274.8s | 77.4s | **3.5 倍更快** |
-| 成功率 | 4/5 (80%) | 5/5 (100%) | **+20%** |
-| 平均 token 使用 | ~102k tokens | ~61k tokens | **减少 37%** |
-| 平均步骤数 | ~12 步 | ~7 步 | **减少 42%** |
+| 指标            | 高级版（旧） | 文件系统（新） | 变化           |
+| --------------- | ------------ | -------------- | -------------- |
+| 平均执行时间    | 274.8s       | 77.4s          | **3.5 倍更快** |
+| 成功率          | 4/5 (80%)    | 5/5 (100%)     | **+20%**       |
+| 平均 token 使用 | ~102k tokens | ~61k tokens    | **减少 37%**   |
+| 平均步骤数      | ~12 步       | ~7 步          | **减少 42%**   |
 
 文件系统智能体在每个对比维度都获胜。旧架构的最坏情况花了 724 秒、100 步和 145,463 个 token，最后还失败了。文件系统智能体用 141 秒、19 步和 67,483 个 token 完成了同样的查询，而且实际成功了。
 
@@ -131,13 +144,13 @@ const agent = new ToolLoopAgent({
 
 ### 经验教训
 
-**别对抗重力。** 文件系统是一个极其强大的抽象。Grep 已经 50 年了，仍然完全满足我们的需求。我们在为 Unix 已经解决的问题构建自定义工具。
+**别对抗重力**。 文件系统是一个极其强大的抽象。Grep 已经 50 年了，仍然完全满足我们的需求。我们在为 Unix 已经解决的问题构建自定义工具。
 
-**我们在约束推理，因为我们不信任模型的推理能力。** 有了 Opus 4.5，这种约束反而成了负担。当我们停止替模型做选择时，模型会做出更好的选择。
+**我们在约束推理，因为我们不信任模型的推理能力**。 有了 Opus 4.5，这种约束反而成了负担。当我们停止替模型做选择时，模型会做出更好的选择。
 
-**这之所以有效，是因为我们的语义层本身就是好文档。** YAML 文件结构良好、命名一致、包含清晰的定义。如果你的数据层是一团遗留命名约定和未记录的 join，给 Claude 原始文件访问权限救不了你。你只会得到更快的错误查询。
+**这之所以有效，是因为我们的语义层本身就是好文档**。 YAML 文件结构良好、命名一致、包含清晰的定义。如果你的数据层是一团遗留命名约定和未记录的 join，给 Claude 原始文件访问权限救不了你。你只会得到更快的错误查询。
 
-**做减法是真实存在的。** 最好的智能体可能是工具最少的那些。每个工具都是你替模型做的一个选择。有时候模型会做出更好的选择。
+**做减法是真实存在的**。 最好的智能体可能是工具最少的那些。每个工具都是你替模型做的一个选择。有时候模型会做出更好的选择。
 
 ### 这对智能体构建者意味着什么
 
