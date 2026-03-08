@@ -312,14 +312,14 @@ Eyre
 | 5 | [好看好用的界面](/Advanced/05-ui-ux/) | ✅ 序言可阅读 |
 | 6 | [数据存在哪里](/Advanced/06-data-persistence-database/) | ✅ 序言可阅读 |
 | 7 | [连接前后端](/Advanced/07-backend-api/) | ✅ 序言可阅读 |
-| 8 | [谁能访问我的数据](/Advanced/08-auth-security/) | ✅ 序言可阅读 |
-| 9 | [功能测试](/Advanced/09-testing-automation/) | ✅ 序言可阅读 |
-| 10 | [公网访问](/Advanced/10-localhost-public-access/) | ✅ 序言可阅读 |
-| 11 | [协作开发](/Advanced/11-git-collaboration/) | ✅ 序言可阅读 |
+| 8 | [谁能访问我的数据](/Advanced/08-auth-security/) | 🚧 正文待补充 |
+| 9 | [功能测试](/Advanced/09-testing-automation/) | 🚧 正文待补充 |
+| 10 | [公网访问](/Advanced/10-localhost-public-access/) | 🚧 正文待补充 |
+| 11 | [协作开发](/Advanced/11-git-collaboration/) | 🚧 正文待补充 |
 | 12 | [无服务器自动部署](/Advanced/12-serverless-deploy-cicd/) | ✅ 序言可阅读 |
-| 13 | [域名解析与接入](/Advanced/13-domain-dns/) | ✅ 序言可阅读 |
+| 13 | [域名解析与接入](/Advanced/13-domain-dns/) | 🚧 正文待补充 |
 | 14 | [部署到服务器](/Advanced/14-vps-ops-deploy/) | ✅ 序言可阅读 |
-| 15 | [SEO、分享与数据统计](/Advanced/15-seo-analytics/) | ✅ 序言可阅读 |
+| 15 | [SEO、分享与数据统计](/Advanced/15-seo-analytics/) | 🚧 正文待补充 |
 | 16 | [用户反馈与产品迭代](/Advanced/16-user-feedback-iteration/) | ✅ 序言可阅读 |
 
 ---
