@@ -1,14 +1,23 @@
 ---
-title: '260307-智能体架构中的安全边界'
-description: '在智能体架构中划定安全边界的框架。了解从密钥注入到完整应用沙箱的边界设计'
-author: 'Malte Ubl, Harpreet Arora'
-source: 'https://vercel.com/blog/security-boundaries-in-agentic-architectures'
+title: 260307-智能体架构中的安全边界
+description: 在智能体架构中划定安全边界的框架。了解从密钥注入到完整应用沙箱的边界设计
+author: Malte Ubl, Harpreet Arora
+source: https://vercel.com/blog/security-boundaries-in-agentic-architectures
 date: '2026-03-07'
 category: 05-security-compliance
-tags: [Vercel, 安全, 智能体架构, 沙箱, 密钥管理]
+tags:
+- Vercel
+- 安全
+- 智能体架构
+- 沙箱
+- 密钥管理
 ---
 
 # 智能体架构中的安全边界
+
+
+**作者：Malte Ubl, Harpreet Arora**
+
 
 <div class="article-meta">
 📅 2026-03-07 | 👤 Malte Ubl, Harpreet Arora | 🔗 <a href="https://vercel.com/blog/security-boundaries-in-agentic-architectures" target="_blank">查看原文</a>

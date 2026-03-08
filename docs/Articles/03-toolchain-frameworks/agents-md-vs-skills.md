@@ -1,14 +1,22 @@
 ---
-title: '260307-AGENTS.md vs Skills：被动上下文为何胜过主动检索'
-description: 'Vercel 团队通过严格的评估测试发现，8KB 的 AGENTS.md 文档索引达到 100% 通过率，而 Skills 最高只有 79%'
-author: 'Vercel Team'
-source: 'https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals'
+title: 260307-AGENTS.md vs Skills：被动上下文为何胜过主动检索
+description: Vercel 团队通过严格的评估测试发现，8KB 的 AGENTS.md 文档索引达到 100% 通过率，而 Skills 最高只有 79%
+author: Vercel Team
+source: https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals
 date: '2026-03-07'
 category: 03-toolchain-frameworks
-tags: [Vercel, AGENTS.md, Skills, 上下文管理]
+tags:
+- Vercel
+- AGENTS.md
+- Skills
+- 上下文管理
 ---
 
 # AGENTS.md vs Skills：被动上下文为何胜过主动检索
+
+
+**作者：Vercel Team**
+
 
 <div class="article-meta">
 📅 2026-03-07 | 👤 Vercel Team | 🔗 <a href="https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals" target="_blank">查看原文</a>

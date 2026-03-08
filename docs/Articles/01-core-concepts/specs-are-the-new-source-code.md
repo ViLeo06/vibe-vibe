@@ -1,14 +1,23 @@
 ---
-title: '250731-规范是新的源代码'
-description: '探讨 AI 时代下产品规范与源代码的关系转变，规范如何从可丢弃的文档变成产品开发的真实来源'
-author: 'Ravi Mehta & Danny Martinez'
-source: 'https://blog.ravi-mehta.com/p/specs-are-the-new-source-code'
+title: 250731-规范是新的源代码
+description: 探讨 AI 时代下产品规范与源代码的关系转变，规范如何从可丢弃的文档变成产品开发的真实来源
+author: Ravi Mehta & Danny Martinez
+source: https://blog.ravi-mehta.com/p/specs-are-the-new-source-code
 date: '2025-07-31'
 category: 01-core-concepts
-tags: [产品管理, 规范驱动开发, AI辅助开发, Vibe Coding, 产品执行]
+tags:
+- 产品管理
+- 规范驱动开发
+- AI辅助开发
+- Vibe Coding
+- 产品执行
 ---
 
 # 规范是新的源代码
+
+
+**作者：Ravi Mehta & Danny Martinez**
+
 
 <div class="article-meta">
 📅 2025-07-31 | 👤 Ravi Mehta & Danny Martinez | 🔗 <a href="https://blog.ravi-mehta.com/p/specs-are-the-new-source-code" target="_blank">查看原文</a>

@@ -1,14 +1,26 @@
 ---
-title: '260307-MCP：它是什么以及为什么重要'
-description: '创建 AI 与应用程序之间通用语言的标准'
-author: 'Addy Osmani'
-source: 'https://addyo.substack.com/p/mcp-what-it-is-and-why-it-matters'
+title: 260307-MCP：它是什么以及为什么重要
+description: 创建 AI 与应用程序之间通用语言的标准
+author: Addy Osmani
+source: https://addyo.substack.com/p/mcp-what-it-is-and-why-it-matters
 date: '2026-03-07'
 category: 02-technical-architecture
-tags: [MCP, AI集成, 模型上下文协议, 开发工具, AI代理]
+tags:
+- MCP
+- AI集成
+- 模型上下文协议
+- 开发工具
+- AI代理
 ---
 
 # MCP：它是什么以及为什么重要
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyo.substack.com/p/mcp-what-it-is-and-why-it-matters)**
+
+
 
 > ## 摘要
 >

@@ -1,14 +1,23 @@
 ---
-title: '250800-AI 代码审查的实施与最佳实践'
-description: '来自 Graphite 的完整技术指南，涵盖 AI 代码审查系统的实施、最佳实践、工具选择和成功衡量'
-author: 'Greg Foster'
-source: 'https://graphite.com/guides/ai-code-review-implementation-best-practices'
+title: 250800-AI 代码审查的实施与最佳实践
+description: 来自 Graphite 的完整技术指南，涵盖 AI 代码审查系统的实施、最佳实践、工具选择和成功衡量
+author: Greg Foster
+source: https://graphite.com/guides/ai-code-review-implementation-best-practices
 date: '2025-08-00'
 category: 04-engineering-practices
-tags: [AI 代码审查, Graphite Agent, 代码质量, 最佳实践, 工程效率]
+tags:
+- AI 代码审查
+- Graphite Agent
+- 代码质量
+- 最佳实践
+- 工程效率
 ---
 
 # AI 代码审查的实施与最佳实践
+
+
+**作者：Greg Foster**
+
 
 <div class="article-meta">
 📅 2025-08-00 | 👤 Greg Foster | 🔗 <a href="https://graphite.com/guides/ai-code-review-implementation-best-practices" target="_blank">查看原文</a>

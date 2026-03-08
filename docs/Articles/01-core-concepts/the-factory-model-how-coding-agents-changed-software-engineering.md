@@ -1,14 +1,27 @@
 ---
-title: '260307-工厂模型：编码智能体如何改变软件工程'
-description: '软件工程不再是编写代码，而是构建生产软件的工厂。探讨智能体工程如何改变开发者的工作方式，从编写代码转向编排系统。'
-author: 'Addy Osmani'
-source: 'https://addyosmani.com/blog/factory-model/'
+title: 260307-工厂模型：编码智能体如何改变软件工程
+description: 软件工程不再是编写代码，而是构建生产软件的工厂。探讨智能体工程如何改变开发者的工作方式，从编写代码转向编排系统。
+author: Addy Osmani
+source: https://addyosmani.com/blog/factory-model/
 date: '2026-03-07'
 category: 01-core-concepts
-tags: [智能体工程, 软件工程, 抽象层次, 工厂模型, 测试驱动开发, 系统思维]
+tags:
+- 智能体工程
+- 软件工程
+- 抽象层次
+- 工厂模型
+- 测试驱动开发
+- 系统思维
 ---
 
 # 工厂模型：编码智能体如何改变软件工程
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyosmani.com/blog/factory-model/)**
+
+
 
 > ## 摘要
 >

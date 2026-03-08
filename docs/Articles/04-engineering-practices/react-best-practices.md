@@ -1,14 +1,24 @@
 ---
-title: '260114-React 最佳实践：Vercel 十年性能优化经验总结'
-description: 'Vercel 将 10+ 年的 React 和 Next.js 性能优化知识封装成结构化仓库，专为 AI Agent 和 LLM 优化，涵盖消除瀑布流、减少 Bundle 体积等 40+ 条规则'
-author: 'Shu Ding, Andrew Qu'
-source: 'https://vercel.com/blog/introducing-react-best-practices'
+title: 260114-React 最佳实践：Vercel 十年性能优化经验总结
+description: Vercel 将 10+ 年的 React 和 Next.js 性能优化知识封装成结构化仓库，专为 AI Agent 和 LLM 优化，涵盖消除瀑布流、减少
+  Bundle 体积等 40+ 条规则
+author: Shu Ding, Andrew Qu
+source: https://vercel.com/blog/introducing-react-best-practices
 date: '2026-01-14'
 category: 04-engineering-practices
-tags: [Vercel, React, 性能优化, Next.js, AI Agent]
+tags:
+- Vercel
+- React
+- 性能优化
+- Next.js
+- AI Agent
 ---
 
 # React 最佳实践：Vercel 十年性能优化经验总结
+
+
+**作者：Shu Ding, Andrew Qu**
+
 
 <div class="article-meta">
 📅 2026-01-14 | 👤 Shu Ding, Andrew Qu | 🔗 <a href="https://vercel.com/blog/introducing-react-best-practices" target="_blank">查看原文</a>

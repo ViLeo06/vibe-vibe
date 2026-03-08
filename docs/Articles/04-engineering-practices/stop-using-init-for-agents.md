@@ -1,14 +1,26 @@
 ---
-title: '260307-停止为 AGENTS.md 使用 /init'
-description: '2026年初发表的两篇论文表明，自动生成的AGENTS.md文件会降低AI代理性能并增加20%以上的成本。本文探讨如何正确编写AGENTS.md，以及为什么大多数自动生成的内容都是冗余的。'
-author: 'Addy Osmani'
-source: 'https://addyosmani.com/blog/agents-md/'
+title: 260307-停止为 AGENTS.md 使用 /init
+description: 2026年初发表的两篇论文表明，自动生成的AGENTS.md文件会降低AI代理性能并增加20%以上的成本。本文探讨如何正确编写AGENTS.md，以及为什么大多数自动生成的内容都是冗余的。
+author: Addy Osmani
+source: https://addyosmani.com/blog/agents-md/
 date: '2026-03-07'
 category: 04-engineering-practices
-tags: [AI代理, AGENTS.md, 性能优化, 最佳实践, 代码库管理]
+tags:
+- AI代理
+- AGENTS.md
+- 性能优化
+- 最佳实践
+- 代码库管理
 ---
 
 # 停止为 AGENTS.md 使用 /init
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyosmani.com/blog/agents-md/)**
+
+
 
 **核心要点：正确的思维模型是将 AGENTS.md 视为你尚未修复的代码库问题的动态清单，而不是永久配置。自动生成的 AGENTS.md 文件会损害代理性能并使成本膨胀 20% 以上，因为它们重复了代理已经可以发现的内容。人工编写的文件只有在包含不可发现的信息时才有帮助——工具陷阱、非显而易见的约定、地雷。其他每一行都是噪音**。
 

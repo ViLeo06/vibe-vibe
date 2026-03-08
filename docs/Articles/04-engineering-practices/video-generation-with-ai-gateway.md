@@ -1,14 +1,22 @@
 ---
-title: '260307-使用 AI Gateway 生成视频'
-description: 'Vercel AI Gateway 现已支持视频生成功能，通过 AI SDK 6 可以创建电影级质量的视频、同步音频、生成个性化内容并保持身份一致性'
-author: 'Jerilyn Zheng'
-source: 'https://vercel.com/blog/video-generation-with-ai-gateway'
+title: 260307-使用 AI Gateway 生成视频
+description: Vercel AI Gateway 现已支持视频生成功能，通过 AI SDK 6 可以创建电影级质量的视频、同步音频、生成个性化内容并保持身份一致性
+author: Jerilyn Zheng
+source: https://vercel.com/blog/video-generation-with-ai-gateway
 date: '2026-03-07'
 category: 04-engineering-practices
-tags: [Vercel, AI Gateway, 视频生成, AI SDK]
+tags:
+- Vercel
+- AI Gateway
+- 视频生成
+- AI SDK
 ---
 
 # 使用 AI Gateway 生成视频
+
+
+**作者：Jerilyn Zheng**
+
 
 <div class="article-meta">
 📅 2026-03-07 | 👤 Jerilyn Zheng | 🔗 <a href="https://vercel.com/blog/video-generation-with-ai-gateway" target="_blank">查看原文</a>

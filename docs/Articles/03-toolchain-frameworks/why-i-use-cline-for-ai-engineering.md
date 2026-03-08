@@ -1,14 +1,26 @@
 ---
-title: '260307-为什么我在 AI 工程中使用 Cline'
-description: '在评估了整个 AI 编码助手领域后,一位资深工程师分享了为什么选择 Cline 作为严肃工程工作的首选工具'
-author: 'Addy Osmani'
-source: 'https://addyo.substack.com/p/why-i-use-cline-for-ai-engineering'
+title: 260307-为什么我在 AI 工程中使用 Cline
+description: 在评估了整个 AI 编码助手领域后,一位资深工程师分享了为什么选择 Cline 作为严肃工程工作的首选工具
+author: Addy Osmani
+source: https://addyo.substack.com/p/why-i-use-cline-for-ai-engineering
 date: '2025-07-21'
 category: 03-toolchain-frameworks
-tags: [AI编码助手, Cline, VSCode插件, 开发工具, 工程实践]
+tags:
+- AI编码助手
+- Cline
+- VSCode插件
+- 开发工具
+- 工程实践
 ---
 
 # 为什么我在 AI 工程中使用 Cline
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyo.substack.com/p/why-i-use-cline-for-ai-engineering)**
+
+
 
 > ## 摘要
 >

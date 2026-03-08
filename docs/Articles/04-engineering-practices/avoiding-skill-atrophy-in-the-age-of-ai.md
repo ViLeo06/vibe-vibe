@@ -1,14 +1,26 @@
 ---
-title: '260307-在AI时代避免技能退化'
-description: '如何在使用AI编码助手的同时，避免让你辛苦获得的工程技能逐渐衰退'
-author: 'Addy Osmani'
-source: 'https://addyo.substack.com/p/avoiding-skill-atrophy-in-the-age'
+title: 260307-在AI时代避免技能退化
+description: 如何在使用AI编码助手的同时，避免让你辛苦获得的工程技能逐渐衰退
+author: Addy Osmani
+source: https://addyo.substack.com/p/avoiding-skill-atrophy-in-the-age
 date: '2026-03-07'
 category: 04-engineering-practices
-tags: [AI, 技能发展, 编程实践, 批判性思维, 职业发展]
+tags:
+- AI
+- 技能发展
+- 编程实践
+- 批判性思维
+- 职业发展
 ---
 
 # 在AI时代避免技能退化
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyo.substack.com/p/avoiding-skill-atrophy-in-the-age)**
+
+
 
 > ## 摘要
 >

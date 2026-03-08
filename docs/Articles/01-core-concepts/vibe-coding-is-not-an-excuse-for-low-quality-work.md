@@ -1,14 +1,26 @@
 ---
-title: '260307-Vibe Coding 不是低质量工作的借口'
-description: '负责任的 AI 辅助开发实战指南'
-author: 'Addy Osmani'
-source: 'https://addyo.substack.com/p/vibe-coding-is-not-an-excuse-for'
+title: 260307-Vibe Coding 不是低质量工作的借口
+description: 负责任的 AI 辅助开发实战指南
+author: Addy Osmani
+source: https://addyo.substack.com/p/vibe-coding-is-not-an-excuse-for
 date: '2026-03-07'
 category: 01-core-concepts
-tags: [AI辅助开发, 代码质量, 工程实践, 技术债务, 代码审查]
+tags:
+- AI辅助开发
+- 代码质量
+- 工程实践
+- 技术债务
+- 代码审查
 ---
 
 # Vibe Coding 不是低质量工作的借口
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyo.substack.com/p/vibe-coding-is-not-an-excuse-for)**
+
+
 
 > ## 摘要
 >
