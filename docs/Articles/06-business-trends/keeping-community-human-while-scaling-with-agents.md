@@ -1,17 +1,25 @@
 ---
-title: '260307-用 AI Agent 扩展社区的同时保持人性化'
-description: '了解 Vercel 如何通过 AI agents 扩展社区支持。我们自动化了后勤工作以重获人类专注力，让团队能够解决复杂问题'
-author: 'Pauline P. Narvas'
-source: 'https://vercel.com/blog/keeping-community-human-while-scaling-with-agents'
+title: 260307-用 AI Agent 扩展社区的同时保持人性化
+description: 了解 Vercel 如何通过 AI agents 扩展社区支持。我们自动化了后勤工作以重获人类专注力，让团队能够解决复杂问题
+author: Pauline P. Narvas
+source: https://vercel.com/blog/keeping-community-human-while-scaling-with-agents
 date: '2026-03-07'
 category: 06-business-trends
-tags: [Vercel, AI Agent, 社区运营, Workflows, 自动化]
+tags:
+- Vercel
+- AI Agent
+- 社区运营
+- Workflows
+- 自动化
 ---
 
 # 用 AI Agent 扩展社区的同时保持人性化
 
+**作者：Pauline P. Narvas**
+
+**原文：[查看原文](https://vercel.com/blog/keeping-community-human-while-scaling-with-agents)**
+
 <div class="article-meta">
-📅 2026-03-07 | 👤 Pauline P. Narvas | 🔗 <a href="https://vercel.com/blog/keeping-community-human-while-scaling-with-agents" target="_blank">查看原文</a>
 </div>
 
 在 Vercel，开发者社区是我们所做一切的核心。这是我们与使用我们产品的人保持最紧密联系的方式。

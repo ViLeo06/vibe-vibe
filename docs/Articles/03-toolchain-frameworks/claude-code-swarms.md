@@ -1,14 +1,26 @@
 ---
-title: '260307-Claude Code Swarms：多智能体协作开发'
-description: 'Claude Code 现已支持智能体团队（Swarms）—— 多个 AI 智能体协同研究、调试和并行构建的系统。探索这一从实验性功能到正式特性的演进。'
-author: 'Addy Osmani'
-source: 'https://addyosmani.com/blog/claude-code-agent-teams/'
+title: 260307-Claude Code Swarms：多智能体协作开发
+description: Claude Code 现已支持智能体团队（Swarms）—— 多个 AI 智能体协同研究、调试和并行构建的系统。探索这一从实验性功能到正式特性的演进。
+author: Addy Osmani
+source: https://addyosmani.com/blog/claude-code-agent-teams/
 date: '2026-03-07'
 category: 03-toolchain-frameworks
-tags: [AI智能体, Claude Code, 多智能体系统, 协作开发, Swarms]
+tags:
+- AI智能体
+- Claude Code
+- 多智能体系统
+- 协作开发
+- Swarms
 ---
 
 # Claude Code Swarms：多智能体协作开发
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyosmani.com/blog/claude-code-agent-teams/)**
+
+
 
 **Claude Code 现已支持[智能体团队](https://code.claude.com/docs/en/agent-teams)**（swarms）。不再是单个智能体按顺序完成任务，而是由一个主智能体将工作委派给多个团队成员，它们并行工作——研究、调试和构建，同时相互协调。在你的 `settings.json` 中启用智能体团队功能来试用它。如果你一直在通过 Conductor、Gas Town 或类似工具探索多智能体编排，这个消息会让你兴奋。
 

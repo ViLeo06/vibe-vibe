@@ -1,14 +1,26 @@
 ---
-title: '260307-如何为 AI 代理编写优秀的规范'
-description: '学习如何为 AI 编码代理编写有效的规范，以提高 AI 驱动开发工作流程中的清晰度、专注度和生产力。'
-author: 'Addy Osmani'
-source: 'https://addyosmani.com/blog/good-spec/'
+title: 260307-如何为 AI 代理编写优秀的规范
+description: 学习如何为 AI 编码代理编写有效的规范，以提高 AI 驱动开发工作流程中的清晰度、专注度和生产力。
+author: Addy Osmani
+source: https://addyosmani.com/blog/good-spec/
 date: '2026-03-07'
 category: 04-engineering-practices
-tags: [AI代理, 规范编写, 提示工程, 开发工作流, 最佳实践]
+tags:
+- AI代理
+- 规范编写
+- 提示工程
+- 开发工作流
+- 最佳实践
 ---
 
 # 如何为 AI 代理编写优秀的规范
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyosmani.com/blog/good-spec/)**
+
+
 
 > ## 摘要
 >

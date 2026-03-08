@@ -1,17 +1,24 @@
 ---
-title: '250201-关于 Vibe Coding 你需要知道的一切'
-description: 'Vercel 发布的 Vibe Coding 现状报告，揭示 AI 编程如何重塑开发者工作方式'
-author: 'Zeb Hermann, Keith Messick'
-source: 'https://vercel.com/blog/what-you-need-to-know-about-vibe-coding'
+title: 250201-关于 Vibe Coding 你需要知道的一切
+description: Vercel 发布的 Vibe Coding 现状报告，揭示 AI 编程如何重塑开发者工作方式
+author: Zeb Hermann, Keith Messick
+source: https://vercel.com/blog/what-you-need-to-know-about-vibe-coding
 date: '2025-02-01'
 category: 01-core-concepts
-tags: [Vercel, Vibe Coding, AI 编程, 开发趋势]
+tags:
+- Vercel
+- Vibe Coding
+- AI 编程
+- 开发趋势
 ---
 
 # 关于 Vibe Coding 你需要知道的一切
 
+**作者：Zeb Hermann, Keith Messick**
+
+**原文：[查看原文](https://vercel.com/blog/what-you-need-to-know-about-vibe-coding)**
+
 <div class="article-meta">
-📅 2025-02-01 | 👤 Zeb Hermann, Keith Messick | 🔗 <a href="https://vercel.com/blog/what-you-need-to-know-about-vibe-coding" target="_blank">查看原文</a>
 </div>
 
 Vibe coding 正在彻底改变我们的工作方式。以下是 Vercel 发布的《Vibe Coding 现状报告》中的核心要点。

@@ -1,17 +1,25 @@
 ---
-title: '260307-测试「Bash 就够了」假设：SQL vs Bash 智能体对比实验'
-description: 'Vercel 和 Braintrust 联合测试 bash 与 SQL 智能体在结构化数据查询上的表现，混合方案达到 100% 准确率'
-author: 'Ankur Goyal, Andrew Qu'
-source: 'https://vercel.com/blog/testing-if-bash-is-all-you-need'
+title: 260307-测试「Bash 就够了」假设：SQL vs Bash 智能体对比实验
+description: Vercel 和 Braintrust 联合测试 bash 与 SQL 智能体在结构化数据查询上的表现，混合方案达到 100% 准确率
+author: Ankur Goyal, Andrew Qu
+source: https://vercel.com/blog/testing-if-bash-is-all-you-need
 date: '2026-03-07'
 category: 02-technical-architecture
-tags: [Vercel, Braintrust, 智能体工程, 工具选择, 性能优化]
+tags:
+- Vercel
+- Braintrust
+- 智能体工程
+- 工具选择
+- 性能优化
 ---
 
 # 测试「Bash 就够了」假设：SQL vs Bash 智能体对比实验
 
+**作者：Ankur Goyal, Andrew Qu**
+
+**原文：[查看原文](https://vercel.com/blog/testing-if-bash-is-all-you-need)**
+
 <div class="article-meta">
-📅 2026-03-07 | 👤 Ankur Goyal, Andrew Qu | 🔗 <a href="https://vercel.com/blog/testing-if-bash-is-all-you-need" target="_blank">查看原文</a>
 </div>
 
 > **本文来源**：[Vercel 官方博客](https://vercel.com/blog/testing-if-bash-is-all-you-need)

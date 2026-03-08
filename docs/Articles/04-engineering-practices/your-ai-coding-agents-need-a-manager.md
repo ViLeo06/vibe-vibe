@@ -1,14 +1,27 @@
 ---
-title: '260307-你的 AI 编码代理需要一个管理者'
-description: '在不久的将来，高杠杆开发者看起来像是异步优先的管理者，运行着并行的 AI 编码代理。使某人成为优秀技术负责人或管理者的技能，直接转化为 AI 编码能力。'
-author: 'Addy Osmani'
-source: 'https://addyosmani.com/blog/coding-agents-manager/'
+title: 260307-你的 AI 编码代理需要一个管理者
+description: 在不久的将来，高杠杆开发者看起来像是异步优先的管理者，运行着并行的 AI 编码代理。使某人成为优秀技术负责人或管理者的技能，直接转化为 AI
+  编码能力。
+author: Addy Osmani
+source: https://addyosmani.com/blog/coding-agents-manager/
 date: '2026-03-07'
 category: 04-engineering-practices
-tags: [AI编码, 代理编排, 工程管理, 开发效率, 异步协作]
+tags:
+- AI编码
+- 代理编排
+- 工程管理
+- 开发效率
+- 异步协作
 ---
 
 # 你的 AI 编码代理需要一个管理者
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyosmani.com/blog/coding-agents-manager/)**
+
+
 
 **使某人成为优秀技术负责人或管理者的技能，直接转化为 AI 编码能力。一旦你开始并行运行多个代理，你就不再只是调试上下文，而是开始管理一个团队。清晰度、委派、验证循环、异步沟通。随着[编排](https://addyosmani.com/blog/future-agentic-coding/)变得更加主流，工作的形态正在改变**。
 

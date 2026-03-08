@@ -1,17 +1,25 @@
 ---
-title: '251112-多智能体系统在AI原生工程中的作用'
-description: 'Resolve AI 深度解析多智能体架构如何使工程师实现 AI 原生工作流程，从 AI 辅助到 AI 原生的范式转变'
-author: 'Spiros Xanthos, Gabor Angeli, Bharat Khandelwal'
-source: 'https://resolve.ai/blog/multi-agent-systems-ai-native-engineering'
+title: 251112-多智能体系统在AI原生工程中的作用
+description: Resolve AI 深度解析多智能体架构如何使工程师实现 AI 原生工作流程，从 AI 辅助到 AI 原生的范式转变
+author: Spiros Xanthos, Gabor Angeli, Bharat Khandelwal
+source: https://resolve.ai/blog/multi-agent-systems-ai-native-engineering
 date: '2025-11-12'
 category: 02-technical-architecture
-tags: [多智能体系统, AI原生工程, 生产运维, 事件响应, Resolve AI]
+tags:
+- 多智能体系统
+- AI原生工程
+- 生产运维
+- 事件响应
+- Resolve AI
 ---
 
 # 多智能体系统在使软件工程师成为 AI 原生中的作用
 
+**作者：Spiros Xanthos, Gabor Angeli, Bharat Khandelwal**
+
+**原文：[查看原文](https://resolve.ai/blog/multi-agent-systems-ai-native-engineering)**
+
 <div class="article-meta">
-📅 2025-11-12 | 👤 Spiros Xanthos, Gabor Angeli, Bharat Khandelwal | 🔗 <a href="https://resolve.ai/blog/multi-agent-systems-ai-native-engineering" target="_blank">查看原文</a>
 </div>
 
 今天的工程学带有一个奇怪的矛盾：您可以在几小时内使用 AI 启动整个服务，但理解这些服务出了什么问题仍然需要在碎片化工具中进行艰苦的工作。以以下例子为例：

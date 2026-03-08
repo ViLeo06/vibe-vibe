@@ -1,14 +1,26 @@
 ---
-title: '260307-自我改进的编码智能体'
-description: '探索如何设置自我改进的AI编码智能体循环，实现在你睡觉时自动编写、测试和交付代码'
-author: 'Addy Osmani'
-source: 'https://addyosmani.com/blog/self-improving-agents/'
+title: 260307-自我改进的编码智能体
+description: 探索如何设置自我改进的AI编码智能体循环，实现在你睡觉时自动编写、测试和交付代码
+author: Addy Osmani
+source: https://addyosmani.com/blog/self-improving-agents/
 date: '2026-03-07'
 category: 02-technical-architecture
-tags: [AI智能体, 自动化编码, 持续集成, 智能体循环, Claude Code]
+tags:
+- AI智能体
+- 自动化编码
+- 持续集成
+- 智能体循环
+- Claude Code
 ---
 
 # 自我改进的编码智能体
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyosmani.com/blog/self-improving-agents/)**
+
+
 
 **想象一下，结束一天的工作后，第二天醒来发现新功能已经编码、测试完毕并准备好审查**。 这就是自主AI编码智能体的承诺——利用 **Claude Code** 等工具在持续循环中改进和交付代码，即使你在睡觉。
 

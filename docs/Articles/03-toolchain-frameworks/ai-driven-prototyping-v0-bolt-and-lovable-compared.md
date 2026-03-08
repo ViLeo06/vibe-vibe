@@ -1,14 +1,28 @@
 ---
-title: '260307-AI驱动的原型开发：v0、Bolt和Lovable对比'
-description: '深入分析三大AI辅助开发工具在快速原型开发中的实际应用、局限性和工程权衡'
-author: 'Addy Osmani'
-source: 'https://addyo.substack.com/p/ai-driven-prototyping-v0-bolt-and'
+title: 260307-AI驱动的原型开发：v0、Bolt和Lovable对比
+description: 深入分析三大AI辅助开发工具在快速原型开发中的实际应用、局限性和工程权衡
+author: Addy Osmani
+source: https://addyo.substack.com/p/ai-driven-prototyping-v0-bolt-and
 date: '2026-03-07'
 category: 03-toolchain-frameworks
-tags: [AI开发工具, 原型开发, v0, Bolt, Lovable, 全栈开发, UI生成]
+tags:
+- AI开发工具
+- 原型开发
+- v0
+- Bolt
+- Lovable
+- 全栈开发
+- UI生成
 ---
 
 # AI驱动的原型开发：v0、Bolt和Lovable对比
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyo.substack.com/p/ai-driven-prototyping-v0-bolt-and)**
+
+
 
 > ## 摘要
 >
