@@ -131,9 +131,9 @@ async function handleRequest(userId: string, skipProcessing: boolean) {
 
 一个组件在每次渲染时都从 `localStorage` 解析 JSON 配置，即使它只需要在状态初始化时使用一次。将其包装在回调中（`useState(() => JSON.parse(...))`）消除了浪费的工作。
 
-## 在你的 Coding Agent 中使用
+## 在你的 Coding Agents 中使用
 
-这些最佳实践也被打包为 [Agent Skills](https://github.com/vercel-labs/agent-skills)，可以安装到 Opencode、Codex、Claude Code、Cursor 和其他 Coding Agent 中。当你的 Agent 发现级联的 `useEffect` 调用或大量客户端导入时，它可以参考这些模式并建议修复。
+这些最佳实践也被打包为 [Agent Skills](https://github.com/vercel-labs/agent-skills)，可以安装到 Opencode、Codex、Claude Code、Cursor 和其他 Coding Agents 中。当你的智能体发现级联的 `useEffect` 调用或大量客户端导入时，它可以参考这些模式并建议修复。
 
 ```bash
 npx skills add vercel-labs/agent-skills
@@ -155,3 +155,4 @@ npx skills add vercel-labs/agent-skills
 - [react-best-practices 仓库](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices)
 - [Agent Skills 项目](https://github.com/vercel-labs/agent-skills)
 - [Vercel 性能优化指南](https://vercel.com/docs/concepts/performance)
+
