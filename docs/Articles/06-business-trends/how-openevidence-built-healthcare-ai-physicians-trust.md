@@ -4,7 +4,7 @@ description: "创业公司的速度，医院级的可靠性，零妥协"
 author: "Nic Vargas"
 source: "https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust"
 date: "2026-03-07"
-category: case-studies
+category: 06-business-trends
 tags: [Vercel, Next.js, 医疗 AI, 可靠性, 扩展性]
 ---
 

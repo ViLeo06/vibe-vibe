@@ -4,7 +4,7 @@ description: "Vercel AI Gateway 现已支持视频生成功能，通过 AI SDK 6
 author: "Jerilyn Zheng"
 source: "https://vercel.com/blog/video-generation-with-ai-gateway"
 date: "2026-03-07"
-category: engineering-practice
+category: 04-engineering-practices
 tags: [Vercel, AI Gateway, 视频生成, AI SDK]
 ---
 

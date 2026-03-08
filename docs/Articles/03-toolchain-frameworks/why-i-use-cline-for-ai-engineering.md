@@ -1,0 +1,338 @@
+---
+title: "260307-为什么我在 AI 工程中使用 Cline"
+description: "在评估了整个 AI 编码助手领域后,一位资深工程师分享了为什么选择 Cline 作为严肃工程工作的首选工具"
+author: "Addy Osmani"
+source: "https://addyo.substack.com/p/why-i-use-cline-for-ai-engineering"
+date: "2025-07-21"
+category: 03-toolchain-frameworks
+tags: [AI编码助手, Cline, VSCode插件, 开发工具, 工程实践]
+---
+
+# 为什么我在 AI 工程中使用 Cline
+
+> ## 摘要
+> 在评估整个领域后的评估报告
+
+---
+
+AI 编码助手领域充斥着承诺彻底改变开发工作流程的工具。作为一名从事复杂系统工作数十年的工程师,我对这类声明持有健康的怀疑态度。在广泛测试了主要竞争者(Cursor、WindSurf、GitHub Copilot 等)之后,我发现 **[Cline](https://github.com/cline/cline)** - **[一个免费的 VSCode 插件](https://cline.bot/)** - 对于严肃的工程工作具有独特的价值。以下是原因,以及需要考虑的重要注意事项和权衡。_本文最后更新于 2025 年 7 月 21 日。_
+
+## 核心理念:AI 作为系统级工具
+
+Cline 对 AI 辅助的处理方式与市场上大多数工具不同。它不仅仅专注于代码生成或补全,而是作为一个系统级工具运行,可以与你的整个开发环境交互。这在处理复杂的调试场景、大规模重构或集成测试时变得特别有价值。
+
+## 重要的关键能力
+
+### 灵活的上下文管理
+
+Cline 最强大的功能之一是它能够高效地整合各种类型的上下文。系统提供了几种添加上下文的方法:
+
+-   `@file`: 直接包含文件内容,带有智能解析
+-   `@folder`: 批量导入目录内容,带有智能过滤
+-   `@url`: 自动获取文档并转换为 markdown
+-   `@problems`: 集成工作区诊断信息
+
+这种灵活性在处理大型代码库或复杂调试场景时变得特别有价值。你可以有选择地包含相关文件和文档,而不是用不必要的信息压垮上下文窗口。系统的智能解析确保包含的内容针对所选模型进行了适当的格式化。
+
+[
+
+![](/images/articles/localized/03-toolchain-frameworks/why-i-use-cline-for-ai-engineering/01.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!ZRxV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd4d26629-9c21-41b9-99a5-c314cc810dd6_1172x592.png)
+
+这些功能非常适合[上下文工程](https://addyo.substack.com/p/context-engineering-bringing-engineering),为所选模型提供成功完成任务所需的所有信息和工具。
+
+### 模型灵活性和策略性切换
+
+与锁定特定提供商的工具不同,Cline 的模型灵活性使得能够利用不同 AI 模型优势的复杂工作流程成为可能。它支持全系列模型,包括来自 Anthropic、OpenAI、Google Gemini、DeepSeek 以及通过 LM Studio/Ollama 的本地模型:
+
+[
+
+![](/images/articles/localized/03-toolchain-frameworks/why-i-use-cline-for-ai-engineering/02.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!5px9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdf1e8678-c21c-4300-8661-d4a8abc56464_1456x954.png)
+
+对于本地/离线模型用户,Cline 与 **LM Studio** 的集成有了重要升级。Cline **移除了 LM Studio API 调用的硬编码温度设置**,允许用户为本地模型自定义生成_温度_(实现更少确定性或更有创意的输出)。它还增加了对 LM Studio 响应中 reasoning_content 的支持 - 这意味着如果本地模型提供思维链或推理轨迹,Cline 可以捕获并利用它。这一增强为用户在通过 LM Studio 使用本地模型时提供了更多灵活性和洞察力。
+
+我也非常欣赏 Cline 在会话期间对成本的主动核算。这在模型提供商之间切换时最为明显:
+
+[
+
+![](/images/articles/localized/03-toolchain-frameworks/why-i-use-cline-for-ai-engineering/03.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!V2Dw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7df0fd49-53bd-4164-b396-5a74f297eda8_1920x1080.jpeg)
+
+Cline 还添加了上下文大小的实时可视化指示。这个进度条会在你即将达到限制时显示,对于在模型约束内管理工作非常有用:
+
+虽然拥有多个可用模型很有用,但真正的力量来自于策略性地组合它们。新兴的 DeepSeek-R1 + Claude 3.5 Sonnet 工作流程完美地展示了这一点。
+
+在最近的更新中,Cline 改进了上下文窗口的可视化,这样你就知道它何时填满。当你使用 Cline 时,上下文窗口会填满(包括你的提示、Cline 的响应、文件内容、工具输出)。
+
+[
+
+![Image](/images/articles/localized/03-toolchain-frameworks/why-i-use-cline-for-ai-engineering/04.jpg "Image")
+
+](https://substackcdn.com/image/fetch/$s_!lD-8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F714da67b-bec6-448d-9016-e622480e5f2e_1804x788.jpeg)
+
+模型在非常长的上下文中可能难以保持专注。Cline 甚至使用[内置的上下文感知](https://x.com/cline/status/1922054519736934648/photo/1)来自动触发 new_task 工具,以保持最佳性能。
+
+#### DeepSeek-R1 + Sonnet 混合方法
+
+最近的基准测试和用户体验表明,将 DeepSeek-R1 用于规划,Claude 3.5 Sonnet 用于实现,可以将成本降低高达 97%,同时提高整体输出质量。
+
+以下是这种组合如此有效的原因:
+
+**DeepSeek-R1 用于规划($0.55/M tokens)或像 Gemini 这样的模型**
+
+-   擅长逻辑推理和架构分析
+-   开源模型允许定制
+-   成本显著降低(输入 token 比 Sonnet 便宜 5.45 倍,输出便宜 6.85 倍)
+-   特别有效于:
+    -   理解复杂代码库
+    -   创建序列图
+    -   映射依赖关系
+    -   识别潜在边缘情况
+    -   生成架构文档
+
+**Claude 3.5 Sonnet 用于实现("执行")**
+
+-   在运行时调试和代码生成方面表现出色
+-   出色的浏览器自动化能力
+-   迭代开发的快速响应时间
+-   特别有效于:
+    -   编写和优化代码
+    -   测试实现
+    -   调试运行时问题
+    -   基于浏览器的测试
+    -   系统交互
+
+这种方法的成本效率令人震惊。对于规划密集型任务,使用 DeepSeek-R1 而不是高级模型可以将成本降低一个数量级,同时保持甚至提高输出质量。工程师报告说,对于以前需要更昂贵模型的任务,大约 70% 可以依赖 DeepSeek-R1。
+
+如前所述,你也可以使用 Gemini(例如 2.0 Flash Thinking)与 Cline 进行规划,它具有新的 1M token 上下文窗口。以下是它的实际应用示例:
+
+Cline 无缝切换模型的能力使这种混合方法变得实用。通过 v3.2.6 更新,系统甚至会记住你为每种模式偏好的模型,使得为不同类型的任务保持最佳模型选择变得轻松。你不会被单一模型的权衡所困 - 你可以根据具体任务优化成本、能力或速度。
+
+### 检查点:超越 git 的版本控制
+
+Cline 的检查点系统在每次 AI 操作后自动捕获工作区状态。
+
+与传统版本控制不同:
+
+-   每个检查点包含完整的环境状态
+-   可以细粒度地比较和回滚更改
+-   保留浏览器会话和终端状态
+
+这在以下情况下变得特别有价值:
+
+-   同时探索多种解决方案方法
+-   调试复杂的运行时问题
+-   跨多个文件重构
+-   测试不同的依赖配置
+
+该系统独立于你的常规 git 工作流程运行,防止需要用实验性更改污染提交历史。
+
+### Computer Use:运行时感知
+
+也许 Cline 最独特的功能是它与运行系统交互的能力。使用 Claude 的计算机使用能力,它可以:
+
+-   启动并与浏览器交互(甚至验证交互是否有效!)
+-   执行和监控终端命令
+-   捕获和分析运行时行为
+-   实时响应系统输出
+
+[
+
+![](/images/articles/localized/03-toolchain-frameworks/why-i-use-cline-for-ai-engineering/05.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!GRYr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd850d14d-b678-4a1e-8c24-b24d0afe74b3_1920x1080.jpeg)
+
+上图中,Cline 能够连接启动 Chrome 来验证一组更改是否正确渲染。它注意到有一个 Next.js 错误,并可以主动解决这个问题,而无需我来回复制粘贴问题。这是一个游戏规则改变者。
+
+这弥合了静态代码分析和运行时行为之间的关键差距 - 在处理复杂的 Web 应用程序或分布式系统时特别有价值。
+
+如上面的演示所示,Computer use 使 Cline 在运行时调试、端到端测试和一般 Web 使用方面具有更多自主性。
+
+### 计划/执行模式:在最重要的时候进行控制
+
+计划/执行切换从根本上改变了你与 AI 辅助的交互方式:
+
+-   **计划模式**: 在执行前设计和审查解决方案,具有持久的模型选择
+-   **执行模式**: 直接实现简单任务,保持自己的模型偏好
+
+这种分离为关键更改提供了必要的控制,同时保持了日常任务的效率。在实现过程中需求演变时,在任务中途切换模式的能力特别有价值。
+
+#### 全局计划/执行模式设置更新
+
+Cline 的**计划/执行模式**(其标志性功能之一)获得了生活质量升级。以前,可能需要在每个会话中重新选择"计划"与"执行"的首选模型;现在 Cline **全局存储计划/执行模型偏好**。实际上,如果你更喜欢,比如说,DeepSeek 或 Gemini 用于规划,另一个模型用于执行,Cline 将持久地记住这些选择。
+
+[
+
+![](/images/articles/localized/03-toolchain-frameworks/why-i-use-cline-for-ai-engineering/06.png)
+
+](https://substackcdn.com/image/fetch/$s_!WE0E!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F535b0ba1-12e1-4e38-8c48-056f771f8c37_600x224.png)
+
+这确保了跨项目的一致工作流程,无需每次手动切换设置。对于普通用户和 Cursor 迁移者来说,这使 Cline 的计划/执行系统更加无缝 - 以更少的摩擦连接战略规划和直接执行。
+
+### 模型上下文协议(MCP):实践中的可扩展性
+
+模型上下文协议从根本上改变了 AI 辅助的可能性。你可以通过自定义工具扩展 Cline 的能力,而不是局限于预定义的集成。一些实际应用:
+
+-   与内部监控系统集成
+-   自定义安全扫描工作流程
+-   自动化文档生成
+-   遗留系统现代化管道
+
+协议的简单性(基于 JSON 的 API)使其易于访问,同时对于复杂集成仍然足够强大,无需专门的提示或角色。这种可扩展性在企业环境中特别有价值,在那里自定义工具是常态而不是例外。
+
+最新版本的 Cline 添加了一个 [MCP 市场](https://x.com/cline/status/1892358732161384605)。这就像 Cline 的应用商店,支持一键安装、自动配置,不再需要复杂的设置。
+
+以下是 Cline 使用 MCP 为自己创建和添加工具的示例,例如"添加一个拉取最新 npm 文档的工具"。它处理从创建 MCP 服务器到安装它的所有事情,为未来的任务做好准备。
+
+### Fork 生态系统:RooCode
+
+虽然 Cline 启发了几个分支,如 RooCode(以前的 RooCline)和 Blackbox,但每个都在 AI 辅助开发方法上采取了不同的方向。RooCode 强调基于角色的提示和专门的工作流程,而 Cline 保持其成为能够处理任何任务的通用工具的愿景,无需显式角色选择。这一理念体现在计划/执行模式等功能中,它简化了常见的交互模式,而无需用户管理复杂的提示策略。
+
+不同的方法突出了 AI 工具设计中一个有趣的张力:虽然专门模式可能看起来很吸引人,但它们通常会增加用户体验的复杂性。Cline 的方法专注于减少提示疲劳,使交互更自然,即将推出的功能旨在进一步简化开发人员向 AI 助手传达意图的方式。
+
+Cline 的快速开发步伐意味着今天的限制可能明天就会解决。最近的更新表明重点在于:
+
+-   改进的性能优化
+-   更好地与现有开发工作流程集成
+-   更复杂的运行时分析能力
+
+## 与当前工具的比较
+
+AI 编码助手领域正在快速发展,每个工具都提供独特的优势和权衡。以下是 Cline 与该领域其他主要参与者的比较:
+
+### Cursor
+
+_(2K 补全免费,否则 $20/月)_
+
+**优势:**
+
+-   基于 Visual Studio Code 构建,熟悉度高
+-   稳定且全面的功能集
+-   通过 Composer 有效的多文件操作
+-   强大的团队环境支持
+
+**限制:**
+
+-   最近的性能问题和错误
+-   较少的系统级集成
+-   有限的运行时调试
+
+### WindSurf
+
+_(50 个高级提示免费,否则 $15/月)_
+
+**优势:**
+
+-   对中大型代码库的出色上下文感知
+-   干净、精致的 UI
+-   具有成本效益的定价模式
+-   强大的项目上下文理解
+
+**限制:**
+
+-   与竞争对手相比功能较少
+-   没有浏览器自动化
+-   令人困惑的"模型流动作积分"系统
+
+### GitHub Copilot
+
+_(Copilot Pro 是 $10/用户/月)_
+
+**优势:**
+
+-   付费层无限使用
+-   无缝的 VS Code 集成
+-   强大的内联建议
+-   原生 GitHub 生态系统集成
+
+**限制:**
+
+-   基本的多文件编辑能力
+-   仅限于编辑器环境
+-   复杂任务性能较慢
+-   没有系统级操作
+-   基本的模型支持
+
+### Aider
+
+**优势:**
+
+-   出色的基于终端的工作流程
+-   强大的 CLI 集成
+-   开源灵活性
+-   直接的任务解决方法
+
+**限制:**
+
+-   有限的 IDE 集成
+-   基本的运行时能力
+-   对于专注于 GUI 的开发人员学习曲线更陡
+
+### Continue
+
+**优势:**
+
+-   强大的上下文感知
+-   良好的版本控制集成
+-   干净的界面设计
+-   专注的功能集
+
+**限制:**
+
+-   仅限于编辑器环境
+-   没有系统级操作
+-   基本的模型支持
+-   对于复杂工作流程灵活性较差
+
+### 为什么 Cline 脱颖而出
+
+Cline 的与众不同之处在于它的组合:
+
+1.  **模型灵活性:** 策略性地利用不同模型的能力(例如,DeepSeek-R1 + Sonnet 工作流程)可以将成本降低高达 97%,同时提高输出质量。我一直在有效地利用这一点。
+
+2.  **系统集成:** 与浏览器、终端和开发工具的深度集成实现了真正的端到端辅助。
+
+3.  **控制和可见性:** 人在回路中的方法,具有明确的批准和检查点,为关键系统提供了必要的监督。
+
+4.  **可扩展性:** 模型上下文协议允许与自定义工具和工作流程集成,使其能够适应特定需求。
+
+然而,这种力量伴随着权衡,例如基于 token 的定价需要注意模型选择。
+
+这些工具之间的选择最终取决于你的具体需求:
+
+-   对于注重成本的团队: Cursor 和 WindSurf 提供了良好的价值,虽然从功能角度来看不如 Cline 全面。Cline 中的成本通常可以通过使用 OpenRouter、本地模型或分支(RooCline/Code)来解决
+
+-   对于以 GitHub 为中心的工作流程: GitHub Copilot 无缝集成
+
+-   对于终端爱好者: Aider 提供了专注的体验
+
+-   对于最大的灵活性和控制: Cline 实现了复杂的工作流程
+
+Cline 的方法使其特别适合在复杂系统上工作的团队,在这些系统中,控制、灵活性和系统级集成比即时便利更重要。
+
+## 结论:为什么 Cline 对严肃工程有意义
+
+对于构建复杂系统的团队,Cline 的 AI 辅助方法与专业工程实践很好地契合:
+
+-   它尊重现有工作流程,而不是强制新的工作流程
+-   它在最重要的地方提供控制和可见性
+-   它可以随着需求的发展而扩展和定制
+-   它将 AI 视为工具而不是魔法解决方案
+
+为了更大的控制和能力而增加复杂性的权衡对于严肃的开发工作是有意义的。虽然更简单的工具可能足以完成基本任务,但 Cline 的系统级方法为复杂的工程挑战提供了独特的价值。
+
+Cline 是否适合你的团队取决于你的具体需求和约束。
+
+**然而,如果你正在构建复杂系统并希望 AI 辅助尊重工程原则,Cline 值得认真考虑。**
+
+\*作者除了作为用户之外,与 Cline 没有任何关联。此评估基于生产环境中的个人经验。
+
+[
+
+![](/images/articles/localized/03-toolchain-frameworks/why-i-use-cline-for-ai-engineering/07.png)
+
+](https://substackcdn.com/image/fetch/$s_!hO0v!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1d684824-9add-4a97-a0ed-5c84bba8176f_1600x1600.png)

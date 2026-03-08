@@ -4,7 +4,7 @@ description: "深入了解 Vercel 如何使用 Sandbox、AI Gateway 和 Workflow
 author: "Eric Dodds, Allen Zhou"
 source: "https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents"
 date: "2026-03-07"
-category: agent-engineering
+category: 04-engineering-practices
 tags: [Vercel, 智能体工程, AEO, 架构设计]
 ---
 

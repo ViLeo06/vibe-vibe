@@ -1,0 +1,456 @@
+---
+title: "260307-什么是 AI Agent？为什么它们很重要？"
+description: "理解 AI Agent 的演进、架构和未来"
+author: "Addy Osmani"
+source: "https://addyo.substack.com/p/what-are-ai-agents-why-do-they-matter"
+date: "2026-03-07"
+category: 01-core-concepts
+tags: [AI Agent, 自主系统, 多智能体系统, 工具使用, 浏览器自动化]
+---
+
+# 什么是 AI Agent？为什么它们很重要？
+
+> ## 摘要
+> 理解 AI Agent 的演进、架构和未来
+
+_**Agent 是一个根据数据自主完成任务或做出决策的程序。它与 AI 模型对话，使用工具和资源执行基于目标的操作。**_
+
+传统 AI 模型和 Agent 之间的区别微妙但深刻。当我们与 AI 模型（例如 Gemini、o1、Sonnet 或类似的大型语言模型）交互时，我们本质上是在进行一系列单次交互：我们提供输入，模型处理它，然后返回输出。虽然这些交互可能很复杂，但它们本质上是被动的和无状态的。每个响应都是孤立存在的，没有真正的连续性或采取独立行动的能力。
+
+[
+
+![](/images/articles/localized/01-core-concepts/what-are-ai-agents-why-do-they-matter/01.gif)
+
+](https://substackcdn.com/image/fetch/$s_!oHMR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdbf19636-2dc6-493e-a89c-8cc6bc2ac69b_1218x646.gif)
+
+**相比之下，AI Agent 是设计用来感知环境、做出决策并采取行动以实现特定目标的自主系统——同时保持上下文并根据结果调整方法。**
+
+这听起来可能是一个微小的区别，但它代表了 AI 系统如何运作以及它们能够实现什么的根本转变。
+
+考虑一下我们今天如何使用 AI 聊天界面。你可能会要求 ChatGPT 从头到尾写一篇文章，然后得到一个**单次响应**。你可能需要自己做一些工作来迭代它。Agent 版本更加细致——Agent 可能会写一个大纲，决定是否需要研究，写一个草稿，评估是否需要改进并自我修订。让我们看看一些 Agent 实际运行的例子。
+
+[
+
+![](/images/articles/localized/01-core-concepts/what-are-ai-agents-why-do-they-matter/02.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!Aqzq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe5088fdd-504e-4f89-9801-fc39392ef9ee_2438x1368.png)
+
+当你要求 AI 模型帮助你分析一些数据时，它可以建议方法甚至编写代码，但它不能实际执行该代码或直接与你的数据交互。另一方面，AI Agent 可以主动处理你的数据：加载文件、运行分析、生成可视化，甚至根据结果建议和实施改进。
+
+这在 Agent 到 Agent 的工作流程中变得更加强大。考虑一个数据分析项目，其中多个 Agent 协作：数据准备 Agent 可能会清理和规范化你的原始数据，将其传递给应用统计方法并识别模式的分析 Agent。然后，这个 Agent 可能会与可视化 Agent 协作，创建引人注目的发现表示，而文档 Agent 则记录方法和结果。最后，审查 Agent 可能会验证整个工作流程并建议改进或额外的分析。
+
+[
+
+![](/images/articles/localized/01-core-concepts/what-are-ai-agents-why-do-they-matter/03.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!wdpY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F46cc99eb-2a3f-48f2-9d08-4239f1239bd7_1024x1024.png)
+
+此工作流程中的每个 Agent 都保持自己的上下文和专业知识，同时通过结构化协议与其他 Agent 协调。
+
+它们可以动态处理边缘情况——例如，如果分析 Agent 发现数据质量问题，它可以向准备 Agent 请求特定的清理，或者如果可视化 Agent 识别出有趣的模式，它可以建议额外的分析来进一步探索。这不再只是拥有一个可以提供建议的顾问和拥有一个可以帮助完成工作的同事之间的区别——这就像拥有一整个专家团队代表你无缝协作。
+
+回到单次提示与 Agent：当我们谈论用于代码生成的 AI 时，我们大多数人习惯于"提示和响应"方法。你给 AI 一个提示，比如"给我写做 X 的代码"，它会用一些代码响应。
+
+[
+
+![](/images/articles/localized/01-core-concepts/what-are-ai-agents-why-do-they-matter/04.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!cQO5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdcffb754-3b91-41e8-98bb-56d2f97ec2f7_2064x1154.png)
+
+Agent 采用更细致的方法。它可以概述逻辑，检查代码，运行测试，检测错误，然后如果出现问题就重新思考并修复它们。这个迭代过程模仿了工程师处理问题的方式，并提供更好的结果。AI 成为协作者，而不仅仅是输出的纯生成器。
+
+这种自主性和采取行动的能力是将 Agent 与即使是最复杂的语言模型区分开来的原因。这种转变使得能够自动化以前从未值得构建传统自动化的"长尾"任务——从跨多个系统组织文件到监控数据源以查找特定模式，再到协调跨多个应用程序的复杂工作流程。
+
+**我个人为什么对 Agent 感到兴奋？**
+
+- 它们具有弹性能力来处理组织以前无法负担的工作——而不是替换现有系统或人员。
+- Agent 将范式从软件作为工具转变为软件作为工作者。这可能是企业与其技术堆栈之间的全新关系。
+- Agent 可能会将软件价值与最终用户数量脱钩。你不再受限于人类团队可以完成多少工作。
+- Agent 用例，如"深度研究"和 Agent 驱动的编码，已经为我节省了_大量_时间。这正在释放时间让我专注于 AI 无法做到的事情。
+
+## AI Agent 互操作性标准化协议的出现
+
+AI Agent 自主和协作操作的能力需要开发和采用标准化通信协议，以确保无缝互操作性和创建复杂的多 Agent 系统。缺乏这样的标准可能导致生态系统碎片化，阻碍复杂任务自动化和跨平台协作的潜力。这里有两个值得记住的关键发展。
+
+- **[模型上下文协议 (MCP)](https://addyo.substack.com/p/mcp-what-it-is-and-why-it-matters)：** 由 Anthropic 推出，MCP 是一个开放标准，旨在将 AI 模型连接到外部工具和数据源（它是"AI 集成的 USB-C"）。它使 AI 助手能够直接访问和交互各种数据集，增强其信息检索和任务执行能力。例如，MCP 允许 AI 助手直接连接到 GitHub 等平台以创建存储库并高效管理拉取请求。在 [MCP：它是什么以及为什么重要](https://addyo.substack.com/p/mcp-what-it-is-and-why-it-matters) 中了解更多关于 MCP 的实际示例。
+
+- **[Agent2Agent 协议 (A2A)](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)：** 最近由 Google 宣布，A2A 是一个开放标准，旨在促进来自不同供应商和框架的 AI Agent 之间的无缝通信和协作。它允许 Agent 在各种企业平台之间安全地交换信息和协调行动，促进互操作性和增强自动化。
+
+这是通过 Google 的 [Agentspace](https://cloud.google.com/products/agentspace) 工作的 A2A 示例：
+
+**简单来说：MCP 将 Agent 连接到工具（想想 Agent 到 API），而 A2A 使 Agent 能够与其他 Agent 对话。**
+
+[
+
+![](/images/articles/localized/01-core-concepts/what-are-ai-agents-why-do-they-matter/05.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!XAEl!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F44a03e66-5def-4ef0-bc1c-c74822c9dbf6_1008x752.jpeg)
+
+[
+
+![](/images/articles/localized/01-core-concepts/what-are-ai-agents-why-do-they-matter/06.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!-bJk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba2b5c77-b253-4d92-a3fb-f4cda58378f4_1600x974.png)
+
+## **超越简单自动化：理解 Agent 能力**
+
+AI Agent 的能力远远超出简单的自动化脚本或聊天机器人。它们可以：
+
+1. **在多次交互中保持持久的上下文和记忆**，使它们能够从经验中学习并随着时间的推移调整方法。
+
+2. **使用工具并与外部系统交互**，无论是通过 API、Web 浏览器还是直接系统交互。
+
+3. **将复杂目标分解为可管理的子任务**，并按逻辑顺序执行它们。
+
+4. **监控自己的进度**并根据结果调整策略。
+
+5. **与其他 Agent 协作**，每个 Agent 专门负责更大任务的不同方面。
+
+**这种能力的组合使 Agent 能够处理传统 AI 系统难以或不可能完成的复杂、多步骤任务。**
+
+这种自主性和持续、目标导向行动的能力代表了 AI 系统如何协助完成复杂任务的根本进步。
+
+_[Agent Recipes](https://www.agentrecipes.com/) 是一个学习 Agent/工作流程配方的网站，提供代码示例，你可以轻松复制并粘贴到自己的 AI 应用程序中。_
+
+## **Agent 模式和架构：自主系统的构建块**
+
+AI Agent 的出现催生了几种不同的架构模式，每种模式都解决了自主决策和行动挑战的不同方面。理解这些模式对于掌握 Agent 系统的当前能力和局限性以及它们未来的潜在演变至关重要。
+
+[
+
+![](/images/articles/localized/01-core-concepts/what-are-ai-agents-why-do-they-matter/07.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!jMAd!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24d2b5d4-7011-44ac-bc5f-eb6a93d58e80_2054x1152.png)
+
+### **工具使用和集成**
+
+Agent 架构中最基本的模式是工具使用——与外部系统和 API 交互以完成任务的能力。这是关于理解何时以及如何有效地使用不同的工具。现代 Agent 可以与从数据库系统到开发环境的所有内容交互，但特别有趣的是它们如何选择使用哪些工具以及何时使用。
+
+例如，当 Agent 被要求分析销售数据时，它可能需要：
+
+- 使用文件系统 API 访问原始数据
+- 使用数据处理库进行分析
+- 利用可视化工具创建报告
+- 利用通信 API 共享结果
+
+复杂性不在于单个工具交互，而在于 Agent 能够朝着目标连贯地编排这些工具。这反映了人类的认知过程——我们不仅知道如何使用工具，还了解每个工具何时合适以及如何有效地组合它们。
+
+### **记忆和上下文管理**
+
+也许 Agent 系统中最重要的架构挑战是管理记忆和上下文。与无状态的 LLM 交互不同，Agent 需要随着时间的推移保持对其环境和先前行动的理解。这导致了几种创新方法：
+
+1. 情景记忆：Agent 保持过去交互及其结果的记录，使它们能够从经验中学习并避免重复错误。这不仅仅是存储对话历史；而是提取和组织相关信息以供将来使用。
+
+2. 工作记忆：类似于人类的短期记忆，这允许 Agent 保持关于其当前任务和最近行动的上下文。这对于在复杂的多步骤操作中保持连贯性至关重要。
+
+3. 语义记忆：Agent 随着时间的推移学到的事实、模式和关系的长期存储。这有助于为未来的决策和策略提供信息。
+
+### **分层规划和执行**
+
+Agent 架构中出现的最复杂的模式之一是分层规划。这种方法将复杂目标分解为可管理的子任务，在 Agent 系统内创建相当于认知层次结构的东西。这模仿了人类专家处理复杂问题的方式——将它们分解为更小、可管理的部分。
+
+层次结构通常包括：
+
+1. 战略规划：高层目标设定和策略开发
+2. 战术规划：将策略分解为具体的可操作任务
+3. 执行规划：确定每个任务所需的具体步骤
+4. 行动执行：执行计划的步骤并监控结果
+
+这允许 Agent 管理扁平架构会令人不知所措的复杂性。例如，一个被要求"改善我们网站性能"的 Agent 可能：
+
+- 在战略层面：决定专注于加载时间和用户体验
+- 在战术层面：计划优化 JavaScript / 长任务、压缩图像和改善服务器响应时间
+- 在执行层面：详细说明每个优化的具体步骤
+- 在行动层面：实际实施更改并测量结果
+
+### **多 Agent 系统和协作**
+
+也许 Agent 架构中出现的最有趣的模式是多 Agent 系统的发展。这些系统将认知负载分布在多个专门的 Agent 上，每个 Agent 处理复杂任务的不同方面。这种模式作为单 Agent 系统局限性的自然解决方案而出现，就像人类组织演变为通过专业化和协作处理复杂任务一样。
+
+Microsoft 的 AutoGen 和开源 CrewAI 框架体现了这种方法，允许开发人员创建在复杂任务上协同工作的 Agent 团队。典型的多 Agent 系统可能包括：
+
+- 管理整体任务流程和委派的协调器 Agent
+- 在特定领域具有深厚知识的专家 Agent
+- 审查和验证工作的评论家 Agent
+- 处理其他 Agent 和外部系统之间通信的集成 Agent
+
+这种方法的力量在于它能够将复杂的认知任务分解为可管理的部分，同时通过结构化的通信和协作协议保持连贯性。例如，在软件开发环境中，你可能有：
+
+- 与利益相关者交互并维护项目目标的需求 Agent
+- 创建技术规范的设计 Agent
+- 在不同组件上工作的多个开发 Agent
+- 验证功能的测试 Agent
+- 维护技术文档的文档 Agent
+
+[
+
+![](/images/articles/localized/01-core-concepts/what-are-ai-agents-why-do-they-matter/08.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!k4aL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e2780a6-7b6b-4a2a-90cd-63e65ea58d38_3159x1304.jpeg)
+
+_图为 CrewAI，它允许你创建和管理 Agent 团队。_
+
+这些 Agent 之间的交互不仅仅是传递消息；它涉及用于谈判、共识建立和冲突解决的复杂协议。这反映了人类组织结构，但具有完美信息共享和一致执行既定协议的优势。
+
+[
+
+![](/images/articles/localized/01-core-concepts/what-are-ai-agents-why-do-they-matter/09.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!QaaF!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F033e971e-f378-4371-9d82-ba0c5c1f0060_5100x6122.webp)
+
+_[AI Agent 技术栈](https://www.letta.com/blog/ai-agents-stack) 组织成三个关键层：Agent 托管/服务、Agent 框架和 LLM 模型与存储。_
+
+## **浏览器 Agent 生态系统：连接 AI 和 Web**
+
+基于浏览器的 AI Agent 的出现代表了（在我看来）Agent 生态系统中最重要的发展之一。这些 Agent 可以像人类一样与 Web 界面交互——导航页面、填写表单、提取信息和执行复杂的工作流程。这种能力从根本上改变了 Web 自动化和交互的格局，开启了以前不切实际或不可能的可能性。
+
+### **当前格局**
+
+浏览器 Agent 生态系统目前分为几种不同的方法，每种方法都有自己的优势和权衡：
+
+#### **专有解决方案**
+
+Google 的 Project Mariner 代表了光谱的一端——一个构建在 Chrome 之上并由 Gemini 驱动的紧密集成解决方案。虽然仍处于实验阶段，但它展示了浏览器 Agent 成为我们 Web 体验原生部分的潜力。我很幸运有机会与 Mariner 合作，将他们的愿景变为现实。
+
+OpenAI 的 Operator 采用了不同的方法，专注于通过名为 Computer-Using Agent (CUA) 的模型进行通用 Web 交互。它特别值得注意的是其先进的视觉和推理能力，使其能够理解和交互复杂的 Web 界面。与 GPT-4 的集成提供了复杂的决策能力，使其能够处理复杂的任务，如预订旅行安排或管理电子商务交易。
+
+_视频：**[Rowan Cheung](https://x.com/rowancheung)**_
+
+#### **开源替代方案**
+
+在光谱的另一端，像 Browser Use 和 Browserbase 的 Open Operator 这样的项目正在使浏览器自动化能力民主化。
+
+**[Browser Use](https://browser-use.com/)** 是一个开源项目，旨在使 AI Agent 能够直接与 Web 浏览器交互，促进复杂的基于 Web 的任务的自动化。通过利用此工具，AI 模型可以自主导航网站、执行数据提取并通过用户友好的界面执行各种 Web 操作。它无需手动配置即可识别和交互 Web 元素，并与各种大型语言模型 (LLM) 兼容。
+
+_演示："阅读我的简历并找到 ML 工作，将它们保存到文件中，然后开始在新标签页中申请它们，如果你需要帮助，问我。"_
+
+Browser Use 背后的团队现在还有一个[基于云的版本](https://cloud.browser-use.com/handler/sign-in)可用。
+
+**[Browserbase 的 Open Operator](https://operator.browserbase.com/)** 是一个开源工具，旨在通过自然语言命令自动化 Web 任务。通过解释用户指令，它在无头浏览器环境中执行操作，简化复杂的 Web 交互。Open Operator 利用 Browserbase 的基于云的基础设施。
+
+**[Skyvern](https://www.skyvern.com/)** 利用大型语言模型 (LLM) 和计算机视觉来自动化基于浏览器的工作流程。它适应各种网页，通过简单的自然语言命令执行复杂的任务。他们一直在探索如何将更多第三方集成无缝地整合到 Agent 工作流程中。
+
+这些开源解决方案提供了几个优势：
+
+1. 透明度：用户可以检查和修改代码，准确了解 Agent 如何做出决策
+2. 定制化：组织可以根据其特定需求调整工具
+3. 成本控制：不依赖专有 API 定价
+4. 社区开发：通过社区贡献快速迭代和改进
+
+特别是 Browserbase 生态系统，因其 Stagehand 框架而获得了关注，该框架为构建自定义浏览器 Agent 提供了强大的基础。它允许开发人员创建复杂的自动化工作流程，同时保持对整个堆栈的控制。
+
+### **超越简单自动化**
+
+使浏览器 Agent 特别有趣的是它们超越传统 Web 自动化的能力。正如 Aaron Levie 所指出的：
+
+> "可以启动无限云浏览器的 AI Agent 不是用来做我们已经用 API 做得很好的事情。它们将用于我们以前从未抽出时间用 API 连接的长尾任务。"
+
+这一见解触及了浏览器 Agent 重要性的核心。考虑一些例子：
+
+1. 复杂的研究任务：
+   - Agent 可以导航多个网站，交叉引用信息
+   - 在保持上下文的同时提取相关数据
+   - 将发现综合成连贯的报告
+   - 所有这些都不需要特定的 API 或集成点
+
+2. 用户界面测试：
+   - Agent 可以系统地探索 Web 应用程序
+   - 识别可用性问题
+   - 测试边缘情况
+   - 记录错误和不一致
+   - 所有这些都在理解上下文和用户体验原则的同时进行
+
+3. 内容管理：
+   - Agent 可以监控多个站点的更改
+   - 跨平台更新内容
+   - 确保品牌和消息传递的一致性
+   - 处理数字存在管理的繁琐方面
+
+_"深度研究"是我最喜欢的复杂研究实现之一，我很喜欢使用 OpenAI 的深度研究以及 Google 的深度研究（这些天真的很好）。_
+
+[
+
+![](/images/articles/localized/01-core-concepts/what-are-ai-agents-why-do-they-matter/10.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!Mh21!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8186e8e6-ca9f-4a4a-a30b-92b89987e0d8_3014x1504.png)
+
+### **技术实现和挑战**
+
+浏览器 Agent 的实现提出了几个独特的技术挑战：
+
+1. 视觉理解：Agent 必须解释复杂的视觉布局并在上下文中理解 UI 元素。这需要复杂的计算机视觉能力与 Web 界面的语义理解相结合。
+
+2. 状态管理：Web 应用程序可以具有复杂的状态转换和动态内容。Agent 需要跟踪这些状态并了解它们的行动如何影响应用程序。
+
+3. 错误处理：Web 界面可能是不可预测的，元素可能会改变位置、消失或根据条件表现不同。Agent 需要强大的错误处理和恢复机制。
+
+4. 安全考虑：具有与 Web 界面交互能力的浏览器 Agent 带来了独特的安全挑战，特别是在凭证管理和敏感数据处理方面。
+
+### **经济和战略影响**
+
+浏览器 Agent 的兴起对我们如何思考 Web 应用程序和服务具有重大影响。正如 Levie 所指出的：
+
+> "这样做的摩擦如此之高，以至于当你开始着手时，你可能最终还是手动完成任务。现在，你只需花几美元看看工作流程是否有效，然后扩展它。"
+
+这种经济现实可能会重塑我们对以下方面的思考：
+
+1. API 开发：
+   - 公司可能会优先考虑人性化界面而不是 API 开发
+   - "API 优先"范式可能会在某些用例中转变为"浏览器优先"
+   - 基于 Agent 交互可能会出现新的集成模式
+
+2. 服务设计：
+   - Web 界面可能会演变为更加 Agent 友好，同时保持人类可用性
+   - 可能会出现 Agent-界面交互的新标准
+   - 服务可能会为 Agent 交互提供专门的界面
+
+3. 成本结构：
+   - 自动化的经济性可能会发生巨大变化
+   - 可能会出现基于 Agent 使用的新定价模型
+   - 许多任务的自动化成本效益分析可能会改变
+
+## **现实世界的应用和影响**
+
+AI Agent 从理论构想到实用工具的转变已经在进行中，应用程序在多个领域出现。虽然很容易被技术的潜力所吸引，但批判性地审视当前的实现，了解它们的成功和局限性至关重要。
+
+### **软件开发和工程**
+
+AI Agent 在软件开发中的影响也许提供了其当前能力和局限性的最清晰画面。我们可能会看到从简单的代码补全转变为可以参与整个开发生命周期的"AI 队友"。
+
+#### **当前实现示例：**
+
+1. 代码生成和审查：
+   - Agent 现在可以根据自然语言描述生成整个组件或服务
+   - 它们可以审查拉取请求，识别潜在问题并提出改进建议
+   - 更复杂的 Agent 可以在多个文件中保持上下文并理解项目特定的约定
+
+2. 测试和质量保证：
+   - 基于代码更改的自动化测试生成
+   - 通过浏览器交互进行 UI 测试
+   - 性能分析和优化建议
+
+3. 文档和维护：
+   - 基于代码更改的自动文档更新
+   - API 文档生成和维护
+   - 基于使用模式的代码重构建议
+
+特别值得注意的是这些实现如何超越简单的自动化。例如，Agent 可能会注意到开发人员如何处理某些边缘情况的模式，并主动建议在整个代码库中标准化这种方法。这种上下文感知和主动协助水平代表了对传统开发工具的重大进步。
+
+### **企业自动化和业务流程**
+
+在企业环境中，AI Agent 开始处理传统方法无法经济地解决的自动化任务的"长尾"。
+
+#### **当前应用：**
+
+1. 文档管理：
+   - 跨多个系统的自动化文件组织
+   - 内容分类和标记
+   - 元数据管理和更新
+   - 跨平台内容同步
+
+2. 客户服务：
+   - 多步骤查询解决
+   - 主动问题识别
+   - 跨系统信息收集
+   - 上下文响应生成
+
+3. 工作流程自动化：
+   - 复杂的审批流程
+   - 多系统数据对账
+   - 合规监控和报告
+   - 资源分配和调度
+
+与传统自动化的关键区别在于处理异常和边缘情况的能力。例如，在组织文件时，Agent 可以识别在不同系统中以不同名称引用同一实体的情况，并就分类做出智能决策。
+
+## **挑战和局限性：现实检验**
+
+虽然 AI Agent 的潜力很大，但了解它们当前的局限性和挑战至关重要。这不仅仅是技术限制——而是需要解决的基本问题，以使技术实现其全部潜力。
+
+### **技术挑战**
+
+#### **可靠性和一致性**
+
+**AI Agent 面临的最直接挑战是可靠性。**
+
+与遵循确定性规则的传统软件不同，Agent 可能表现出不可预测的行为，特别是在面对新情况时。这以几种方式表现出来：
+
+1. 幻觉和错误信心：
+   - Agent 可能对其环境做出不正确的假设
+   - 它们可能基于误解的上下文执行操作
+   - 通常没有内置机制来识别它们何时在其能力范围之外运行
+
+2. 错误传播：
+   - 在多步骤任务中，小错误可能会复合
+   - 从中间故障中恢复仍然是一个重大挑战
+   - 长时间运行的任务特别容易受到级联故障的影响
+
+3. 上下文管理：
+   - 在长序列操作中保持准确状态
+   - 处理中断和恢复任务
+   - 可靠地管理多个并发操作
+
+正如 Levie 所指出的：
+
+> "我们如何确保结果的准确性，而不是在每一步都有增量幻觉或错误？"
+
+这仍然是 Agent 开发中的核心挑战之一。
+
+### **安全和隐私问题**
+
+Agent 的自主性质引发了重大的安全和隐私问题：
+
+1. 访问控制：
+   - Agent 通常需要广泛的系统访问才能有效
+   - 传统的安全模型不是为自主行为者设计的
+   - 安全地管理凭证委派很复杂
+
+2. 数据隐私：
+   - Agent 可能会跨多个系统处理敏感信息
+   - 复杂工作流程中的隐私边界可能不清楚
+   - 数据保留和处置政策需要重新思考
+
+3. 审计和问责：
+   - 跟踪 Agent 行动以实现合规
+   - 为 Agent 决策建立责任
+   - 管理自动化流程中的责任
+
+### **经济和实际限制**
+
+AI Agent 的经济性提出了自己的挑战：
+
+1. 计算成本：
+   - 运行复杂的 Agent 需要大量的计算资源
+   - 与传统自动化相比，每次操作的成本可能很高
+   - 规模经济尚不清楚
+
+2. 集成开销：
+   - 调整现有系统以进行 Agent 交互
+   - 培训和维护成本
+   - Agent 友好界面的开发
+
+3. 技能要求：
+   - 有效的 Agent 部署仍然需要大量专业知识
+   - 理解 Agent 的局限性和能力
+   - 管理和监控 Agent 操作
+
+## **结论：前进的道路**
+
+AI Agent 代表了我们与技术交互方式的根本转变。虽然当前的实现有局限性，但我们显然正在朝着自主 AI Agent 将成为我们工作、创造和解决问题方式不可或缺的一部分的未来迈进。
+
+成功采用的关键在于理解这些系统的潜力和局限性。正如 Levie 所指出的：
+
+> "未来十年将由我们与 AI 协作的程度来定义——而不仅仅是它有多聪明。"
+
+这表明成功不仅取决于技术进步，还取决于开发部署和集成框架，在以前根本没有完成工作的"非消费"领域解锁全新类别的价值。
+
+对于开发人员、业务领导者和技术专家来说，当务之急是深思熟虑地参与这项技术。了解其能力和边界，但也要将你的想象力扩展到自动化现有工作流程之外，设想以前不可能的事情。当技术的价值不再受人类带宽的限制时，创新的机会就会爆发。
+
+AI Agent 的时代正在展开。
+
+问题不是它们是否会改变我们使用技术的方式，而是我们如何塑造这种转变。当我们度过这一转变时，我们既需要意识到挑战，也需要有勇气重新想象当软件成为自主合作伙伴而不仅仅是工具时可能发生的事情。
+
+[
+
+![](/images/articles/localized/01-core-concepts/what-are-ai-agents-why-do-they-matter/11.jpg)
+
+](https://substackcdn.com/image/fetch/$s_!fc7v!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54d38260-3ba4-4945-832d-cd30e789b051_5246x3200.png)

@@ -1,10 +1,10 @@
 ---
 title: "260307-用文件系统和 Bash 构建智能体"
-description: "Vercel 团队分享如何用文件系统和 Bash 替代复杂工具链，将智能体成本降低 75%"
+description: "Vercel 团队分享如何用文件系统和 Bash 替代复杂工具链,将智能体成本降低 75%"
 author: "Ashka Stephen"
 source: "https://vercel.com/blog/how-to-build-agents-with-filesystems-and-bash"
 date: "2026-03-07"
-category: agent-engineering
+category: 02-technical-architecture
 tags: [Vercel, 智能体架构, 上下文管理, 成本优化]
 ---
 

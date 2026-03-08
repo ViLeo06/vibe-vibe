@@ -4,7 +4,7 @@ description: "Vercel 发布的 Vibe Coding 现状报告，揭示 AI 编程如何
 author: "Zeb Hermann, Keith Messick"
 source: "https://vercel.com/blog/what-you-need-to-know-about-vibe-coding"
 date: "2025-02-01"
-category: agent-engineering
+category: 01-core-concepts
 tags: [Vercel, Vibe Coding, AI 编程, 开发趋势]
 ---
 

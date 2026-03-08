@@ -2,7 +2,7 @@
 title: "250800-揭秘 Claude Code 的工作原理"
 description: "深度解析 Claude Code 的系统提示、工具设计和上下文工程策略，揭示其高效性背后的技术细节"
 author: "Outsight Team"
-source: "https://outsight.in/blog/how-claude-code-works"
+source: "https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62"
 date: "2025-08-00"
 category: 02-technical-architecture
 tags: [Claude Code, 系统提示, 上下文工程, 代理架构, Anthropic]
@@ -11,7 +11,7 @@ tags: [Claude Code, 系统提示, 上下文工程, 代理架构, Anthropic]
 # 揭秘 Claude Code 的工作原理
 
 <div class="article-meta">
-📅 2025-08-00 | 👤 Outsight Team | 🔗 <a href="https://outsight.in/blog/how-claude-code-works" target="_blank">查看原文</a>
+📅 2025-08-00 | 👤 Outsight Team | 🔗 <a href="https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62" target="_blank">查看原文</a>
 </div>
 
 ## 引言
