@@ -4,7 +4,7 @@ description: "Vercel 团队通过严格的评估测试发现，8KB 的 AGENTS.md
 author: "Vercel Team"
 source: "https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals"
 date: "2026-03-07"
-category: agent-engineering
+category: 03-toolchain-frameworks
 tags: [Vercel, AGENTS.md, Skills, 上下文管理]
 ---
 

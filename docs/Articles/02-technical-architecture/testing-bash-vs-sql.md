@@ -4,7 +4,7 @@ description: "Vercel 和 Braintrust 联合测试 bash 与 SQL 智能体在结构
 author: "Ankur Goyal, Andrew Qu"
 source: "https://vercel.com/blog/testing-if-bash-is-all-you-need"
 date: "2026-03-07"
-category: agent-engineering
+category: 02-technical-architecture
 tags: [Vercel, Braintrust, 智能体工程, 工具选择, 性能优化]
 ---
 
@@ -61,7 +61,7 @@ SQL 占据主导地位。它达到了 100% 的准确率，而 bash 只有 53%。
 
 一个令人惊讶的发现是，bash 智能体生成了[高度复杂的 shell 命令](https://www.braintrust.dev/app/braintrust-labs/p/bash-evals/experiments/bash-claude-sonnet-4-5?c=sql-claude-sonnet-4-5&r=b665a3b6-a046-4584-a8f7-2289ef580384&s=510baab2-879b-4a8e-9f9f-c4cb716dc6f4&fs=1)，将 `find`、`grep`、`jq`、`awk` 和 `xargs` 以在典型智能体工作流中很少出现的方式链接起来。模型显然对 shell 脚本有深入的了解，但这些知识并没有转化为更好的任务性能。
 
-![复杂的 shell 脚本并未转化为准确性](https://vercel.com/vc-ap-vercel-marketing/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fcontentful%2Fimage%2Fe5382hct74si%2F6Cvx8yBqPQE8BrsQMAK26c%2Fc280298be058861f971726019c072146%2Fgrep-chain.png&w=1920&q=75)
+![复杂的 shell 脚本并未转化为准确性](/images/articles/localized/02-technical-architecture/testing-bash-vs-sql/01.png)
 
 *复杂的 shell 脚本并未转化为准确性*
 
@@ -100,7 +100,7 @@ Vercel 团队提交了一个[包含更正的 PR](https://github.com/braintrustda
 
 在对 `just-bash`、评估数据集和数据加载问题进行所有修复后，bash-sqlite 成为最可靠的方法。"赢家"不是单次运行的原始准确性，而是通过自我验证实现的一致准确性。
 
-![混合方法在准确性上与 SQL 持平，同时增加了自我验证](https://vercel.com/vc-ap-vercel-marketing/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fcontentful%2Fimage%2Fe5382hct74si%2F7KgOPR8IraRs4nYwxM52Ef%2F13e193cb6e596c02121374d1cf8d7f9c%2Fall-experiments.png&w=1920&q=75)
+![混合方法在准确性上与 SQL 持平，同时增加了自我验证](/images/articles/localized/02-technical-architecture/testing-bash-vs-sql/02.png)
 
 *混合方法在准确性上与 SQL 持平，同时增加了自我验证*
 

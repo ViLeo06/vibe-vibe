@@ -2,7 +2,7 @@
 title: "250501-AI代理已经到来，威胁也随之而来"
 description: "Palo Alto Networks Unit 42 深度安全研究，揭示 AI 代理应用的 9 大攻击场景及防御策略"
 author: "Jay Chen, Royce Lu"
-source: "https://unit42.paloaltonetworks.com/ai-agents-threats/"
+source: "https://unit42.paloaltonetworks.com/agentic-ai-threats/"
 date: "2025-05-01"
 category: 05-security-compliance
 tags: [AI安全, 提示注入, 代理安全, 漏洞研究, Palo Alto Networks]
@@ -11,7 +11,7 @@ tags: [AI安全, 提示注入, 代理安全, 漏洞研究, Palo Alto Networks]
 # AI代理已经到来，威胁也随之而来
 
 <div class="article-meta">
-📅 2025-05-01 | 👤 Jay Chen, Royce Lu | 🔗 <a href="https://unit42.paloaltonetworks.com/ai-agents-threats/" target="_blank">查看原文</a>
+📅 2025-05-01 | 👤 Jay Chen, Royce Lu | 🔗 <a href="https://unit42.paloaltonetworks.com/agentic-ai-threats/" target="_blank">查看原文</a>
 </div>
 
 ## 执行摘要
