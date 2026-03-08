@@ -1,6 +1,6 @@
 ---
-title: 260307-Vercel 如何构建 Coding Agent 的 AEO 追踪系统
-description: 深入了解 Vercel 如何使用 Sandbox、AI Gateway 和 Workflows 构建 AI 引擎优化系统，追踪编程智能体的行为
+title: 260307-Vercel 如何构建 Coding Agents 的 AEO 追踪系统
+description: 深入了解 Vercel 如何使用 Sandbox、AI Gateway 和 Workflows 构建 AEO 系统，追踪 Coding Agents 的行为。
 author: Eric Dodds, Allen Zhou
 source: https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents
 date: '2026-03-07'
@@ -12,7 +12,7 @@ tags:
 - 架构设计
 ---
 
-# Vercel 如何构建 Coding Agent 的 AEO 追踪系统
+# Vercel 如何构建 Coding Agents 的 AEO 追踪系统
 
 **作者：Eric Dodds, Allen Zhou**
 
@@ -27,7 +27,7 @@ AI 改变了人们查找信息的方式。对企业而言，理解 LLM 如何搜
 
 ![营销团队的最终用户看到的是跨编程智能体格式一致的响应](/images/articles/2026-03/vercel-aeo-tracking.png)
 
-这最初是一个只关注标准聊天模型的原型，但我们很快意识到这还不够。要全面了解可见性，我们需要追踪编程智能体（coding agents）。
+这最初只是一个面向标准聊天模型的原型，但我们很快意识到这还不够。想真正看清可见性，就必须把 Coding Agents 也纳入追踪范围。
 
 对于标准模型，追踪相对简单。我们使用 [AI Gateway](https://vercel.com/ai-gateway) 向数十个流行模型（如 GPT、Gemini 和 Claude）发送提示，并分析它们的响应、搜索行为和引用来源。
 
@@ -40,7 +40,7 @@ AI 改变了人们查找信息的方式。对企业而言，理解 LLM 如何搜
 1. **执行隔离**：如何安全地运行可以执行任意代码的自主智能体？
 2. **可观测性**：当每个智能体都有自己的记录格式、工具调用约定和输出结构时，如何捕获智能体的行为？
 
-## Coding Agent AEO 生命周期
+## Coding Agents AEO 生命周期
 
 编程智能体通常通过 CLI 而非 API 访问。即使你只是发送提示并捕获响应，CLI 仍需要在完整的运行时环境中安装和执行。
 
@@ -334,3 +334,4 @@ export async function probeTopicWorkflow(topicId: string) {
 - **方法论深入探讨**。我们正在撰写一篇后续文章，涵盖完整的 AEO 评估方法论：提示设计、双模式测试（网络搜索与训练数据）、查询即一等公民架构和声音份额指标。
 
 - **扩展智能体覆盖范围**。随着生态系统的增长，添加更多智能体，并扩展我们测试的提示类型（不仅仅是"推荐工具"，还有完整的项目脚手架、调试等）。
+
