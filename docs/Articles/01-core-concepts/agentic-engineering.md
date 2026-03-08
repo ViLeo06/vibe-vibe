@@ -1,14 +1,26 @@
 ---
-title: '260307-智能体工程'
-description: "智能体工程是一种严谨的AI辅助软件开发方法，强调人类监督和工程严谨性，将其与随意的'氛围编程'区分开来"
-author: 'Addy Osmani'
-source: 'https://addyosmani.com/blog/agentic-engineering/'
+title: 260307-智能体工程
+description: 智能体工程是一种严谨的AI辅助软件开发方法，强调人类监督和工程严谨性，将其与随意的'氛围编程'区分开来
+author: Addy Osmani
+source: https://addyosmani.com/blog/agentic-engineering/
 date: '2026-03-07'
 category: 01-core-concepts
-tags: [AI辅助开发, 智能体工程, 软件工程, 最佳实践, 工程纪律]
+tags:
+- AI辅助开发
+- 智能体工程
+- 软件工程
+- 最佳实践
+- 工程纪律
 ---
 
 # 智能体工程
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyosmani.com/blog/agentic-engineering/)**
+
+
 
 一年前，Andrej Karpathy 创造了"氛围编程"（vibe coding）这个词来描述一种欢快而鲁莽的编程方式：你提示，把键盘交给AI，接受它吐出的一切，不看差异，通过粘贴错误消息来迭代。这是一个很好的标签，用来描述一件真实的事情——在纯AI自动驾驶模式下构建快速原型或MVP。
 

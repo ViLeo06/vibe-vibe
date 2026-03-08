@@ -1,17 +1,25 @@
 ---
-title: '250800-我们在 FAANG 如何 Vibe Coding'
-description: '来自 FAANG 公司资深工程师的真实经验分享，展示 AI 辅助编码在大型科技公司生产环境中的完整工作流程'
-author: 'Anonymous FAANG Engineer'
-source: 'https://www.reddit.com/r/ClaudeAI/comments/1i4kqxo/how_we_vibe_code_at_a_faang/'
+title: 250800-我们在 FAANG 如何 Vibe Coding
+description: 来自 FAANG 公司资深工程师的真实经验分享，展示 AI 辅助编码在大型科技公司生产环境中的完整工作流程
+author: Anonymous FAANG Engineer
+source: https://www.reddit.com/r/ClaudeAI/comments/1i4kqxo/how_we_vibe_code_at_a_faang/
 date: '2025-08-00'
 category: 01-core-concepts
-tags: [Vibe Coding, FAANG, 测试驱动开发, 设计文档, 生产环境]
+tags:
+- Vibe Coding
+- FAANG
+- 测试驱动开发
+- 设计文档
+- 生产环境
 ---
 
 # 我们在 FAANG 如何 Vibe Coding
 
+**作者：Anonymous FAANG Engineer**
+
+**原文：[查看原文](https://www.reddit.com/r/ClaudeAI/comments/1i4kqxo/how_we_vibe_code_at_a_faang/)**
+
 <div class="article-meta">
-📅 2025-08-00 | 👤 Anonymous FAANG Engineer | 🔗 <a href="https://www.reddit.com/r/ClaudeAI/comments/1i4kqxo/how_we_vibe_code_at_a_faang/" target="_blank">查看原文</a>
 </div>
 
 嘿，伙计们。我想在这里发布这个，因为我看到很多来自不相信 AI 辅助编码可以用于生产代码的人的抨击。这根本不是真的。

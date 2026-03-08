@@ -1,14 +1,26 @@
 ---
-title: '260307-Vibe Coding：革命还是鲁莽放纵？'
-description: '解码 vibe coding：炒作、希望与开发者的严峻真相'
-author: 'Addy Osmani'
-source: 'https://addyo.substack.com/p/vibe-coding-revolution-or-reckless'
+title: 260307-Vibe Coding：革命还是鲁莽放纵？
+description: 解码 vibe coding：炒作、希望与开发者的严峻真相
+author: Addy Osmani
+source: https://addyo.substack.com/p/vibe-coding-revolution-or-reckless
 date: '2026-03-07'
 category: 01-core-concepts
-tags: [AI编程, Vibe Coding, 代码质量, 软件工程, AI辅助开发]
+tags:
+- AI编程
+- Vibe Coding
+- 代码质量
+- 软件工程
+- AI辅助开发
 ---
 
 # Vibe Coding：革命还是鲁莽放纵？
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyo.substack.com/p/vibe-coding-revolution-or-reckless)**
+
+
 
 > ## 摘要
 >

@@ -1,14 +1,27 @@
 ---
-title: '260307-AI 写代码更快，你的工作是证明它能用'
-description: 'AI 并没有杀死代码审查，而是让举证责任变得明确。通过手动验证和自动化测试等证据来交付变更，然后使用审查来评估风险、意图和责任。独立开发者依靠自动化来跟上 AI 的速度，而团队则使用审查来建立共享上下文和所有权。'
-author: 'Addy Osmani'
-source: 'https://addyosmani.com/blog/code-review-ai/'
+title: 260307-AI 写代码更快，你的工作是证明它能用
+description: AI 并没有杀死代码审查，而是让举证责任变得明确。通过手动验证和自动化测试等证据来交付变更，然后使用审查来评估风险、意图和责任。独立开发者依靠自动化来跟上
+  AI 的速度，而团队则使用审查来建立共享上下文和所有权。
+author: Addy Osmani
+source: https://addyosmani.com/blog/code-review-ai/
 date: '2026-03-07'
 category: 04-engineering-practices
-tags: [AI辅助开发, 代码审查, 工程实践, 测试驱动, 软件质量]
+tags:
+- AI辅助开发
+- 代码审查
+- 工程实践
+- 测试驱动
+- 软件质量
 ---
 
 # AI 写代码更快，你的工作是证明它能用
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyosmani.com/blog/code-review-ai/)**
+
+
 
 > ## 摘要
 >

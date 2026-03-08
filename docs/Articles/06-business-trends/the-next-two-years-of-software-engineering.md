@@ -1,14 +1,26 @@
 ---
-title: '260307-软件工程的未来两年'
-description: '探讨塑造软件工程至2026年的五个关键问题，每个问题都有两种对比场景。这些视角帮助我们为不断演变的行业做好准备。'
-author: 'Addy Osmani'
-source: 'https://addyosmani.com/blog/next-two-years/'
+title: 260307-软件工程的未来两年
+description: 探讨塑造软件工程至2026年的五个关键问题，每个问题都有两种对比场景。这些视角帮助我们为不断演变的行业做好准备。
+author: Addy Osmani
+source: https://addyosmani.com/blog/next-two-years/
 date: '2026-03-07'
 category: 06-business-trends
-tags: [软件工程, AI编程, 职业发展, 技术趋势, 开发者技能]
+tags:
+- 软件工程
+- AI编程
+- 职业发展
+- 技术趋势
+- 开发者技能
 ---
 
 # 软件工程的未来两年
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyosmani.com/blog/next-two-years/)**
+
+
 
 > ## 摘要
 >

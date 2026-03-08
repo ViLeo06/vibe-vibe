@@ -1,14 +1,26 @@
 ---
-title: '260307-什么是 AI Agent？为什么它们很重要？'
-description: '理解 AI Agent 的演进、架构和未来'
-author: 'Addy Osmani'
-source: 'https://addyo.substack.com/p/what-are-ai-agents-why-do-they-matter'
+title: 260307-什么是 AI Agent？为什么它们很重要？
+description: 理解 AI Agent 的演进、架构和未来
+author: Addy Osmani
+source: https://addyo.substack.com/p/what-are-ai-agents-why-do-they-matter
 date: '2026-03-07'
 category: 01-core-concepts
-tags: [AI Agent, 自主系统, 多智能体系统, 工具使用, 浏览器自动化]
+tags:
+- AI Agent
+- 自主系统
+- 多智能体系统
+- 工具使用
+- 浏览器自动化
 ---
 
 # 什么是 AI Agent？为什么它们很重要？
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyo.substack.com/p/what-are-ai-agents-why-do-they-matter)**
+
+
 
 > ## 摘要
 >

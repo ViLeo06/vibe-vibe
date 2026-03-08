@@ -1,14 +1,26 @@
 ---
-title: '260307-超越70%：最大化AI辅助编程中人类30%的价值'
-description: '为什么在AI辅助编程时代，持久的人类技能仍然至关重要'
-author: 'Addy Osmani'
-source: 'https://addyo.substack.com/p/beyond-the-70-maximizing-the-human'
+title: 260307-超越70%：最大化AI辅助编程中人类30%的价值
+description: 为什么在AI辅助编程时代，持久的人类技能仍然至关重要
+author: Addy Osmani
+source: https://addyo.substack.com/p/beyond-the-70-maximizing-the-human
 date: '2026-03-07'
 category: 04-engineering-practices
-tags: [AI辅助编程, 软件工程, 开发者技能, 代码质量, 系统设计]
+tags:
+- AI辅助编程
+- 软件工程
+- 开发者技能
+- 代码质量
+- 系统设计
 ---
 
 # 超越70%：最大化AI辅助编程中人类30%的价值
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyo.substack.com/p/beyond-the-70-maximizing-the-human)**
+
+
 
 > ## 摘要
 >

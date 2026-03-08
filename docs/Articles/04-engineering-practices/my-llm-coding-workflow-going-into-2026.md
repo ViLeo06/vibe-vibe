@@ -1,14 +1,26 @@
 ---
-title: '260307-我在2026年的LLM编码工作流'
-description: 'AI编码助手在2025年成为游戏规则改变者，但有效利用它们需要技巧和结构。本文分享了如何在规划、编码和协作中与AI配合的工作流程。'
-author: 'Addy Osmani'
-source: 'https://addyosmani.com/blog/ai-coding-workflow/'
+title: 260307-我在2026年的LLM编码工作流
+description: AI编码助手在2025年成为游戏规则改变者，但有效利用它们需要技巧和结构。本文分享了如何在规划、编码和协作中与AI配合的工作流程。
+author: Addy Osmani
+source: https://addyosmani.com/blog/ai-coding-workflow/
 date: '2025-01-15'
 category: 04-engineering-practices
-tags: [AI编码, LLM, 工作流程, 软件工程, 最佳实践]
+tags:
+- AI编码
+- LLM
+- 工作流程
+- 软件工程
+- 最佳实践
 ---
 
 # 我在2026年的LLM编码工作流
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyosmani.com/blog/ai-coding-workflow/)**
+
+
 
 > ## 摘要
 >

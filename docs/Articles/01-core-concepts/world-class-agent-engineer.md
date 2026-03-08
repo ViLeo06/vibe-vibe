@@ -1,17 +1,23 @@
 ---
-title: '260307-如何成为世界级的智能体工程师'
-description: '深入探讨如何最大化发挥 AI 编程助手的潜力，从上下文管理到工作流设计的实战指南'
-author: 'systematicls'
-source: 'https://x.com/systematicls/status/2028814227004395561'
+title: 260307-如何成为世界级的智能体工程师
+description: 深入探讨如何最大化发挥 AI 编程助手的潜力，从上下文管理到工作流设计的实战指南
+author: systematicls
+source: https://x.com/systematicls/status/2028814227004395561
 date: '2026-03-07'
 category: 01-core-concepts
-tags: [智能体工程, 最佳实践, 工作流]
+tags:
+- 智能体工程
+- 最佳实践
+- 工作流
 ---
 
 # 如何成为世界级的智能体工程师
 
+**作者：systematicls**
+
+**原文：[查看原文](https://x.com/systematicls/status/2028814227004395561)**
+
 <div class="article-meta">
-📅 2026-03-07 | 👤 systematicls | 🔗 <a href="https://x.com/systematicls/status/2028814227004395561" target="_blank">查看原文</a>
 </div>
 
 > **本文来源**：改编自 [systematicls 的 Twitter 分享](https://x.com/systematicls/status/2028814227004395561)

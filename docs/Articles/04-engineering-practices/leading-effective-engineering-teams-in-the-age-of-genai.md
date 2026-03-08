@@ -1,14 +1,28 @@
 ---
-title: '260307-GenAI 时代领导高效工程团队'
-description: '面向软件工程领导者的实用指南，探讨如何在生成式 AI 时代有效领导工程团队，平衡创新与监督、生产力与伦理、速度与质量'
-author: 'Addy Osmani'
-source: 'https://addyo.substack.com/p/leading-effective-engineering-teams-c9b'
+title: 260307-GenAI 时代领导高效工程团队
+description: 面向软件工程领导者的实用指南，探讨如何在生成式 AI 时代有效领导工程团队，平衡创新与监督、生产力与伦理、速度与质量
+author: Addy Osmani
+source: https://addyo.substack.com/p/leading-effective-engineering-teams-c9b
 date: '2026-03-07'
 category: 04-engineering-practices
-tags: [工程领导力, 生成式AI, 团队管理, AI辅助开发, 技能提升, 代码质量, 工程实践]
+tags:
+- 工程领导力
+- 生成式AI
+- 团队管理
+- AI辅助开发
+- 技能提升
+- 代码质量
+- 工程实践
 ---
 
 # GenAI 时代领导高效工程团队
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyo.substack.com/p/leading-effective-engineering-teams-c9b)**
+
+
 
 > ## 摘要
 >

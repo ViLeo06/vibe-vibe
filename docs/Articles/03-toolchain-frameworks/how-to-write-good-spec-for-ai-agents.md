@@ -1,14 +1,26 @@
 ---
-title: '260307-如何为 AI 智能体编写优秀的规范'
-description: '学习如何为 AI 编码智能体编写有效的规范，以提高 AI 驱动开发工作流中的清晰度、专注度和生产力。涵盖从高层愿景到模块化提示的五大原则。'
-author: 'Addy Osmani'
-source: 'https://addyosmani.com/blog/good-spec/'
+title: 260307-如何为 AI 智能体编写优秀的规范
+description: 学习如何为 AI 编码智能体编写有效的规范，以提高 AI 驱动开发工作流中的清晰度、专注度和生产力。涵盖从高层愿景到模块化提示的五大原则。
+author: Addy Osmani
+source: https://addyosmani.com/blog/good-spec/
 date: '2026-03-07'
 category: 03-toolchain-frameworks
-tags: [AI智能体, 规范编写, AI辅助开发, 提示工程, 软件工程]
+tags:
+- AI智能体
+- 规范编写
+- AI辅助开发
+- 提示工程
+- 软件工程
 ---
 
 # 如何为 AI 智能体编写优秀的规范
+
+
+**作者：Addy Osmani**
+
+**原文：[查看原文](https://addyosmani.com/blog/good-spec/)**
+
+
 
 **TL;DR: 目标是编写一个清晰的规范，涵盖足够的细节（这可能包括结构、风格、测试、边界）来指导 AI，而不会让它不堪重负。将大任务分解为小任务，而不是将所有内容保留在一个大提示中。首先在只读模式下规划，然后执行并持续迭代**。
 

@@ -3,12 +3,24 @@ title: Claude Skills 完整构建指南
 description: 从基础到高级，全面介绍如何为 Claude 构建自定义 Skills，包括设计模式、测试方法和分发策略
 date: 2026-01-15
 author: Anthropic
-source: 'https://docs.anthropic.com/en/docs/build-with-claude/skills'
+source: https://docs.anthropic.com/en/docs/build-with-claude/skills
 category: 03-toolchain-frameworks
-tags: [Claude, Skills, Agent, MCP, 工作流]
+tags:
+- Claude
+- Skills
+- Agent
+- MCP
+- 工作流
 ---
 
 # Claude Skills 完整构建指南
+
+
+**作者：Anthropic**
+
+**原文：[查看原文](https://docs.anthropic.com/en/docs/build-with-claude/skills)**
+
+
 
 ## 目录
 

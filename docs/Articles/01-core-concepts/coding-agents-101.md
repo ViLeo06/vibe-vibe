@@ -1,17 +1,25 @@
 ---
-title: '250615-编码代理入门指南'
-description: '来自 Devin 团队的实战经验总结，涵盖提示技巧、工作流程集成、大任务委托、自动化和性能优化的完整指南'
-author: 'Cognition Team'
-source: 'https://devin.ai/agents101#introduction'
+title: 250615-编码代理入门指南
+description: 来自 Devin 团队的实战经验总结，涵盖提示技巧、工作流程集成、大任务委托、自动化和性能优化的完整指南
+author: Cognition Team
+source: https://devin.ai/agents101#introduction
 date: '2025-06-15'
 category: 01-core-concepts
-tags: [编码代理, Devin, 提示工程, 工作流程自动化, AI辅助开发]
+tags:
+- 编码代理
+- Devin
+- 提示工程
+- 工作流程自动化
+- AI辅助开发
 ---
 
 # 编码代理入门：真正完成工作的艺术
 
+**作者：Cognition Team**
+
+**原文：[查看原文](https://devin.ai/agents101)**
+
 <div class="article-meta">
-📅 2025-06-15 | 👤 Cognition Team | 🔗 <a href="https://devin.ai/agents101" target="_blank">查看原文</a>
 </div>
 
 现在是 2025 年。**编码代理不是魔法，但它们已经是最接近魔法的东西了**。我们注意到，一些工程师，特别是高级到资深级别的工程师，找到成功的速度比其他人更快。在这里，我们分享一些从客户和我们自己的经验中得出的顶级经验教训。

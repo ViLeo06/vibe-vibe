@@ -1,17 +1,24 @@
 ---
-title: '260307-Vercel 如何构建 Coding Agent 的 AEO 追踪系统'
-description: '深入了解 Vercel 如何使用 Sandbox、AI Gateway 和 Workflows 构建 AI 引擎优化系统，追踪编程智能体的行为'
-author: 'Eric Dodds, Allen Zhou'
-source: 'https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents'
+title: 260307-Vercel 如何构建 Coding Agent 的 AEO 追踪系统
+description: 深入了解 Vercel 如何使用 Sandbox、AI Gateway 和 Workflows 构建 AI 引擎优化系统，追踪编程智能体的行为
+author: Eric Dodds, Allen Zhou
+source: https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents
 date: '2026-03-07'
 category: 04-engineering-practices
-tags: [Vercel, 智能体工程, AEO, 架构设计]
+tags:
+- Vercel
+- 智能体工程
+- AEO
+- 架构设计
 ---
 
 # Vercel 如何构建 Coding Agent 的 AEO 追踪系统
 
+**作者：Eric Dodds, Allen Zhou**
+
+**原文：[查看原文](https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents)**
+
 <div class="article-meta">
-📅 2026-03-07 | 👤 Eric Dodds, Allen Zhou | 🔗 <a href="https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents" target="_blank">查看原文</a>
 </div>
 
 AI 改变了人们查找信息的方式。对企业而言，理解 LLM 如何搜索和总结其网站内容至关重要。
