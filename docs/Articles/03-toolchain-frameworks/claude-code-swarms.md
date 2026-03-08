@@ -236,7 +236,7 @@ claude --teammate-mode in-process
 
 这就是当智能体实际上可以协调时[智能体工程](https://addyosmani.com/blog/agentic-engineering/)的样子。协调 AI 智能体系统的架构在这里。明智地使用它。
 
-完整的 [Claude Code 智能体团队文档](https://code.claude.com/docs/en/agent-teams)有完整的设置和使用指南。
+完整的 [Claude Code 智能体团队文档](https://code.claude.com/docs/en/agent-teams?有完整的设置和使用指南。
 
 ---
 
