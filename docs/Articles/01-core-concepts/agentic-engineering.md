@@ -1,9 +1,9 @@
 ---
-title: "260307-智能体工程"
+title: '260307-智能体工程'
 description: "智能体工程是一种严谨的AI辅助软件开发方法，强调人类监督和工程严谨性，将其与随意的'氛围编程'区分开来"
-author: "Addy Osmani"
-source: "https://addyosmani.com/blog/agentic-engineering/"
-date: "2026-03-07"
+author: 'Addy Osmani'
+source: 'https://addyosmani.com/blog/agentic-engineering/'
+date: '2026-03-07'
 category: 01-core-concepts
 tags: [AI辅助开发, 智能体工程, 软件工程, 最佳实践, 工程纪律]
 ---
@@ -87,6 +87,6 @@ AI编码的兴起并没有取代软件工程的工艺——它提高了标准。
 
 现在是时候把工程带回来了。让我们称之为它本来的样子。
 
-___
+---
 
 _我与O'Reilly合作写了一本新书，[Beyond Vibe Coding](https://beyond.addy.ie/)，更深入地探讨了AI辅助（和代理）工程的实用框架。如果你一直在自己的工作流程中摸索这个问题，我很想听听什么有效。_

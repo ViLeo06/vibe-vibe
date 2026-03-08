@@ -1,9 +1,9 @@
 ---
-title: "250201-关于 Vibe Coding 你需要知道的一切"
-description: "Vercel 发布的 Vibe Coding 现状报告，揭示 AI 编程如何重塑开发者工作方式"
-author: "Zeb Hermann, Keith Messick"
-source: "https://vercel.com/blog/what-you-need-to-know-about-vibe-coding"
-date: "2025-02-01"
+title: '250201-关于 Vibe Coding 你需要知道的一切'
+description: 'Vercel 发布的 Vibe Coding 现状报告，揭示 AI 编程如何重塑开发者工作方式'
+author: 'Zeb Hermann, Keith Messick'
+source: 'https://vercel.com/blog/what-you-need-to-know-about-vibe-coding'
+date: '2025-02-01'
 category: 01-core-concepts
 tags: [Vercel, Vibe Coding, AI 编程, 开发趋势]
 ---
@@ -26,7 +26,7 @@ Vibe coding 正在彻底改变我们的工作方式。以下是 Vercel 发布的
 
 十五年前，no-code 工具让人们通过拖拽组件来构建应用。这标志着"所见即所得"（WYSIWYG）软件工具的开端，用户可以在视觉界面中编辑内容，直接看到最终效果。
 
-现在，像 v0、Lovable 或 [Replit](https://v0.app/docs/compare/v0-vs-replit) 这样的 vibe coding 工具让这个过程变得更简单，进入了"所见即所得 2.0"时代：你_说_什么，就_得到_什么。任何人都可以即时生成应用、网站或工作流。无需经验。这正在改变各种规模组织中个人和团队的工作方式，改变项目的人员配置方式和个人的贡献方式。
+现在，像 v0、Lovable 或 [Replit](https://v0.app/docs/compare/v0-vs-replit) 这样的 vibe coding 工具让这个过程变得更简单，进入了"所见即所得 2.0"时代：你*说*什么，就*得到*什么。任何人都可以即时生成应用、网站或工作流。无需经验。这正在改变各种规模组织中个人和团队的工作方式，改变项目的人员配置方式和个人的贡献方式。
 
 ![从 No-code 到 Vibe Code 的演进](/images/articles/2025-02/vibe-coding-no-code-to-vibe-code.png)
 

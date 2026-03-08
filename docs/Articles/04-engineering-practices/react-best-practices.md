@@ -1,9 +1,9 @@
 ---
-title: "260114-React 最佳实践：Vercel 十年性能优化经验总结"
-description: "Vercel 将 10+ 年的 React 和 Next.js 性能优化知识封装成结构化仓库，专为 AI Agent 和 LLM 优化，涵盖消除瀑布流、减少 Bundle 体积等 40+ 条规则"
-author: "Shu Ding, Andrew Qu"
-source: "https://vercel.com/blog/introducing-react-best-practices"
-date: "2026-01-14"
+title: '260114-React 最佳实践：Vercel 十年性能优化经验总结'
+description: 'Vercel 将 10+ 年的 React 和 Next.js 性能优化知识封装成结构化仓库，专为 AI Agent 和 LLM 优化，涵盖消除瀑布流、减少 Bundle 体积等 40+ 条规则'
+author: 'Shu Ding, Andrew Qu'
+source: 'https://vercel.com/blog/introducing-react-best-practices'
+date: '2026-01-14'
 category: 04-engineering-practices
 tags: [Vercel, React, 性能优化, Next.js, AI Agent]
 ---
@@ -88,10 +88,7 @@ async function handleRequest(userId: string, skipProcessing: boolean) {
 **正确写法（仅在需要时阻塞）：**
 
 ```typescript
-async function handleRequest(
-  userId: string,
-  skipProcessing: boolean
-) {
+async function handleRequest(userId: string, skipProcessing: boolean) {
   if (skipProcessing) {
     // 提前返回，不等待任何数据
     return { skipped: true }
@@ -145,6 +142,7 @@ npx skills add vercel-labs/agent-skills
 ---
 
 **相关资源：**
+
 - [react-best-practices 仓库](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices)
 - [Agent Skills 项目](https://github.com/vercel-labs/agent-skills)
 - [Vercel 性能优化指南](https://vercel.com/docs/concepts/performance)
