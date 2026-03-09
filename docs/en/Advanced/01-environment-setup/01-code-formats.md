@@ -1,7 +1,7 @@
 ---
 title: "1.1 The Evolution of Code Formats"
 description: "The development paradigm from single files to modularization"
-chapter: "第一章"
+chapter: "Chapter 1"
 ---
 
 # 1.1 The Evolution of Code Formats
@@ -41,20 +41,20 @@ graph TB
 <html>
 <head>
   <style>
-    /* CSS: 样式层 — 长什么样 */
+    /* CSS: Presentation layer — how it looks */
     .box { background: #f0f0f0; padding: 20px; }
     .count { font-size: 24px; }
   </style>
 </head>
 <body>
-  <!-- HTML: 结构层 — 有什么内容 -->
+  <!-- HTML: Structure layer — what content exists -->
   <div class="box">
     <span class="count">0</span>
-    <button>增加</button>
+    <button>Add</button>
   </div>
 
   <script>
-    /* JavaScript: 行为层 — 怎么交互 */
+    /* JavaScript: Behavior layer — how it interacts */
     let count = 0;
     document.querySelector('button').addEventListener('click', () => {
       count++;
@@ -203,12 +203,12 @@ Let AI know what you need, and it will choose the appropriate format:
 TypeScript is an upgraded version of JavaScript that adds type checking.
 
 ```typescript
-// TypeScript 写代码时会指出错误
-const count: number = "hello";  // ❌ 编辑器标红
+// TypeScript catches errors at write time
+const count: number = "hello";  // ❌ Editor shows red squiggly
 
-// JavaScript 要运行后才报错
+// JavaScript only errors at runtime
 const count = "hello";
-count.toFixed(2);  // 💥 运行时崩溃
+count.toFixed(2);  // 💥 Runtime crash
 ```
 
 You don't need to memorize the syntax. You just need to know:
@@ -227,7 +227,7 @@ First, identify the code type:
 **Single-file HTML**:
 
 ```bash
-# 直接双击，或
+# Double-click to open, or
 open index.html      # Mac
 start index.html     # Windows
 ```
@@ -235,8 +235,8 @@ start index.html     # Windows
 **TypeScript project**:
 
 ```bash
-pnpm install   # 安装依赖
-pnpm dev       # 启动开发服务器
+pnpm install   # Install dependencies
+pnpm dev       # Start the dev server
 ```
 
 If it still throws an error, send the error message to the AI and it will tell you the specific cause.

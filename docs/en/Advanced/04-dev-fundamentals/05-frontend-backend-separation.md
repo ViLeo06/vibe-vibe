@@ -1,7 +1,7 @@
 ---
 title: "4.5 Frontend-Backend Separation Concepts"
 description: "Understand the architecture and interactions of frontend-backend separation"
-chapter: "第四章"
+chapter: "Chapter 4"
 priority: "🟢"
 ---
 
@@ -56,14 +56,14 @@ In the early days of the Web, the server directly generated complete HTML pages 
 
 ```mermaid
 sequenceDiagram
-    participant 浏览器 as Browser
-    participant 服务器 as Server
+    participant Browser
+    participant Server
 
-    浏览器->>服务器: Visit URL
-    服务器->>服务器: Query database
-    服务器->>服务器: Generate HTML
-    服务器->>浏览器: Return complete HTML
-    浏览器->>浏览器: Display directly
+    Browser->>Server: Visit URL
+    Server->>Server: Query database
+    Server->>Server: Generate HTML
+    Server->>Browser: Return complete HTML
+    Browser->>Browser: Display directly
 ```
 
 Characteristics of this pattern:
@@ -79,14 +79,14 @@ Modern Web applications use a frontend-backend separation architecture:
 
 ```mermaid
 sequenceDiagram
-    participant 浏览器 as Frontend (Browser)
+    participant Browser as Frontend (Browser)
     participant API as Backend (API)
 
-    浏览器->>浏览器: Load page shell
-    浏览器->>API: Request data
+    Browser->>Browser: Load page shell
+    Browser->>API: Request data
     API->>API: Process business logic
-    API->>浏览器: Return JSON data
-    浏览器->>浏览器: Render page
+    API->>Browser: Return JSON data
+    Browser->>Browser: Render page
 ```
 
 Characteristics of this pattern:
