@@ -279,7 +279,7 @@ Major international model providers most commonly used
 
 A comprehensive guide to Happy CLI installation, authorization login, using Happy Coder with Claude Code terminal in the browser, and connecting to Claude Code terminal via mobile app—including how to take over any terminal from anywhere.
 
-### 1、Install Happy CLI on Your Computer
+### 1. Install Happy CLI on Your Computer
 
 - You need to install the Happy Coder command-line tool on the computer (or server) where you run your code
 - **Prerequisites**: Ensure you have Node.js 18 or higher installed
@@ -290,7 +290,7 @@ Open your preferred terminal (Terminal or PowerShell) and enter the following co
 npm install -g happy-coder
 ```
 
-### 2、Launch Happy Coder (Launches Claude Code by Default)
+### 2. Launch Happy Coder (Launches Claude Code by Default)
 
 Enter in terminal:
 
@@ -313,7 +313,7 @@ Note:
 - Option 1: Mobile App, for connecting your phone to the Happy Coder CLI terminal on your computer
 - Option 2: Web Browser, for connecting to the Happy Coder CLI terminal through a browser webpage
 
-### 3、Select Web Browser
+### 3. Select Web Browser
 
 Select Web Browser to use Claude Code in your browser
 
@@ -392,7 +392,7 @@ To reconnect, simply enter `happy claude` in the terminal—the browser will aut
 - When you need to manually take over in the command-line terminal, press any key with the cursor in the terminal to take over, and you can enter commands in the terminal again
 - Meanwhile, if you continue typing and sending commands in the browser's dialog box, the browser takes over again, and the Claude Code terminal returns to the locked (observation) state
 
-### 4、Select Mobile App
+### 4. Select Mobile App
 
 If you've previously connected to another terminal (e.g., browser), you need to log out first before connecting via mobile
 
@@ -468,7 +468,7 @@ When you send a command from mobile, it syncs in real-time to Claude Code on you
 
 Happy Coder doesn't have many commands. Here's a reference of main commands, utility commands, and related subcommands for quick lookup when needed.
 
-### 1、Main Commands (Start Session)
+### 1. Main Commands (Start Session)
 
 | **Command**     | **Description**                                              |
 | --------------- | ------------------------------------------------------------ |
@@ -477,7 +477,7 @@ Happy Coder doesn't have many commands. Here's a reference of main commands, uti
 | `happy codex`   | Start OpenAI Codex mode                                      |
 | `happy connect` | Connect and verify service (e.g., `happy connect gemini`)    |
 
-### 2、Utility Commands
+### 2. Utility Commands
 
 | **Command**     | **Function Description**                                     |
 | --------------- | ------------------------------------------------------------ |
@@ -487,7 +487,7 @@ Happy Coder doesn't have many commands. Here's a reference of main commands, uti
 | `happy daemon`  | **Manage Background Service**: Start, stop, or restart Happy Coder's daemon (background resident service) |
 | `happy doctor`  | **System Diagnostics & Troubleshooting**: Run environment self-check, detect configuration errors, and provide fix suggestions |
 
-### 3、Connect Subcommands
+### 3. Connect Subcommands
 
 | **Command**            | **Function Description**                                     |
 | ---------------------- | ------------------------------------------------------------ |
@@ -496,7 +496,7 @@ Happy Coder doesn't have many commands. Here's a reference of main commands, uti
 | `happy connect codex`  | **OpenAI Codex Authentication**: Link your OpenAI account to use Codex/GPT related models. |
 | `happy connect status` | **View Connection Status**: Display current authentication status for all AI vendors. |
 
-### 4、Gemini Subcommand Quick Reference
+### 4. Gemini Subcommand Quick Reference
 
 | **Command**                      | **Function Description**                                     |
 | -------------------------------- | ------------------------------------------------------------ |
@@ -696,7 +696,7 @@ The most powerful feature of cloud computers is the ability to choose your desir
 
 ![image-20260205223928504](/images/Advanced/happy-coder/image-20260205223928504.png)
 
-### 5、Deploy and Install Happy Coder on the Cloud Computer for Full Cloud Migration
+### 5. Deploy and Install Happy Coder on the Cloud Computer for Full Cloud Migration
 
 - Install and configure Claude Code and the corresponding models just like on your local machine, ensuring it works the same as locally
 - Install Happy Coder on the cloud computer—specific steps are identical to local installation
@@ -743,7 +743,7 @@ In the era of AI programming, the traditional "computer + compiler" model is bec
 - It actually represents the cutting-edge **"Agent-First"** development paradigm
 - Essence: **Cloud compute center + multi-model, all-capable brain + cross-device portable control**
 
-### 1、Core Architecture
+### 1. Core Architecture
 
 This system essentially keeps the **"heavy production environment"** in the cloud, delegates **"intelligent decision-making"** to AI, and keeps **"control"** in your hands.
 
@@ -753,11 +753,11 @@ This system essentially keeps the **"heavy production environment"** in the clou
 
 > Solves developers' pain points of "anytime, anywhere, high efficiency, low cost"
 
-### 2、It's My "All-Capable Brain," Even More a Model All-Star
+### 2. It's My "All-Capable Brain," Even More a Model All-Star
 
-No more纠结 between Claude or Gemini—all models domestic and international can be switched anytime, a "strongest brain" that draws on the best of all. It can read my hundreds of thousands of lines of code and give the most precise refactoring suggestions.
+No more agonizing over Claude or Gemini—all models domestic and international can be switched anytime, a "strongest brain" that draws on the best of all. It can read my hundreds of thousands of lines of code and give the most precise refactoring suggestions.
 
-### 3、It's My "Disembodied Productivity": AI Works While I Drink Coffee
+### 3. It's My "Disembodied Productivity": AI Works While I Drink Coffee
 
 This is what excites me most. Through the linkage of **Happy Coder** and **Happy App**, I've achieved **asynchronous development**:
 
@@ -766,7 +766,7 @@ This is what excites me most. Through the linkage of **Happy Coder** and **Happy
 
 > **In plain terms:** I've hired a senior programmer on 24/7 standby, and I only need to do "approval" work on my phone.
 
-### 4、It's My "Digital Fortress": An Architecture Safer Than Local Development
+### 4. It's My "Digital Fortress": An Architecture Safer Than Local Development
 
 Security isn't an add-on—it's the foundation of this system. Through "data never lands" and "end-to-end encryption," I've solved AI development's biggest privacy concern:
 
@@ -774,15 +774,17 @@ Security isn't an add-on—it's the foundation of this system. Through "data nev
 - **Physical-Level Privacy Isolation:** All core code, API Keys, and development environments are locked in the **Wuying Cloud Computer**. My personal devices retain no sensitive data; even if my phone is lost, code assets remain secure in the cloud vault.
 - **Anonymity and Minimal Permissions:** No account registration required, reducing attack surface for identity leakage; every critical AI operation requires my remote manual authorization, preventing risks from Agent "going off track."
 
-### 5、It's My "Mobile Command Center": The Ultimate Balance of Performance and Freedom
+### 5. It's My "Mobile Command Center": The Ultimate Balance of Performance and Freedom
 
 - **Compute Freedom:** With **Wuying Cloud Computer**, I'm no longer limited by my local machine's specs. Compilation too slow? One-click switch to "Performance Mode." Want to save money? Switch back to "Smooth Mode."
 - **Spatial Freedom:** Whether using a tablet at a café or a phone on a high-speed train, I'm connecting to the same high-performance Linux/Windows environment. The environment is always consistent, code is always up-to-date, data is always secure (code never lands).
-- **Cost Expert:** Spend every penny where it counts—Wuying Cloud Computer bills by core-hour, stop when not in use.### 6、总结：这套工具链的核心逻辑
+- **Cost Expert:** Spend every penny where it counts—Wuying Cloud Computer bills by core-hour, stop when not in use.
 
-| **维度**     | **传统本地开发模式**     | **“Happy+无影” 模式**                            |
-| ------------ | ------------------------ | ------------------------------------------------ |
-| **工作地点** | 被拴在工位屏幕前         | 任何有网络的地方（手机、平板、电脑）             |
-| **工作效率** | 盯着进度条，不敢离开     | **异步交付**，手机审批，AI 自动推进              |
-| **算力资源** | 受限于本地硬件，发热严重 | 云端弹性配置，从 4 核到 12 核 GPU 甚至更高随心换 |
-| **AI 能力**  | 单一模型，上下文有限     | 多模型混血，具备百万级长上下文分析力             |
+### 6. Summary: The Core Logic of This Toolchain
+
+| **Dimension**      | **Traditional Local Development**              | **"Happy + Wuying" Mode**                                                        |
+| ------------------ | ---------------------------------------------- | -------------------------------------------------------------------------------- |
+| **Workspace**      | Chained to your desk and monitor               | Anywhere with internet (phone, tablet, computer)                                 |
+| **Efficiency**     | Staring at progress bars, afraid to step away  | **Async delivery**—approve on your phone while AI keeps pushing forward          |
+| **Compute Power**  | Limited by local hardware, severe overheating   | Elastic cloud configuration, seamlessly switch from 4-core to 12-core GPU or higher |
+| **AI Capability**  | Single model, limited context                  | Multi-model hybrid with million-token-level long-context analysis                |
