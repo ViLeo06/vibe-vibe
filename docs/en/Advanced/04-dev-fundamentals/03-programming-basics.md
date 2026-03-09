@@ -1,7 +1,7 @@
 ---
 title: "4.3 How to Read AI-Generated Code"
 description: "Understand the four core concepts of code"
-chapter: "第四章"
+chapter: "Chapter 4"
 priority: "🟢"
 ---
 
@@ -36,7 +36,7 @@ When you ask AI to generate code, what it's essentially doing is combining four 
 
 A **variable** is a container for storing data. You can think of it as a labeled box—the data goes inside the box, and the label is the variable name.
 
-For example, `let username = "张三"` creates a box called `username` with "张三" inside it. You can retrieve this value anytime later, or replace the contents of the box with something else.
+For example, `let username = "John"` creates a box called `username` with "John" inside it. You can retrieve this value anytime later, or replace the contents of the box with something else.
 
 Variables allow code to "remember" information. A user's login status, the items in a shopping cart, an article title—these are all pieces of data stored in variables.
 
@@ -57,10 +57,10 @@ Once a function is defined, whenever you need to calculate a total price, you ca
 A **condition** allows a program to take different actions depending on the situation.
 
 ```
-if (用户已登录) {
-  显示欢迎信息
+if (userIsLoggedIn) {
+  showWelcomeMessage
 } else {
-  显示登录按钮
+  showLoginButton
 }
 ```
 
@@ -100,17 +100,17 @@ Once you understand the basic building blocks of code, you can read simple code 
 For example, if you want AI to help you write a user login feature, you can describe it with pseudocode:
 
 ```
-当用户点击登录按钮时：
-    获取输入框中的邮箱和密码
-    检查邮箱格式是否正确
-    如果格式正确：
-        发送请求到服务器验证
-        如果验证成功：
-            跳转到首页
-        否则：
-            显示"密码错误"
-    否则：
-        显示"邮箱格式不正确"
+When the user clicks the login button:
+    Get the email and password from the input fields
+    Check if the email format is valid
+    If the format is correct:
+        Send a request to the server for verification
+        If verification succeeds:
+            Redirect to the homepage
+        Otherwise:
+            Show "Incorrect password"
+    Otherwise:
+        Show "Invalid email format"
 ```
 
 This way of describing requirements is clearer than plain natural language, while still not requiring you to master specific syntax. AI can understand pseudocode very well and help convert it into formal code.
