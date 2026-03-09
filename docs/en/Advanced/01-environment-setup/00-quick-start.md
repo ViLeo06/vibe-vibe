@@ -23,7 +23,7 @@ This section provides the simplest and most straightforward setup process so you
 
 ### 1. Install [Git](https://git-scm.com/install/windows)
 
-**Download**：<https://registry.npmmirror.com/-/binary/git-for-windows/v2.52.0.windows.1/Git-2.52.0-64-bit.exe>
+**Download**:<https://registry.npmmirror.com/-/binary/git-for-windows/v2.52.0.windows.1/Git-2.52.0-64-bit.exe>
 
 ![image-20260203180304836](/images/Advanced/image-20260203180304836.png)
 
@@ -31,7 +31,7 @@ After downloading, double-click to install, and **just keep clicking "Next"** (s
 
 ### 2. Install [Node.js](https://nodejs.org/zh-cn/download)![image-20260203180429883](/images/Advanced/image-20260203180429883.png)
 
-**Download**：<https://npmmirror.com/mirrors/node/v24.13.0/node-v24.13.0-x64.msi>
+**Download**:<https://npmmirror.com/mirrors/node/v24.13.0/node-v24.13.0-x64.msi>
 
 After downloading, double-click to install, and **just keep clicking "Next"** (skip if already installed).
 
@@ -126,13 +126,13 @@ If it still doesn't work, uninstall Git and reinstall it.
 
 ### 1. Install Git
 
-**macOS**：
+**macOS**:
 
 - The first time you type `git` in Terminal, you'll be prompted to install the Xcode Command Line Tools. Just click Install.
 - Or run it manually: `xcode-select --install`
 - If you want the latest version, use Homebrew: `brew install git`
 
-**Linux**：
+**Linux**:
 
 ```bash
 # Ubuntu/Debian
@@ -151,13 +151,13 @@ sudo yum install git -y
 
 This script will automatically install Node.js, pnpm, and configure a China mirror:
 
-**macOS：**
+**macOS:**
 
 ```bash
 curl -fsSL https://cnb.cool/vibevibe/scripts/-/git/raw/main/init-node-mac.sh | sed 's/\r$//' | sh && npm install -g pnpm && pnpm config set registry https://registry.npmmirror.com/ && pnpm setup
 ```
 
-**Linux：**
+**Linux:**
 
 ```bash
 curl -fsSL https://cnb.cool/vibevibe/scripts/-/git/raw/main/init-node-linux.sh | sed 's/\r$//' | sh
@@ -246,18 +246,18 @@ The initialization script for Mac/Linux users automatically installs nvm (Node V
 
 ![image-20260203181915052](/images/Advanced/image-20260203181915052.png)
 
-**Download** link：<https://ghfast.top/https://github.com/coreybutler/nvm-windows/releases/download/1.2.2/nvm-setup.zip>
+**Download** link:<https://ghfast.top/https://github.com/coreybutler/nvm-windows/releases/download/1.2.2/nvm-setup.zip>
 
-Or：<https://nvm.uihtm.com/nvm-1.2.2-setup.zip>
+Or:<https://nvm.uihtm.com/nvm-1.2.2-setup.zip>
 
-**Set the mirror after installation**：
+**Set the mirror after installation**:
 
 ```powershell
 nvm node_mirror https://npmmirror.com/mirrors/node/
 nvm npm_mirror https://npmmirror.com/mirrors/npm/
 ```
 
-**Common commands**：
+**Common commands**:
 
 ```bash
 nvm install 24.13.0  # Install a specific version
