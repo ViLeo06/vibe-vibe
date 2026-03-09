@@ -56,17 +56,17 @@ graph TB
 
 ### Open the Terminal
 
-**Mac**：
+**Mac**:
 
 - Press `Command + Space`, then type "Terminal"
 - Or go to Finder → Applications → Utilities → Terminal
 
-**Windows**：
+**Windows**:
 
 - Press `Win + R`, then type `powershell` or `Windows Terminal`
 - Or right-click a folder → "Open in Terminal"
 
-**VS Code built-in terminal**：Click the menu: Terminal → New Terminal. It's recommended to open it directly in the project directory
+**VS Code built-in terminal**: Click the menu: Terminal → New Terminal. It's recommended to open it directly in the project directory
 
 ### What is the prompt?
 
@@ -83,16 +83,16 @@ This is called the **prompt**, and it is **not part of the command**. When enter
 
 ### Copy and Paste
 
-**Windows PowerShell**：
+**Windows PowerShell**:
 
-- **Paste**：Right-click the window (pastes directly; Ctrl+V may not work)
-- **Copy**：Select the text, then right-click
+- **Paste**: Right-click the window (pastes directly; Ctrl+V may not work)
+- **Copy**: Select the text, then right-click
 
-**Mac Terminal**：
+**Mac Terminal**:
 
-- **Copy**：`Command + C`
-- **Paste**：`Command + V`
-- **Paste from elsewhere**：`Command + Shift + V` (sometimes required)
+- **Copy**: `Command + C`
+- **Paste**: `Command + V`
+- **Paste from elsewhere**: `Command + Shift + V` (sometimes required)
 
 ### Basic File Operations
 
@@ -159,7 +159,7 @@ sequenceDiagram
     Program-->>User: Execute command
 ```
 
-**How PATH works**：
+**How PATH works**:
 
 1. You type `pnpm`
 2. The Shell searches each directory listed in PATH for a file named `pnpm`
@@ -186,8 +186,8 @@ The reason is simple: typing commands is much faster than clicking through menus
 
 Commands are often followed by arguments that modify their behavior. There are two formats for arguments:
 
-- **Short arguments**：A single dash followed by a letter, such as `-v` (version) or `-h` (help)
-- **Long arguments**：Two dashes followed by a word, such as `--version` or `--help`
+- **Short arguments**: A single dash followed by a letter, such as `-v` (version) or `-h` (help)
+- **Long arguments**: Two dashes followed by a word, such as `--version` or `--help`
 
 ```bash
 # Check version (short argument)
@@ -222,8 +222,8 @@ mkdir new-folder ; cd new-folder    # new-folder is an example folder name
 
 Change the terminal encoding settings.
 
-- **Mac**：Terminal → Preferences → Profiles → Advanced → Character Encoding → UTF-8
-- **Windows**：PowerShell Properties → Font → Choose a font that supports Chinese
+- **Mac**: Terminal → Preferences → Profiles → Advanced → Character Encoding → UTF-8
+- **Windows**: PowerShell Properties → Font → Choose a font that supports Chinese
 
 ### Q3: How do I open a terminal for the current folder in VS Code?
 
@@ -236,9 +236,9 @@ When you encounter `command not found` or other command errors, troubleshoot ste
 ::: details 🔧 Click to try: Command error troubleshooting flow
 <TerminalTroubleshoot />
 
-> 💡 **Practice**：Follow the steps and enter the correct commands to troubleshoot the issue. Start with spelling checks, then verify tool installation, directory location, and so on.
+> 💡 **Practice**: Follow the steps and enter the correct commands to troubleshoot the issue. Start with spelling checks, then verify tool installation, directory location, and so on.
 >
-> 🎯 **Core idea**：When a command fails, troubleshoot in order: spelling → installation → directory → PATH → system differences.
+> 🎯 **Core idea**: When a command fails, troubleshoot in order: spelling → installation → directory → PATH → system differences.
 :::
 
 ### Troubleshooting Checklist
