@@ -83,10 +83,10 @@ That’s **continuous iteration**. No product is perfect on the first try—grea
 
 ### Chapter Summary
 
-- 16.1 [Facing Real Users](./01-facing-real-users.md)——Mental adjustment after launch and building feedback channels
-- 16.2 [Feedback Categories and Priorities](./02-feedback-prioritization.md)——Using the RICE framework to prioritize feedback
-- 16.3 [Understanding Users](./03-understanding-users.md)——Combining user interviews with data-driven thinking
-- 16.4 [Iteration and Growth](./04-iteration-and-growth.md)——Building a sustainable iteration rhythm and product mindset
+- 16.1 [Facing Real Users](./01-facing-real-users.md) — Mental adjustment after launch and building feedback channels
+- 16.2 [Feedback Categories and Priorities](./02-feedback-prioritization.md) — Using the RICE framework to prioritize feedback
+- 16.3 [Understanding Users](./03-understanding-users.md) — Combining user interviews with data-driven thinking
+- 16.4 [Iteration and Growth](./04-iteration-and-growth.md) — Building a sustainable iteration rhythm and product mindset
 
 ---
 

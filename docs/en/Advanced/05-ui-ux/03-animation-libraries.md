@@ -9,7 +9,7 @@ description: "Motion, GSAP, Three.js... options that make your pages come alive"
 
 A well-placed animation can turn a page from "usable" into "pleasant to use." But too much animation can make users dizzy. As the pros say: "Good animation should be almost invisible to the user—it should simply make interactions feel smoother, not steal the spotlight."
 
-## Motion（formerly Framer Motion）—— The top choice for React animations
+## Motion (formerly Framer Motion) — The top choice for React animations
 
 [Official Motion Examples | React, JS & Vue Animations](https://motion.dev/examples)
 
@@ -27,10 +27,10 @@ Motion (package name `motion`, formerly `framer-motion`) is the most popular ani
 | Page transition animation | "Use Motion's AnimatePresence to create page transitions" |
 | Scroll-triggered animation | "Use Motion's whileInView to trigger the animation when the element enters the viewport" |
 
-## GSAP —— A professional-grade animation engine
+## GSAP — A professional-grade animation engine
 
 
-## GSAP —— A professional-grade animation engine
+## GSAP — A professional-grade animation engine
 
 [Homepage | GSAP](https://gsap.com/)
 
@@ -65,7 +65,7 @@ GSAP (GreenSock Animation Platform) is a long-standing powerhouse in the world o
   </tr>
 </tbody></table>
 
-## Three.js —— The ultimate tool for 3D effects
+## Three.js — The ultimate tool for 3D effects
 
 [Three.js – JavaScript 3D Library](https://threejs.org/)
 

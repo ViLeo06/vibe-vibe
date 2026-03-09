@@ -9,7 +9,7 @@ description: "shadcn/ui, Ant Design, Element Plus, TDesign...when should you use
 
 A component library is like a set of prebuilt "LEGO blocks." You don't need to hand-code buttons, input fields, or dialogs every single time—just use what's already built. As the veterans say: "Choose the right component library, and you'll save 80% of your UI work."
 
-## shadcn/ui（Recommended）
+## shadcn/ui (Recommended)
 
 [shadcn/ui](https://ui.shadcn.com/)
 

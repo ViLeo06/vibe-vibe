@@ -13,13 +13,13 @@ There are many AI tools on the market built specifically for UI/UX. Each has its
 Use these tools to **generate the initial UI**, and let Claude Code handle **integration and modifications**. Recommended flow: create a prototype with a design tool → copy the code into your project → use Claude Code for business logic integration and fine-tuning.
 :::
 
-## Google AI Studio —— AI App Development Platform (Highly Recommended)
+## Google AI Studio — AI App Development Platform (Highly Recommended)
 
 Google's AI app development platform can use Gemini models to generate complete web apps, including the UI. You can think of it as an online version of Claude Code provided by Google—just open it in your browser and start using it, with no local setup required.
 
 ![image-20260222173132952](/images/Advanced/image-20260222173132952.png)
 
-**Best for**：
+**Best for**:
 
 - Quickly building AI-powered app prototypes
 - Projects that need Gemini model integration
@@ -44,13 +44,13 @@ Visit: [aistudio.google.com](https://aistudio.google.com/apps)
 </tbody></table>
 
 
-## Google Stitch —— AI Prototype Design
+## Google Stitch — AI Prototype Design
 
 Google's AI UI prototyping tool can generate complete UI mockups from text descriptions or sketches.
 
 ![image-20260222173221042](/images/Advanced/image-20260222173221042.png)
 
-**Best for**：
+**Best for**:
 
 - Designing page layouts from scratch
 - When you need design mockups rather than code (a mockup is something you can look at but not run, while code is a program you can run directly—Stitch gives you the former)
@@ -63,13 +63,13 @@ Visit: [stitch.withgoogle.com](https://stitch.withgoogle.com/)
 
 
 
-## v0.app —— AI UI Code Generator
+## v0.app — AI UI Code Generator
 
 Built by Vercel, it lets you describe the interface you want in natural language and directly generates React + Tailwind + shadcn/ui code.
 
 ![image-20260222173330046](/images/Advanced/image-20260222173330046.png)
 
-**Best for**：
+**Best for**:
 
 - Quickly generating a single component or page prototype
 - Needing code in the shadcn/ui style
@@ -90,19 +90,19 @@ Built by Vercel, it lets you describe the interface you want in natural language
   </tr>
 </tbody></table>
 
-## Figma —— The Standard Tool in Design
+## Figma — The Standard Tool in Design
 
 Figma is the go-to tool for professional designers, and it now includes AI-assisted features as well. It doesn't generate code directly, but it helps you create precise design mockups. If you have a clear idea of how a page should look but can't describe it well in words, Figma is your canvas—draw it first, then have AI write the code based on it.
 
 ![image-20260222180858852](/images/Advanced/image-20260222180858852.png)
 
-**Best for**：
+**Best for**:
 
 - Design mockups that need pixel-level precision
 - Collaborative team design (designers + developers)
 - Design systems and component specifications
 
-**How it works with Claude Code**：
+**How it works with Claude Code**:
 
 Claude Code can connect directly to Figma (through a plugin protocol called MCP). Once configured, you can simply tell the AI:
 
@@ -129,7 +129,7 @@ Visit: [figma.com](https://www.figma.com/)
   </tr>
 </tbody></table>
 
-## Lovable —— Full-Stack App Generator
+## Lovable — Full-Stack App Generator
 
 Lovable does more than just UI—it can generate complete apps with both frontend and backend. It's well suited for quickly validating product ideas. Similar to Google AI Studio, but Lovable is more focused on generating deployable finished products rather than just prototypes.
 

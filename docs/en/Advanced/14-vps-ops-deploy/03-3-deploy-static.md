@@ -55,7 +55,7 @@ On the "Website" page in 1Panel, Xiaoming clicked "Create Website", chose "Stati
 
 ## Step 3: Upload the build output
 
-After creating the website, 1Panel will generate a website root directory (for example, `/opt/1panel/www/sites/你的域名/index/`).
+After creating the website, 1Panel will generate a website root directory (for example, `/opt/1panel/www/sites/your-domain/index/`).
 
 On the "Files" page in 1Panel, navigate to the website root directory, upload the compressed build output package directly, and then extract it.
 

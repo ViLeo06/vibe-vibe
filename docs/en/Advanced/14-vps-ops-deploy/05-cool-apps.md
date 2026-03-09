@@ -33,8 +33,8 @@ After installation, add your website in the Umami dashboard, and it will generat
 ```html
 <script
   defer
-  src="https://你的umami地址/script.js"
-  data-website-id="你的网站ID"
+  src="https://your-umami-url/script.js"
+  data-website-id="your-website-id"
 ></script>
 ```
 
@@ -95,7 +95,7 @@ Bitwarden in the app store is actually Vaultwarden (a lightweight Rust implement
 - Supports online preview for images, videos, and documents
 - Can be used as a simple file sharing service
 
-**Installation method**: Search for "Alist" in the 1Panel app store (note that the official name is AList) and install it with one click. During installation, you can configure the WebUI port (default 5244) and the S3 port (default 5246). After installation, go to the "Containers" page in 1Panel, find the AList container, click to connect to the terminal, and run `./alist admin random` to generate a random password (or `./alist admin set 你的密码` to set one manually), then log in with that password.
+**Installation method**: Search for "Alist" in the 1Panel app store (note that the official name is AList) and install it with one click. During installation, you can configure the WebUI port (default 5244) and the S3 port (default 5246). After installation, go to the "Containers" page in 1Panel, find the AList container, click to connect to the terminal, and run `./alist admin random` to generate a random password (or `./alist admin set YOUR_PASSWORD` to set one manually), then log in with that password.
 
 After installing Alist, Xiaoming followed the instructions to generate an admin password in the container terminal and logged in. He first mounted a local directory on the server, then connected his Aliyun Drive account as well. When he opened the Alist web interface, the two storage sources were displayed side by side. He could click in to browse files and preview images and videos online. He sent the Alist URL to a friend: "Look, I built my own cloud drive."
 

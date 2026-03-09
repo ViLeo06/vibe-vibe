@@ -84,7 +84,7 @@ Umami's default login credentials are:
 After logging in, go to Settings → Websites, click "Add website," and enter your website name and domain. After saving, Umami will generate a tracking snippet:
 
 ```html
-<script defer src="https://你的umami地址/script.js" data-website-id="你的网站ID"></script>
+<script defer src="https://your-umami-url/script.js" data-website-id="your-website-id"></script>
 ```
 
 Add this snippet to your website's global layout file. In a Next.js project, put it inside the `<head>` of `layout.tsx`; in a VitePress project, add it to the `head` array in the config file. After redeploying, Umami will start collecting data.
@@ -173,8 +173,8 @@ Besides automatically collected pageview data, Umami also supports custom event 
 
 There are two ways to implement it:
 
-- Add the `data-umami-event="事件名"` attribute to an HTML element—the simplest option, no JS required
-- Use the `window.umami.track('事件名', { 属性: '值' })` API—more flexible, and you can attach extra information
+- Add the `data-umami-event="event-name"` attribute to an HTML element—the simplest option, no JS required
+- Use the `window.umami.track('event-name', { property: 'value' })` API—more flexible, and you can attach extra information
 
 If you need to track certain events, just tell Claude Code. But the seasoned mentor reminds Xiaoming: don't track everything. Only track events that help you make decisions—like the key steps in your core conversion funnel. If you track too much, you'll just drown in data and lose sight of what matters.
 

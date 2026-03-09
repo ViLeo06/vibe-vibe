@@ -13,7 +13,7 @@ When you say "I want a modern-style login page," AI's understanding of "modern" 
 
 Before you start building, take a look at how others do it. Here are some inspiration sites designers often browse:
 
-### Awwwards —— Top Web Design Awards
+### Awwwards — Top Web Design Awards
 
 The world's most authoritative website design awards platform, featuring sites with the highest design standards.
 
@@ -28,7 +28,7 @@ The world's most authoritative website design awards platform, featuring sites w
 
 Visit: [awwwards.com](https://www.awwwards.com/)
 
-### Dribbble —— Designer Community
+### Dribbble — Designer Community
 
 A platform where designers share their work, searchable by category (Web Design, Mobile, UI).
 
@@ -43,7 +43,7 @@ A platform where designers share their work, searchable by category (Web Design,
 
 Visit: [dribbble.com](https://dribbble.com/)
 
-### Mobbin —— Real App Screenshot Library
+### Mobbin — Real App Screenshot Library
 
 A collection of thousands of screenshots from real apps and websites, organized by feature (login, settings, payments, etc.).
 
@@ -53,7 +53,7 @@ A collection of thousands of screenshots from real apps and websites, organized 
 
 Visit: [mobbin.com](https://mobbin.com/)
 
-### Land-book —— Landing Page Inspiration
+### Land-book — Landing Page Inspiration
 
 A site dedicated to collecting excellent landing page designs.
 
