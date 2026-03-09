@@ -1,7 +1,7 @@
 ---
 title: "7.3 Making APIs Better"
 description: "Version management, API docs, batch operations, file uploads, real-time updates—treat your API like a product"
-chapter: "第七章"
+chapter: "Chapter 7"
 ---
 
 # 7.3 Making APIs Better

@@ -1,7 +1,7 @@
 ---
 title: "7.0 Build and Run Your First Full-Stack App"
 description: "Build a complete CRUD flow from scratch and verify the full-stack data flow"
-chapter: "第七章"
+chapter: "Chapter 7"
 ---
 
 # 7.0 Build and Run Your First Full-Stack App
@@ -78,14 +78,14 @@ This file is the "backend interface"—the frontend sends requests here, and it 
 ```typescript
 // src/app/api/todos/route.ts
 
-// C - Create（增）：添加一条待办
+// C - Create: Add a new to-do item
 export async function POST(request: Request) {
   const { title } = await request.json()
   const newTodo = await db.insert(todos).values({ title }).returning()
   return Response.json(newTodo[0])
 }
 
-// R - Read（查）：获取所有待办
+// R - Read: Get all to-do items
 export async function GET() {
   const allTodos = await db.select().from(todos).orderBy(todos.createdAt)
   return Response.json(allTodos)

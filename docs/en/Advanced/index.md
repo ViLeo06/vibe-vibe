@@ -164,7 +164,7 @@ For individuals or small teams, this process is almost impossible to replicate. 
 
 **Development phase**: AI writes code for you; you just describe requirements and check results. You don't need to memorize every API usage or remember every framework detail.
 
-**Testing phase**: AI writes test cases for you, executing automatically. You no longer spend大量时间 writing repetitive test code or worry about missing edge cases.
+**Testing phase**: AI writes test cases for you, executing automatically. You no longer spend huge amounts of time writing repetitive test code or worry about missing edge cases.
 
 **Deployment phase**: One-click deployment to cloud platforms, automatically completing build and release. You don't need to configure servers yourself or set up CI/CD pipelines.
 

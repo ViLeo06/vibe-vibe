@@ -122,9 +122,9 @@ You don’t need to specify which approach to use. If you tell AI "use a RESTful
 
 You do not need to handwrite every endpoint in this process. You only need to tell AI what you want, and it will generate the complete code. Your job is to **verify the results**:
 
-1. **Does it run?** —— Start with `pnpm dev`, and make sure the page works as expected
-2. **Is the database correct?** —— Open Drizzle Studio and check whether the data was written correctly
-3. **Are there errors?** —— Copy the entire terminal error output to AI and let it fix it
+1. **Does it run?** — Start with `pnpm dev`, and make sure the page works as expected
+2. **Is the database correct?** — Open Drizzle Studio and check whether the data was written correctly
+3. **Are there errors?** — Copy the entire terminal error output to AI and let it fix it
 
 You don’t need to understand every line of code. It’s enough to know what each file is responsible for and, when something goes wrong, be able to tell AI "which file to change."
 

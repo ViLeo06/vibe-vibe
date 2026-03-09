@@ -129,9 +129,9 @@ After logging in, go to the [Access Token](https://cnb.cool/profile/token) page 
 ### Clone the Repository
 
 ```bash
-git clone https://cnb.cool/你的组织名/仓库名.git
-# 用户名: cnb
-# 密码: 你创建的访问令牌
+git clone https://cnb.cool/your-org-name/repo-name.git
+# Username: cnb
+# Password: the access token you created
 ```
 
 For more usage details, see [CNB Official Documentation - Access Token](https://docs.cnb.cool/zh/develops/token).
@@ -161,7 +161,7 @@ Select Chinese and confirm. After the automatic restart, the interface will swit
 If you already have a local project, you can migrate it to CNB in one click:
 
 ```bash
-cnb-init-from https://你的仓库地址.git
+cnb-init-from https://your-repo-url.git
 ```
 
 ### 3. What Is an Access Token?
