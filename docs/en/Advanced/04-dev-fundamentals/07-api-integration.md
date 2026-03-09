@@ -1,7 +1,7 @@
 ---
 title: "4.7 API Integration in Practice"
 description: "Integrating external APIs from scratch"
-chapter: "第四章"
+chapter: "Chapter 4"
 priority: "🟢"
 ---
 

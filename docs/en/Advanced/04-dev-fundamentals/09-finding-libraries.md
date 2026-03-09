@@ -164,7 +164,7 @@ Below are the most commonly used libraries in the Node.js ecosystem, organized b
   **Use case**: API services needing high concurrency, 2-3x faster than Express
 
 - **[Express](https://github.com/expressjs/express)** - Most popular web framework
-  **Use case**: General web applications, most complete ecosystem, easiest to find resources, team collaboration首选
+  **Use case**: General web applications, most complete ecosystem, easiest to find resources, team collaboration preferred choice
 
 - **[Hono](https://github.com/honojs/hono)** - Lightweight modern framework
   **Use case**: When you need to deploy across multiple runtimes like Cloudflare Workers, Deno, Bun
@@ -459,7 +459,7 @@ You might think "isn't it just `fetch`, why use a library?" But data fetching in
   **Use case**: First choice for new projects, dev server starts instantly, extremely fast HMR
 
 - **[esbuild](https://github.com/evanw/esbuild)** - Extremely fast JavaScript bundler
-  **Use case**: Need极致 build speed, written in Go, 10-100x faster than JS-based tools
+  **Use case**: Need extreme build speed, written in Go, 10-100x faster than JS-based tools
 
 - **[Rollup](https://github.com/rollup/rollup)** - ES module bundler
   **Use case**: Building libraries (not applications), produces smaller and cleaner output
@@ -519,7 +519,7 @@ You might think "isn't it just `fetch`, why use a library?" But data fetching in
 - **[PM2](https://github.com/Unitech/pm2)** - Process manager (recommended)
   **Problem faced**: Node.js process crashes, site goes down, have to restart manually. No log management, can't tell what went wrong.
   **Solution**: Auto-restart, load balancing, log management, monitoring dashboard—all with one command.
-  **Why not build your own**: Process守护, crash restart, log rotation, cluster management... would take at least thousands of lines of code to build yourself, and it might not even be stable.
+  **Why not build your own**: Process monitoring, crash restart, log rotation, cluster management... would take at least thousands of lines of code to build yourself, and it might not even be stable.
 
 - **[nodemon](https://github.com/remy/nodemon)** - Auto-restart dev server
   **Use case**: Development environment, auto-restart server when code changes
@@ -590,7 +590,7 @@ You might think "isn't it just `fetch`, why use a library?" But data fetching in
   **Use case**: Building documentation sites, based on Vite, fast, beautiful themes
 
 - **[Astro](https://github.com/withastro/astro)** - Modern static site generator
-  **Use case**: Need极致 performance, supports multiple frameworks (React, Vue, Svelte)
+  **Use case**: Need extreme performance, supports multiple frameworks (React, Vue, Svelte)
 
 - **[Docusaurus](https://github.com/facebook/docusaurus)** - React documentation site generator
   **Use case**: Building product documentation, feature-complete, from Facebook
@@ -625,7 +625,7 @@ You might think "isn't it just `fetch`, why use a library?" But data fetching in
   **Use case**: Need offline installation, deterministic dependency resolution
 
 - **[bun](https://bun.sh)** - All-in-one toolkit
-  **Use case**: Need极致 speed, integrates runtime, bundler, and test framework
+  **Use case**: Need extreme speed, integrates runtime, bundler, and test framework
 
 ::: tip Complete List
 The above are just the most commonly used libraries. For the complete Node.js ecosystem resources, check out:
@@ -670,7 +670,7 @@ Only consider writing your own in these situations:
 
 1. **Existing solutions don't meet your needs** (but first confirm you've really searched everywhere)
 2. **Learning purposes** (but don't use in production)
-3. **极致 performance optimization** (but profile first, don't optimize prematurely)
+3. **Extreme performance optimization** (but profile first, don't optimize prematurely)
 4. **Dependencies too heavy** (a simple feature introducing 100MB of dependencies isn't worth it)
 
 Xiao Ming listened, reopened Claude Code, and this time asked differently: "I need a React data fetching library that supports caching and automatic revalidation."

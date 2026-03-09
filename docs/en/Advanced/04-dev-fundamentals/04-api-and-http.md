@@ -1,7 +1,7 @@
 ---
 title: "4.4 API and HTTP Fundamentals"
 description: "Understand how APIs and the HTTP protocol work"
-chapter: "第四章"
+chapter: "Chapter 4"
 priority: "🟢"
 ---
 
@@ -131,8 +131,8 @@ The actual data being sent, usually in JSON format:
 
 ```json
 {
-  "title": "文章标题",
-  "content": "文章内容"
+  "title": "Article Title",
+  "content": "Article content..."
 }
 ```
 
@@ -184,8 +184,8 @@ The data returned by the server:
 ```json
 {
   "id": "123",
-  "title": "文章标题",
-  "content": "文章内容",
+  "title": "Article Title",
+  "content": "Article content...",
   "createdAt": "2025-01-28T10:00:00Z"
 }
 ```
@@ -205,7 +205,7 @@ Authorization: Bearer your_token_here
 Content-Type: application/json
 
 {
-  "nickname": "新昵称"
+  "nickname": "New Nickname"
 }
 ```
 
@@ -217,7 +217,7 @@ Content-Type: application/json
 
 {
   "id": "123",
-  "nickname": "新昵称",
+  "nickname": "New Nickname",
   "updatedAt": "2025-01-28T10:00:00Z"
 }
 ```
@@ -268,13 +268,13 @@ JSON (JavaScript Object Notation) is the most commonly used data format for Web 
   "users": [
     {
       "id": "1",
-      "name": "张三",
-      "email": "zhang@example.com"
+      "name": "John",
+      "email": "john@example.com"
     },
     {
       "id": "2",
-      "name": "李四",
-      "email": "li@example.com"
+      "name": "Jane",
+      "email": "jane@example.com"
     }
   ],
   "total": 2,
