@@ -49,7 +49,7 @@ When you normally use AI, you might be chatting in a web-based chatbox:
 | Type | Representative Products | Features |
 |------|---------|------|
 | **CLI Tools** | Claude Code | Runs in the command line, no graphical interface |
-| **IDE Tools** | Cursor、Windsurf、Trae | Graphical interface, visual operations |
+| **IDE Tools** | Cursor, Windsurf, Trae | Graphical interface, visual operations |
 
 
 ::: tip CLI vs IDE Tools: How Should You Choose?
@@ -93,8 +93,8 @@ Most AI IDEs are built on **VS Code** (such as Cursor, Windsurf, and Trae), so t
 
 | Type | International Vendors | Domestic Vendors |
 |------|---------|---------|
-| **CLI** | [Claude Code](https://claude.com/product/claude-code)、[Codex CLI](https://openai.com/)、[Gemini CLI](https://gemini.google.com/)、[Aider](https://aider.chat/)、[OpenCode](https://opencode.ai/) | [Qoder CLI](https://qoder.com/)、[iFlow CLI](https://iflow.cn/) |
-| **IDE** | [Cursor](https://cursor.com/)、[Windsurf](https://windsurf.com/)、[Zed](https://zed.dev/)、[GitHub Copilot](https://github.com/features/copilot) | [Trae](https://www.trae.cn/)、[Qoder](https://qoder.com/)、[CodeBuddy](https://copilot.tencent.com/) |
+| **CLI** | [Claude Code](https://claude.com/product/claude-code), [Codex CLI](https://openai.com/), [Gemini CLI](https://gemini.google.com/), [Aider](https://aider.chat/), [OpenCode](https://opencode.ai/) | [Qoder CLI](https://qoder.com/), [iFlow CLI](https://iflow.cn/) |
+| **IDE** | [Cursor](https://cursor.com/), [Windsurf](https://windsurf.com/), [Zed](https://zed.dev/), [GitHub Copilot](https://github.com/features/copilot) | [Trae](https://www.trae.cn/), [Qoder](https://qoder.com/), [CodeBuddy](https://copilot.tencent.com/) |
 
 ::: tip Advantages of Claude Code
 
@@ -142,9 +142,9 @@ The following tools are **not required**. Install them as needed:
 
 | Tool Type | Recommended Products | When You Need Them |
 |---------|---------|-------------|
-| **Git GUI** | GitHub Desktop、Sourcetree | If you're not familiar with Git commands |
-| **Database** | DBeaver、Drizzle Studio | If you frequently view/modify data |
-| **API Testing** | Postman、Thunder Client | If you need to debug API endpoints |
+| **Git GUI** | GitHub Desktop, Sourcetree | If you're not familiar with Git commands |
+| **Database** | DBeaver, Drizzle Studio | If you frequently view/modify data |
+| **API Testing** | Postman, Thunder Client | If you need to debug API endpoints |
 
 ::: tip Minimum Setup
 

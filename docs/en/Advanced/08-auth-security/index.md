@@ -9,7 +9,7 @@ title: "Chapter 8: Security and User Authentication"
 
 Xiaoming had gotten the backend for his "personal Douban" app up and running. CRUD was working fine, and the APIs now had validation and pagination. His friends had tried it out for a few days and all said it was pretty good. He figured it was just about ready, so it was time to push the code to GitHub—partly as a backup, partly to show his friends what he had built.
 
-`git add .`, `git commit`, `git push`。Done in one smooth flow.
+`git add .`, `git commit`, `git push`. Done in one smooth flow.
 
 Ten minutes later, he received an email—from OpenAI:
 

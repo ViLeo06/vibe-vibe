@@ -81,7 +81,7 @@ Development tools do not handle Chinese paths well, which can easily lead to all
 | `user-profile` | `user profile`, `用户资料` |
 | `app.tsx` | `应用.tsx`, `app 文件.tsx` |
 
-**Rules**：
+**Rules**:
 
 - ✅ Use lowercase English letters
 - ✅ Use hyphens `-` to separate words
@@ -89,7 +89,7 @@ Development tools do not handle Chinese paths well, which can easily lead to all
 
 ::: tip Why can't I use Chinese?
 
-**Common errors**：`ENOENT: no such file or directory`、`MODULE_NOT_FOUND`
+**Common errors**: `ENOENT: no such file or directory`, `MODULE_NOT_FOUND`
 
 Chinese paths may cause encoding issues, path parsing errors, and tool compatibility problems.
 

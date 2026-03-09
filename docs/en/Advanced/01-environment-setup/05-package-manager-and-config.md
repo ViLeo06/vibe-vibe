@@ -83,7 +83,7 @@ npm install -g @anthropic-ai/claude-code
 | **Command** | `npm install -g xxx` | `pnpm add xxx` |
 | **Location** | System directory, available to all projects | The current project's node_modules |
 | **Purpose** | CLI tools (such as Claude Code) | Project dependencies (such as React) |
-| **Examples** | claude、http-server | react、lodash |
+| **Examples** | claude, http-server | react, lodash |
 
 ::: tip When should you install globally?
 
@@ -134,7 +134,7 @@ An automatically generated lock file that records the exact version of each depe
 - Automatically generated, **do not modify it manually**
 - It must be committed to Git
 
-### .nvmrc（Optional）
+### .nvmrc (Optional)
 
 Specifies the recommended Node.js version for the project:
 
