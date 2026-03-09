@@ -1,7 +1,7 @@
 ---
 title: "1.4 Terminal: Getting Started"
 description: "Master the basics of command-line operations"
-chapter: "第一章"
+chapter: "Chapter 1"
 ---
 
 # 1.4 Terminal: Getting Started
@@ -147,16 +147,16 @@ When you type a command like `node` or `pnpm`, how does the system find it?
 
 ```mermaid
 sequenceDiagram
-    participant 用户 as User enters command
+    participant User as User enters command
     participant Shell as Shell interpreter
     participant PATH as PATH environment variable
-    participant 程序 as Executable program
+    participant Program as Executable program
 
-    用户->>Shell: Enter "pnpm"
+    User->>Shell: Enter "pnpm"
     Shell->>PATH: Search directories in PATH
     PATH-->>Shell: Return directory list
-    Shell->>程序: Find the pnpm executable
-    程序-->>用户: Execute command
+    Shell->>Program: Find the pnpm executable
+    Program-->>User: Execute command
 ```
 
 **How PATH works**：

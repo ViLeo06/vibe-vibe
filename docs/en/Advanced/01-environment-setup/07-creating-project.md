@@ -1,7 +1,7 @@
 ---
 title: "1.7 Creating a Project"
 description: "From folder naming conventions to creating a project template"
-chapter: "第一章"
+chapter: "Chapter 1"
 ---
 
 # 1.7 Creating a Project
@@ -77,9 +77,9 @@ Development tools do not handle Chinese paths well, which can easily lead to all
 
 | Correct Example | Incorrect Example |
 |----------|----------|
-| `my-project` | `我的项目`、`my project` |
-| `user-profile` | `user profile`、`用户资料` |
-| `app.tsx` | `应用.tsx`、`app 文件.tsx` |
+| `my-project` | `我的项目`, `my project` |
+| `user-profile` | `user profile`, `用户资料` |
+| `app.tsx` | `应用.tsx`, `app 文件.tsx` |
 
 **Rules**：
 
@@ -100,10 +100,10 @@ Chinese paths may cause encoding issues, path parsing errors, and tool compatibi
 Modern frameworks all provide official scaffolding tools. A standard project can be created with a single command.
 
 ```bash
-# 创建 Next.js 项目（my-app 是项目名，可以改）
+# Create a Next.js project (my-app is the project name, you can change it)
 pnpm create next-app@latest my-app
 
-# 创建 Vite + React 项目
+# Create a Vite + React project
 pnpm create vite@latest my-app -- --template react
 ```
 
@@ -200,10 +200,10 @@ After the tutorial is officially released, installation instructions will be pro
 ## Start the project
 
 ```bash
-# 进入项目目录（my-app 改为你创建的项目名）
+# Enter the project directory (replace my-app with your project name)
 cd my-app
 
-# 启动开发服务器
+# Start the development server
 pnpm dev
 ```
 
