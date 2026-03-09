@@ -1,7 +1,7 @@
 ---
 title: "4.2 From PRD to Technical Documentation"
 description: "Understanding the division of labor between product documentation and technical documentation"
-chapter: "第四章"
+chapter: "Chapter 4"
 priority: "🟢"
 ---
 

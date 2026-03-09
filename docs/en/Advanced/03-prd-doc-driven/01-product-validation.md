@@ -1,7 +1,7 @@
 ---
 title: "3.1 Idea Validation in Practice"
 description: "How to avoid building something nobody wants"
-chapter: "第三章"
+chapter: "Chapter 3"
 priority: "🔴"
 ---
 

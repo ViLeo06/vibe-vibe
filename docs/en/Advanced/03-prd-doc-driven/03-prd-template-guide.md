@@ -1,7 +1,7 @@
 ---
 title: "3.3 PRD Writing in Practice"
 description: "From idea to structured document"
-chapter: "第三章"
+chapter: "Chapter 3"
 priority: "🔴"
 ---
 

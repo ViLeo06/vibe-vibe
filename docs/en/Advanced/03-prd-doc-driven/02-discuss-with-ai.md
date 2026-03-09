@@ -1,7 +1,7 @@
 ---
 title: "3.2 Confirming Requirements with AI"
 description: "Communication techniques to avoid misunderstandings"
-chapter: "第三章"
+chapter: "Chapter 3"
 priority: "🔴"
 ---
 

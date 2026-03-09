@@ -1,7 +1,7 @@
 ---
 title: "3.0 PRD Template"
 description: "A ready-to-copy product requirements document template"
-chapter: "第三章"
+chapter: "Chapter 3"
 ---
 
 # 3.0 PRD Template

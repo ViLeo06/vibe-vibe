@@ -1,7 +1,7 @@
 ---
 title: "4.0 The Three States of Running Code"
 description: "Understand the three runtime modes: Dev, Build, and Production"
-chapter: "第四章"
+chapter: "Chapter 4"
 priority: "🟢"
 ---
 
