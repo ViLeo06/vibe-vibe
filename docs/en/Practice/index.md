@@ -11,5 +11,5 @@ Real-world Vibe Coding case studies — learn how practitioners built actual pro
 | [Open Source AI Canvas: My Vibecoding Journey](./ai-canvas-vibecoding-journey.md) | A complete development story using Gemini to build an AI drawing canvas |
 | [Zero-Code AI Picture Book Generator](./ai-picture-book-generator.md) | Building an AI-powered picture book generator with no coding experience |
 | [Full-Stack AI Resume Optimization SaaS](./ai-resume-saas.md) | Building a full-stack AI resume optimization product with Next.js |
-| [A2A Gomoku MVP with SecondMe API](./a2a-gomoku-secondme.md) | AI-vs-AI Gomoku with API-key headless access, realtime spectator view, and full game logging |
+| [A2A Gomoku MVP with SecondMe API](./a2a-gomoku-secondme.md) | AI-vs-AI Gomoku with API-key headless access, real-time spectator view, and full game logging |
 | [My Vibe Coding Methodology](./vibe-coding-methodology.md) | From executor to decision-maker — an experienced developer's AI workflow |
