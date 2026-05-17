@@ -45,6 +45,9 @@ docs/dev-dist/
 docs/docs/
 nano-api-test/
 scripts/
+!scripts/
+scripts/*
+!scripts/deploy-cloudflare-pages.sh
 VibeVibe 项目协作与开发指南.md
 
 # 旧 demo 位置（已迁移到 /demos）

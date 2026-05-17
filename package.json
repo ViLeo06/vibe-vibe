@@ -7,6 +7,8 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
+    "deploy:pages": "bash scripts/deploy-cloudflare-pages.sh",
+    "deploy:pages:dry-run": "bash scripts/deploy-cloudflare-pages.sh --dry-run",
     "postinstall": "patch-package"
   },
   "keywords": [],
